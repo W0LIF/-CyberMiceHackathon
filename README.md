@@ -1,0 +1,2 @@
+# -CyberMiceHackathon
+Гит Команды КиберМыши

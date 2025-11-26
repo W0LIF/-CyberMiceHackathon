@@ -47,7 +47,7 @@ def createIventsMenu():
     ]
     keyboard.add(*buttons)
     return keyboard
-def createEstablishmentвMenu():
+def createEstablishmentsMenu():
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     buttons = [
         types.KeyboardButton('Детские сады'),

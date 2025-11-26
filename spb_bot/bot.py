@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import requests
 import json
-
+from submenu import*
 TOKEN = "8482065670:AAHcPeR6v20gFlgQCtfYz3uxfZY3QG4CSGo"
 bot = telebot.TeleBot(TOKEN)
 
@@ -14,6 +14,9 @@ def create_menu():
     button4 = types.KeyboardButton("🎭 Мероприятия")
     button5 = types.KeyboardButton("❓ FAQ")
     button6 = types.KeyboardButton("🏡 О жизни в СПб")
+    botton7 = types.KeyboardButton('📋 Учреждения')
+    button8 = types.KeyboardButtton('🔎 Поиск')
+    
 
     keyboard.add(button1, button2, button3, button4, button5, button6)
     return keyboard
@@ -163,6 +166,27 @@ def city_life(message):
 • 103 - Скорая помощь
 • 102 - Полиция
     """
+@bot.message_handler(func=lambda message: message.text == "Учреждения")
+def city_life(message):
+    text = """
+    <b>Учреждения Санкт-Петербурга</b>
+
+📋 <b>Правила:</b>
+• Регистрация в течение 7 дней после переезда
+• Тишина с 23:00 до 8:00
+• Раздельный сбор мусора (в тестовом режиме)
+
+🏛️ <b>Сервисы:</b>
+• МФЦ - многофункциональные центры
+• Госуслуги - электронные услуги
+• Соцзащита - поддержка населения
+
+🚨 <b>Экстренные службы:</b>
+• 112 - Единая служба спасения
+• 103 - Скорая помощь
+• 102 - Полиция
+    """
+  
     bot.send_message(message.chat.id, text, parse_mode='HTML')
 
 print("Бот запущен! Нажмите Ctrl+C чтобы остановить")

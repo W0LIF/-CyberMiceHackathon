@@ -2,6 +2,7 @@ import os
 import requests
 import urllib3
 import json
+from parsing.universal_parser import UniversalParser, CONFIGURATIONS as PARSER_CONFIGS
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) #отключение предупреждений на гос сайтах
 
@@ -90,7 +91,82 @@ def extract_data_safe(json_response):
         return json_response.get("data") or json_response.get("results") or []
     return []
 
-@tool
+
+def ask_agent(user_input: str, chat_history: list = None, extra_context: str = ""):
+    """Helper to invoke the agent executor with optional chat history and extra context.
+
+    - user_input: the raw text from the user
+    - chat_history: list of LangChain HumanMessage/AIMessage objects
+    - extra_context: string with additional context (search or parsing results) appended to input
+    """
+    if chat_history is None:
+        chat_history = []
+
+    # Append context to the human prompt to give the agent additional facts to use
+    prompt_input = user_input
+    if extra_context:
+        prompt_input = f"{user_input}\n\n[CONTEXT]:\n{extra_context}"
+
+    try:
+        response = agent_executor.invoke({
+            "input": prompt_input,
+            "chat_history": chat_history
+        })
+        # If the agent returns a dictionary or dict-like output, try grabbing 'output' key
+        if isinstance(response, dict):
+            return response.get('output') or response.get('result') or str(response)
+        return str(response)
+    except Exception as e:
+        return f"Ошибка при вызове AI: {e}"
+
+
+def detect_category(text: str) -> list:
+    """Простая категориальная детекция запроса на основе ключевых слов.
+
+    Возвращает список возможных категорий (из API_CATALOG) в порядке релевантности.
+    """
+    text_lower = text.lower()
+    scores = {k: 0 for k in API_CATALOG.keys()}
+
+    # Keywords mapping
+    keyword_map = {
+        'documents': ['мфц', 'паспорт', 'регистрац', 'свидетельств', 'документ', 'загран', 'регистрация', 'пропис', 'прописка', 'свидетельство'],
+        'pets': ['вакцинация', 'ветеринар', 'питомец', 'животн', 'собак', 'кошка', 'кролик', 'ветклиник', 'питомец', 'питомцы'],
+        'health': ['поликлиник', 'врач', 'запись к врачу', 'вызов врача', 'медицин', 'здоровье', 'вакцинация', 'прививка'],
+        'iparent': ['дет', 'детский', 'сад', 'школ', 'класс', 'младш', 'детс', 'приём в сад', 'учебн'],
+        'social': ['соц', 'льгот', 'пособ', 'субсид', 'пенси', 'пенсия', 'поддержк', 'жкх', 'отключен', 'отключения']
+    }
+
+    # Score keywords
+    for cat, keywords in keyword_map.items():
+        for kw in keywords:
+            if kw in text_lower:
+                scores[cat] += 2
+
+    # Score by presence of category names in the text
+    for cat in API_CATALOG.keys():
+        if cat in text_lower:
+            scores[cat] += 3
+
+    # Add small scoring for presence of generic tokens
+    generic_map = {
+        'documents': ['документы', 'мфц', 'паспорт'],
+        'pets': ['питомец', 'ветеринар', 'зоопарк'],
+    }
+    for cat, tokens in generic_map.items():
+        for t in tokens:
+            if t in text_lower:
+                scores[cat] += 1
+
+    # Sort categories by descending score and filter score>0
+    ranked = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
+    ranked = [k for k, v in ranked if v > 0]
+
+    # If nothing matched, return all categories as fallback
+    if not ranked:
+        return list(API_CATALOG.keys())
+    return ranked
+
 def search_city_services(query: str, category: str) -> str:
     """
     Универсальный поиск по городским сервисам.
@@ -159,6 +235,55 @@ def search_city_services(query: str, category: str) -> str:
     
     return output_text
 
+
+@tool
+def search_city_services_tool(query: str, category: str) -> str:
+    """LangChain tool wrapper for search_city_services implementation."""
+    return search_city_services(query, category)
+
+
+def parse_site_impl(config_key: str = 'gu_spb_knowledge', limit: int = 10) -> str:
+    """Parse site by config name and return short summary.
+
+    If config_key is 'all', parses all configured sites in `PARSER_CONFIGS` and returns a summary.
+    """
+    parser = UniversalParser()
+    summaries = []
+    targets = []
+    if config_key == 'all':
+        targets = list(PARSER_CONFIGS.keys())
+    else:
+        # allow using both short keys and full names (case-insensitive)
+        if config_key in PARSER_CONFIGS:
+            targets = [config_key]
+        else:
+            # try to find a matching key by substring
+            for k in PARSER_CONFIGS:
+                if config_key.lower() in k.lower():
+                    targets.append(k)
+            if not targets:
+                return f"Конфиг '{config_key}' не найден"
+
+    total_items = 0
+    for tk in targets[:5]:  # avoid parsing too many at once
+        cfg = PARSER_CONFIGS[tk]
+        try:
+            items = parser.parse_site(cfg)
+            count = len(items)
+            total_items += count
+            # summarize titles
+            top_titles = [it.get('title') or it.get('name') or 'Без названия' for it in items[:limit]]
+            summaries.append(f"[{tk}] parsed {count} items; top: {', '.join(top_titles[:5])}")
+        except Exception as e:
+            summaries.append(f"[{tk}] parse failed: {e}")
+
+
+
+@tool
+def parse_site_tool(config_key: str = 'gu_spb_knowledge', limit: int = 10) -> str:
+    """LangChain tool wrapper for `parse_site_impl` - parses content from a configured site and returns a short summary."""
+    return parse_site_impl(config_key, limit)
+
 llm = GigaChat(
     credentials=GIGACHAT_CREDENTIALS, 
     verify_ssl_certs=False,
@@ -176,7 +301,7 @@ llm = GigaChat(
     #
 )
 
-tools = [search_city_services]
+tools = [search_city_services_tool, parse_site_tool]
 
 # Системный промпт (Личность + Инструкции)
 system_prompt = """
@@ -185,6 +310,7 @@ system_prompt = """
 ТВОЯ СТРАТЕГИЯ:
 1. Сначала посмотри в ИСТОРИЮ ДИАЛОГА. Если ответ уже был, не вызывай инструмент повторно.
 2. Если нужно найти информацию, используй 'search_city_services'.
+4. Если нужно обновить или получить свежий контент с веб-сайта, используй 'parse_site_tool' с параметром config_key, например 'gu_spb_knowledge' или 'gu_spb_mfc'.
 3. Всегда обращай внимание на [СИСТЕМНУЮ ИНФОРМАЦИЮ] в ответе инструмента. Если там написано, что записей много, сообщи об этом пользователю.
 
 ПРАВИЛА КАТЕГОРИЙ (для инструмента):

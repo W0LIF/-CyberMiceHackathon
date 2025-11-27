@@ -86,11 +86,22 @@ class UniversalParser:
                         # Извлекаем данные по правилам из конфигурации
                         for field, field_selector in selector_config['fields'].items():
                             try:
-                                if field_selector.startswith('@'):
-                                    # Атрибут элемента
-                                    attr_name = field_selector[1:]
-                                    value = element.get(attr_name, '')
-                                    item_data[field] = value.strip() if value else ''
+                                # Support formats: '@attr' (attribute on element), 'selector@attr' (select child and attribute)
+                                if isinstance(field_selector, str) and '@' in field_selector:
+                                    # Cases: '@attr' or 'childsel@attr'
+                                    if field_selector.startswith('@'):
+                                        attr_name = field_selector[1:]
+                                        value = element.get(attr_name, '')
+                                        item_data[field] = value.strip() if value else ''
+                                    else:
+                                        # split selector and attribute
+                                        sel, attr_name = field_selector.split('@', 1)
+                                        target_element = element.select_one(sel)
+                                        if target_element:
+                                            value = target_element.get(attr_name, '')
+                                            item_data[field] = value.strip() if value else ''
+                                        else:
+                                            item_data[field] = ''
                                 else:
                                     # Текст или вложенный элемент
                                     if field_selector == '':

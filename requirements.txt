@@ -1,0 +1,8 @@
+requests
+pyTelegramBotAPI
+beautifulsoup4
+langchain
+langchain-core
+langchain-gigachat
+urllib3
+pysocks

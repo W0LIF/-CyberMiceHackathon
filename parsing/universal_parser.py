@@ -178,14 +178,19 @@ class UniversalParser:
             print(f"Нет данных для сохранения")
             return
         
+        # Сохраняем в папку spb_bot_opensearch/data
+        json_filename = f"spb_bot_opensearch/data/{prefix}.json"
+        csv_filename = f"spb_bot_opensearch/data/{prefix}.csv"
+        
+        # Создаем папку, если её нет
+        os.makedirs(os.path.dirname(json_filename), exist_ok=True)
+        
         # Сохраняем в JSON
-        json_filename = f"{prefix}.json"
         with open(json_filename, 'w', encoding='utf-8') as f:
             json.dump(items, f, ensure_ascii=False, indent=2)
         
         # Сохраняем в CSV (если есть данные)
         if items and isinstance(items[0], dict):
-            csv_filename = f"{prefix}.csv"
             with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.DictWriter(f, fieldnames=items[0].keys())
                 writer.writeheader()

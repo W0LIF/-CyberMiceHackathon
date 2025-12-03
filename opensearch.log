@@ -1,0 +1,32 @@
+2025-12-03 03:17:11,154 - opensearch - INFO - PUT https://localhost:9200/corporate_data [status:200 request:0.955s]
+2025-12-03 03:17:11,156 - opensearch_manager - INFO - Индекс 'corporate_data' успешно создан.
+2025-12-03 03:17:11,158 - opensearch_manager - WARNING - Папка json_data не найдена. Создана пустая папка.
+2025-12-03 03:17:11,706 - opensearch - INFO - POST https://localhost:9200/corporate_data/_delete_by_query [status:200 request:0.547s]
+2025-12-03 03:17:11,707 - opensearch_manager - INFO - Удалено устаревших документов: 0
+2025-12-03 03:17:12,000 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.292s]
+2025-12-03 03:17:12,108 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.106s]
+2025-12-03 03:17:56,066 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.107s]
+2025-12-03 03:17:56,067 - opensearch_manager - INFO - Индекс 'corporate_data' уже существует.
+2025-12-03 03:17:56,069 - opensearch_manager - WARNING - Папка data не найдена. Создана пустая папка.
+2025-12-03 03:17:56,095 - opensearch - INFO - POST https://localhost:9200/corporate_data/_delete_by_query [status:200 request:0.025s]
+2025-12-03 03:17:56,097 - opensearch_manager - INFO - Удалено устаревших документов: 0
+2025-12-03 03:17:56,199 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.101s]
+2025-12-03 03:17:56,220 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.020s]
+2025-12-03 03:20:48,242 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.119s]
+2025-12-03 03:20:48,245 - opensearch_manager - INFO - Индекс 'corporate_data' уже существует.
+2025-12-03 03:20:48,953 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.583s]
+2025-12-03 03:20:48,955 - opensearch_manager - INFO - Загружено документов: 59, Ошибок: []
+2025-12-03 03:20:49,296 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.340s]
+2025-12-03 03:20:49,375 - opensearch - INFO - POST https://localhost:9200/corporate_data/_delete_by_query [status:200 request:0.078s]
+2025-12-03 03:20:49,375 - opensearch_manager - INFO - Удалено устаревших документов: 0
+2025-12-03 03:20:49,472 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.095s]
+2025-12-03 03:20:49,908 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.435s]
+2025-12-03 04:55:42,323 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.518s]
+2025-12-03 04:55:42,324 - opensearch_manager - INFO - Индекс 'corporate_data' уже существует.
+2025-12-03 04:55:43,536 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.753s]
+2025-12-03 04:55:43,541 - opensearch_manager - INFO - Загружено документов: 180, Ошибок: []
+2025-12-03 04:55:43,951 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.410s]
+2025-12-03 04:55:44,011 - opensearch - INFO - POST https://localhost:9200/corporate_data/_delete_by_query [status:200 request:0.058s]
+2025-12-03 04:55:44,012 - opensearch_manager - INFO - Удалено устаревших документов: 0
+2025-12-03 04:55:44,160 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.148s]
+2025-12-03 04:55:44,245 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.083s]

@@ -13,7 +13,7 @@ import json
 import os
 from submenu import*
 from parsing.universal_parser import UniversalParser, CONFIGURATIONS
-import ai_engine
+import ai_engine as ai_engine
 from ai_engine import check_toxicity, ask_agent, search_city_services, detect_category
 from langchain_core.messages import HumanMessage, AIMessage
 TOKEN = "8482065670:AAHcPeR6v20gFlgQCtfYz3uxfZY3QG4CSGo"

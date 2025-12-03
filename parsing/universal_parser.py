@@ -179,8 +179,8 @@ class UniversalParser:
             return
         
         # Сохраняем в папку spb_bot_opensearch/data
-        json_filename = f"spb_bot_opensearch/data/{prefix}.json"
-        csv_filename = f"spb_bot_opensearch/data/{prefix}.csv"
+        json_filename = f"data/{prefix}.json"
+        csv_filename = f"data/{prefix}.csv"
         
         # Создаем папку, если её нет
         os.makedirs(os.path.dirname(json_filename), exist_ok=True)
@@ -200,9 +200,849 @@ class UniversalParser:
 
 # Конфигурации для разных сайтов
 CONFIGURATIONS = {
-    'gu_spb_knowledge': {
-        'url': 'https://gu.spb.ru/knowledge-base/',
-        'output_prefix': 'gu_spb_knowledge',    # Префиксы для файлов
+    'gu_spb_knowledge1': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=1',
+        'output_prefix': 'gu_spb_knowledge1',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge2': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=2',
+        'output_prefix': 'gu_spb_knowledge2',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge3': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=3',
+        'output_prefix': 'gu_spb_knowledge3',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge4': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=4',
+        'output_prefix': 'gu_spb_knowledge4',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge5': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=5',
+        'output_prefix': 'gu_spb_knowledge5',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge6': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=6',
+        'output_prefix': 'gu_spb_knowledge6',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge7': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=7',
+        'output_prefix': 'gu_spb_knowledge7',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge8': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=8',
+        'output_prefix': 'gu_spb_knowledge8',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge9': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=9',
+        'output_prefix': 'gu_spb_knowledge9',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge10': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=10',
+        'output_prefix': 'gu_spb_knowledge10',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge11': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=11',
+        'output_prefix': 'gu_spb_knowledge11',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge12': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=12',
+        'output_prefix': 'gu_spb_knowledge12',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge13': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=13',
+        'output_prefix': 'gu_spb_knowledge13',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge14': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=14',
+        'output_prefix': 'gu_spb_knowledge14',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge15': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=15',
+        'output_prefix': 'gu_spb_knowledge15',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge16': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=16',
+        'output_prefix': 'gu_spb_knowledge16',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge17': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=17',
+        'output_prefix': 'gu_spb_knowledge17',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge18': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=18',
+        'output_prefix': 'gu_spb_knowledge18',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge19': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=19',
+        'output_prefix': 'gu_spb_knowledge19',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge20': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=20',
+        'output_prefix': 'gu_spb_knowledge20',    # Префиксы для файлов
+        'list_selectors': [     # Лист селекторов
+            {
+                'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор
+                'fields': {    # Какие поля извлекать 
+                    'title': '',  # текст самой ссылки. Пример: "Как получить паспорт" (текст ссылки)
+                    'link': '@href'  # атрибут href, берем атрибуты элемента Пример: "/knowledge/123" (атрибут href)
+                }
+            },
+            {
+                'selector': '.element-card .title-usual a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': 'a.ambient__link-ctrl',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            },
+            {
+                'selector': '.element-card a',
+                'fields': {
+                    'title': '',
+                    'link': '@href'
+                }
+            }
+        ],
+        'content_selectors': [
+            '.text-container',
+            '.paragraph-base', 
+            '.box._mode-usual',
+            'main',
+            '.content',
+            'article'
+        ]
+    },
+    'gu_spb_knowledge21': {
+        'url': 'https://gu.spb.ru/knowledge-base/?PAGEN_1=21',
+        'output_prefix': 'gu_spb_knowledge21',    # Префиксы для файлов
         'list_selectors': [     # Лист селекторов
             {
                 'selector': 'div.element-card a.ambient__link-ctrl', # CSS селектор

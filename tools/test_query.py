@@ -12,7 +12,7 @@ import os
 import argparse
 # Ensure project root is in path for imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import ai_engine
+import ai_engine as ai_engine
 from parsing.universal_parser import UniversalParser, CONFIGURATIONS
 
 

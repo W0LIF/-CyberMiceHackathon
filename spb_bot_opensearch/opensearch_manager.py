@@ -3,175 +3,127 @@ import json
 import logging
 from opensearchpy import OpenSearch, helpers
 
-# Настройка логгера (используем тот же формат, что и в main.py)
 logger = logging.getLogger(__name__)
 
 class OpenSearchManager:
     def __init__(self):
-        # 1. Настройки подключения (обычно берутся из переменных окружения)
-        # Если у вас OpenSearch запущен локально без SSL, настройки могут отличаться
         self.host = 'localhost'
         self.port = 9200
-        self.auth = ('admin', 'admin') # Стандартные логин/пароль для OpenSearch
-        self.index_name = "corporate_data" # Имя индекса (базы)
+        self.auth = ('admin', 'admin')
+        self.index_name = "corporate_data"
 
-        # Инициализация клиента
         self.client = OpenSearch(
             hosts=[{'host': self.host, 'port': self.port}],
             http_auth=self.auth,
-            use_ssl=True,           # Включите False, если у вас локальная версия без HTTPS
-            verify_certs=False,     # Отключаем проверку сертификатов для локальной разработки
+            use_ssl=True,
+            verify_certs=False,
             ssl_show_warn=False
         )
         
-        # Путь к папке с JSON файлами
-        self.data_folder = "data" 
+        # === ИЗМЕНЕНИЕ: Ищем папку data в КОРНЕ проекта ===
+        # 1. Папка, где лежит этот файл (spb_bot_opensearch)
+        current_file_dir = os.path.dirname(os.path.abspath(__file__))
+        # 2. Родительская папка (корень проекта)
+        project_root = os.path.dirname(current_file_dir)
+        # 3. Папка data в корне
+        self.data_folder = os.path.join(project_root, "data")
+        
+        # Для отладки (чтобы вы видели, где он ищет)
+        # print(f"OpenSearchManager ищет данные в: {self.data_folder}")
 
     def setup_index(self):
-        """Создает индекс с правильной схемой данных, если он не существует"""
-        
-        # Схема индекса (маппинг)
         index_body = {
-            "settings": {
-                "index": {
-                    "number_of_shards": 1,
-                    "number_of_replicas": 0
-                }
-            },
+            "settings": {"index": {"number_of_shards": 1, "number_of_replicas": 0}},
             "mappings": {
                 "properties": {
                     "title": {"type": "text", "analyzer": "standard"},
                     "content": {"type": "text", "analyzer": "standard"},
-                    "link": {"type": "keyword"},
-                    "category": {"type": "keyword"}, # keyword нужен для точной агрегации (статистики)
-                    "created_at": {"type": "date"}
+                    "address": {"type": "text", "analyzer": "standard"},
+                    "phone": {"type": "text"},
+                    "category": {"type": "keyword"},
+                    "link": {"type": "keyword"}
                 }
             }
         }
-
-        # Проверяем, существует ли индекс
         if not self.client.indices.exists(index=self.index_name):
             self.client.indices.create(index=self.index_name, body=index_body)
-            logger.info(f"Индекс '{self.index_name}' успешно создан.")
-        else:
-            logger.info(f"Индекс '{self.index_name}' уже существует.")
+            logger.info(f"Индекс '{self.index_name}' создан.")
 
     def load_all_data(self):
-        """Читает JSON файлы из папки и загружает их в OpenSearch"""
-        
+        """Читает ВСЕ json файлы из папки data и грузит в базу"""
         if not os.path.exists(self.data_folder):
-            os.makedirs(self.data_folder)
-            logger.warning(f"Папка {self.data_folder} не найдена. Создана пустая папка.")
+            logger.error(f"Папка {self.data_folder} не найдена!")
             return
 
         files = [f for f in os.listdir(self.data_folder) if f.endswith('.json')]
-        if not files:
-            logger.warning("JSON файлы не найдены.")
-            return
-
         docs_to_upload = []
+
+        print(f"Найдено файлов для загрузки: {len(files)} в папке {self.data_folder}")
 
         for filename in files:
             file_path = os.path.join(self.data_folder, filename)
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
+                    items = data if isinstance(data, list) else [data]
                     
-                    # Если в файле список объектов
-                    if isinstance(data, list):
-                        for item in data:
-                            docs_to_upload.append(self._prepare_doc(item))
-                    # Если в файле один объект
-                    elif isinstance(data, dict):
-                        docs_to_upload.append(self._prepare_doc(data))
-                        
+                    for item in items:
+                        doc = self._prepare_doc(item)
+                        if doc:
+                            docs_to_upload.append(doc)
             except Exception as e:
-                logger.error(f"Ошибка при чтении файла {filename}: {e}")
+                logger.error(f"Ошибка в файле {filename}: {e}")
 
         if docs_to_upload:
-            # Используем bulk helper для быстрой загрузки
+            # Очищаем старый индекс перед полной загрузкой
+            if self.client.indices.exists(index=self.index_name):
+                self.client.indices.delete(index=self.index_name)
+            self.setup_index()
+
             success, failed = helpers.bulk(self.client, docs_to_upload)
-            logger.info(f"Загружено документов: {success}, Ошибок: {failed}")
+            logger.info(f"✅ Успешно загружено: {success} документов.")
         
-        # Обновляем индекс, чтобы данные стали доступны для поиска сразу
         self.client.indices.refresh(index=self.index_name)
 
-    def _prepare_doc(self, source_data):
-        """Вспомогательный метод для форматирования данных под bulk API"""
+    def _prepare_doc(self, item):
+        actual_item = item
+        if 'place' in item and isinstance(item['place'], dict):
+            actual_item = item['place']
+
+        title = actual_item.get('name') or actual_item.get('title') or actual_item.get('short_name')
+        if not title: return None
+
+        address = actual_item.get('address') or actual_item.get('location') or ""
+        if isinstance(address, dict): address = address.get('address', '')
+
+        content = actual_item.get('description') or actual_item.get('text') or actual_item.get('content') or ""
+        category = item.get('category_tag') or actual_item.get('category') or 'general'
+
         return {
             "_index": self.index_name,
             "_source": {
-                "title": source_data.get("title", "Без заголовка"),
-                "content": source_data.get("content", ""),
-                "category": source_data.get("category", "Uncategorized"),
-                "link": source_data.get("link", "#"),
-                "created_at": source_data.get("created_at", None)
+                "title": str(title),
+                "content": str(content),
+                "address": str(address),
+                "phone": str(actual_item.get('phone', '')),
+                "category": category,
+                "link": actual_item.get('link') or actual_item.get('url') or "#"
             }
-        }
-
-    def cleanup_old_data(self):
-        """
-        Удаляет устаревшие данные.
-        Здесь пример удаления документов, у которых category = 'deprecated'.
-        """
-        query = {
-            "query": {
-                "term": {
-                    "category": "deprecated"
-                }
-            }
-        }
-        try:
-            response = self.client.delete_by_query(index=self.index_name, body=query)
-            logger.info(f"Удалено устаревших документов: {response.get('deleted', 0)}")
-        except Exception as e:
-            logger.error(f"Ошибка очистки данных: {e}")
-
-    def get_statistics(self):
-        """Возвращает общее количество и разбивку по категориям"""
-        
-        # Агрегационный запрос
-        body = {
-            "size": 0, # Нам не нужны сами документы, только цифры
-            "aggs": {
-                "categories_count": {
-                    "terms": {
-                        "field": "category",
-                        "size": 10
-                    }
-                }
-            }
-        }
-        
-        res = self.client.search(index=self.index_name, body=body)
-        
-        total = res['hits']['total']['value']
-        buckets = res['aggregations']['categories_count']['buckets']
-        
-        categories_stats = {b['key']: b['doc_count'] for b in buckets}
-        
-        return {
-            "total_documents": total,
-            "categories": categories_stats
         }
 
     def search(self, query_text, size=5):
-        """Полнотекстовый поиск по заголовку и содержимому"""
-        
         search_body = {
             "size": size,
             "query": {
                 "multi_match": {
                     "query": query_text,
-                    "fields": ["title^2", "content"], # Заголовок в 2 раза важнее контента
-                    "fuzziness": "AUTO" # Прощает опечатки
+                    "fields": ["title^3", "address^2", "content"],
+                    "fuzziness": "AUTO"
                 }
             }
         }
-        
         try:
             response = self.client.search(index=self.index_name, body=search_body)
             return response['hits']['hits']
-        except Exception as e:
-            logger.error(f"Ошибка поиска: {e}")
+        except Exception:
             return []

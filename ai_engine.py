@@ -19,6 +19,15 @@ GIGACHAT_CREDENTIALS = "MDE5YWJiZTMtNjFhMi03YjQ2LWE0ZWYtZGZhMmQzYjg0OGUyOmU3OTIw
 
 # Инициализация
 os_manager = OpenSearchManager()
+
+# Проверяем и загружаем данные при старте
+try:
+    was_updated = os_manager.ensure_data_loaded()
+    if was_updated:
+        print("[ai_engine] Данные загружены/обновлены в OpenSearch")
+except Exception as e:
+    print(f"[ai_engine] Ошибка при инициализации данных: {e}")
+
 llm = GigaChat(
     credentials=GIGACHAT_CREDENTIALS, 
     verify_ssl_certs=False, 
@@ -32,7 +41,7 @@ def search_city_data(query: str) -> str:
     Ищет ВСЁ: организации (ветклиники, МФЦ, школы), адреса, законы и инструкции.
     Используй этот инструмент для ЛЮБОГО вопроса.
     """
-    print(f"\n[OPENSEARCH] 🔍 Запрос: '{query}'")
+    print(f"\n[OPENSEARCH] Запрос: '{query}'")
     
     # Ищем в базе (заголовки, контент, адреса)
     results = os_manager.search(query, size=7)
@@ -48,15 +57,15 @@ def search_city_data(query: str) -> str:
         
         # Собираем детали
         details = []
-        if s.get('address'): details.append(f"📍 {s.get('address')}")
-        if s.get('phone'): details.append(f"📞 {s.get('phone')}")
+        if s.get('address'): details.append(f"Адрес: {s.get('address')}")
+        if s.get('phone'): details.append(f"Телефон: {s.get('phone')}")
         
         # Обрезаем описание, чтобы не перегружать контекст
         content = s.get('content', '')[:150].replace("\n", " ")
-        if content: details.append(f"📝 {content}...")
+        if content: details.append(f"Описание: {content}...")
         
         if s.get('link') and s.get('link') != "#": 
-            details.append(f"🔗 {s.get('link')}")
+            details.append(f"Ссылка: {s.get('link')}")
         
         output += f"{i}. {title} ({category})\n   " + "\n   ".join(details) + "\n\n"
         
@@ -88,8 +97,31 @@ prompt_template = ChatPromptTemplate.from_messages([
 agent = create_tool_calling_agent(llm, tools, prompt_template)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
+def ask_agent(user_input, chat_history=None, extra_context=""):
+    """
+    Функция для отправки вопроса агенту с контекстом
+    """
+    if chat_history is None:
+        chat_history = []
+    
+    # Добавляем контекст к вопросу если он есть
+    if extra_context:
+        full_input = f"{extra_context}\n\nВопрос: {user_input}"
+    else:
+        full_input = user_input
+    
+    try:
+        response = agent_executor.invoke({
+            "input": full_input,
+            "chat_history": chat_history
+        })
+        return response.get('output', 'Нет ответа')
+    except Exception as e:
+        print(f"[ai_engine] Ошибка при вызове агента: {e}")
+        return f"Произошла ошибка при обработке запроса: {e}"
+
 if __name__ == "__main__":
-    print("🤖 Бот запущен! (Работает только с базой OpenSearch)")
+    print("Бот запущен!")
     chat_history = [] 
 
     while True:
@@ -110,4 +142,4 @@ if __name__ == "__main__":
             if len(chat_history) > 10: chat_history = chat_history[-10:]
             
         except Exception as e:
-            print(f"❌ Ошибка: {e}")
+            print(f"Ошибка: {e}")

@@ -30,3 +30,389 @@
 2025-12-03 04:55:44,012 - opensearch_manager - INFO - Удалено устаревших документов: 0
 2025-12-03 04:55:44,160 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.148s]
 2025-12-03 04:55:44,245 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.083s]
+2025-12-04 03:49:31,927 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.127s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000022311D27B10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-04 03:49:36,066 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.079s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000002230F446750>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-04 03:49:40,149 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.074s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x00000223128BD5D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-04 03:49:44,245 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.092s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x00000223128BDE90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-04 03:52:38,257 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.113s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+2025-12-04 03:52:38,392 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.103s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+2025-12-04 03:52:38,484 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.086s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+2025-12-04 03:52:38,570 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.080s]
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\OLEGZ\.pyenv\pyenv-win\versions\3.11.9\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+2025-12-04 03:53:46,088 - opensearch - INFO - PUT https://localhost:9200/corporate_data [status:200 request:0.551s]
+2025-12-04 03:53:46,089 - opensearch_manager - INFO - Индекс 'corporate_data' создан.
+2025-12-04 03:53:46,208 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.029s]
+2025-12-04 03:53:46,363 - opensearch - INFO - DELETE https://localhost:9200/corporate_data [status:200 request:0.154s]
+2025-12-04 03:53:47,005 - opensearch - INFO - PUT https://localhost:9200/corporate_data [status:200 request:0.621s]
+2025-12-04 03:53:47,005 - opensearch_manager - INFO - Индекс 'corporate_data' создан.
+2025-12-04 03:53:47,657 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.631s]
+2025-12-04 03:53:48,980 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:1.259s]
+2025-12-04 03:53:49,246 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.249s]
+2025-12-04 03:53:50,027 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.769s]
+2025-12-04 03:54:16,586 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.192s]
+2025-12-04 03:54:16,696 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.019s]
+2025-12-04 03:54:16,835 - opensearch - INFO - DELETE https://localhost:9200/corporate_data [status:200 request:0.138s]
+2025-12-04 03:54:17,272 - opensearch - INFO - PUT https://localhost:9200/corporate_data [status:200 request:0.420s]
+2025-12-04 03:54:17,273 - opensearch_manager - INFO - РРЅРґРµРєСЃ 'corporate_data' СЃРѕР·РґР°РЅ.
+2025-12-04 03:54:17,653 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.361s]
+2025-12-04 03:54:18,711 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.990s]
+2025-12-04 03:54:18,911 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.184s]
+2025-12-04 03:54:18,913 - opensearch_manager - INFO - РЈСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅРѕ: 1049 РґРѕРєСѓРјРµРЅС‚РѕРІ. РћС€РёР±РѕРє: [].
+2025-12-04 03:54:19,420 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.506s]
+2025-12-04 03:56:44,100 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.207s]
+2025-12-04 03:56:44,240 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.047s]
+2025-12-04 03:56:44,368 - opensearch - INFO - DELETE https://localhost:9200/corporate_data [status:200 request:0.128s]
+2025-12-04 03:56:44,773 - opensearch - INFO - PUT https://localhost:9200/corporate_data [status:200 request:0.386s]
+2025-12-04 03:56:44,773 - opensearch_manager - INFO - РРЅРґРµРєСЃ 'corporate_data' СЃРѕР·РґР°РЅ.
+2025-12-04 03:56:45,029 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.237s]
+2025-12-04 03:56:45,842 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.756s]
+2025-12-04 03:56:46,034 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.177s]
+2025-12-04 03:56:46,035 - opensearch_manager - INFO - РЈСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅРѕ: 1049 РґРѕРєСѓРјРµРЅС‚РѕРІ. РћС€РёР±РѕРє: [].
+2025-12-04 03:56:46,354 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.318s]
+2025-12-04 03:57:28,803 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.209s]
+2025-12-04 03:57:28,907 - opensearch - INFO - HEAD https://localhost:9200/corporate_data [status:200 request:0.020s]
+2025-12-04 03:57:29,043 - opensearch - INFO - DELETE https://localhost:9200/corporate_data [status:200 request:0.135s]
+2025-12-04 03:57:29,477 - opensearch - INFO - PUT https://localhost:9200/corporate_data [status:200 request:0.420s]
+2025-12-04 03:57:29,746 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.247s]
+2025-12-04 03:57:30,512 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.702s]
+2025-12-04 03:57:30,690 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.166s]
+2025-12-04 03:57:31,044 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.352s]

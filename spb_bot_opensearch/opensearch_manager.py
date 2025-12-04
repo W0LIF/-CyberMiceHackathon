@@ -1,9 +1,23 @@
 import os
 import json
 import logging
+import sys
+from datetime import datetime, timedelta
 from opensearchpy import OpenSearch, helpers
 
+# Конфигурируем логирование с правильной кодировкой для Windows
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('opensearch.log', encoding='utf-8')
+    ]
+)
+
 logger = logging.getLogger(__name__)
+
+# Подавляем вывод в stdout от opensearch логгера
+logging.getLogger('opensearchpy').setLevel(logging.ERROR)
 
 class OpenSearchManager:
     def __init__(self):
@@ -11,6 +25,7 @@ class OpenSearchManager:
         self.port = 9200
         self.auth = ('admin', 'admin')
         self.index_name = "corporate_data"
+        self.metadata_file = os.path.join(os.path.dirname(__file__), 'index_metadata.json')
 
         self.client = OpenSearch(
             hosts=[{'host': self.host, 'port': self.port}],
@@ -47,12 +62,12 @@ class OpenSearchManager:
         }
         if not self.client.indices.exists(index=self.index_name):
             self.client.indices.create(index=self.index_name, body=index_body)
-            logger.info(f"Индекс '{self.index_name}' создан.")
+            print(f"Индекс '{self.index_name}' создан.")
 
     def load_all_data(self):
         """Читает ВСЕ json файлы из папки data и грузит в базу"""
         if not os.path.exists(self.data_folder):
-            logger.error(f"Папка {self.data_folder} не найдена!")
+            print(f"Ошибка: Папка {self.data_folder} не найдена!")
             return
 
         files = [f for f in os.listdir(self.data_folder) if f.endswith('.json')]
@@ -72,7 +87,7 @@ class OpenSearchManager:
                         if doc:
                             docs_to_upload.append(doc)
             except Exception as e:
-                logger.error(f"Ошибка в файле {filename}: {e}")
+                print(f"Ошибка в файле {filename}: {e}")
 
         if docs_to_upload:
             # Очищаем старый индекс перед полной загрузкой
@@ -81,7 +96,7 @@ class OpenSearchManager:
             self.setup_index()
 
             success, failed = helpers.bulk(self.client, docs_to_upload)
-            logger.info(f"✅ Успешно загружено: {success} документов.")
+            print(f"Успешно загружено: {success} документов. Ошибок: {len(failed) if isinstance(failed, list) else failed}.")
         
         self.client.indices.refresh(index=self.index_name)
 
@@ -127,3 +142,57 @@ class OpenSearchManager:
             return response['hits']['hits']
         except Exception:
             return []
+
+    def is_index_expired(self):
+        """Проверяет, истекло ли 30 дней с момента последнего обновления индекса"""
+        if not os.path.exists(self.metadata_file):
+            return True
+        
+        try:
+            with open(self.metadata_file, 'r', encoding='utf-8') as f:
+                metadata = json.load(f)
+                last_update = datetime.fromisoformat(metadata.get('last_update', '2000-01-01'))
+                return datetime.now() - last_update > timedelta(days=30)
+        except Exception:
+            return True
+
+    def is_index_empty(self):
+        """Проверяет, пуст ли индекс"""
+        try:
+            count = self.client.cat.count(index=self.index_name, format='json')
+            return count[0]['count'] == '0' if count else True
+        except Exception:
+            return True
+
+    def update_metadata(self):
+        """Обновляет время последнего обновления"""
+        metadata = {'last_update': datetime.now().isoformat()}
+        with open(self.metadata_file, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f)
+
+    def ensure_data_loaded(self):
+        """
+        Проверяет и загружает данные:
+        1. Если индекс пуст -> загружаем
+        2. Если прошло 30 дней -> перезагружаем
+        """
+        try:
+            # Если индекс пуст - загружаем
+            if self.is_index_empty():
+                print("Индекс пуст, загружаю данные...")
+                self.load_all_data()
+                self.update_metadata()
+                return True
+            
+            # Если данные истекли (30 дней) - перезагружаем
+            if self.is_index_expired():
+                print("Данные устарели (30 дней), обновляю...")
+                self.load_all_data()
+                self.update_metadata()
+                return True
+            
+            print("Данные актуальны (локальный кеш)")
+            return False
+        except Exception as e:
+            print(f"Ошибка при проверке данных: {e}")
+            return False

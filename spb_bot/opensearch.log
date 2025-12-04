@@ -1,0 +1,27 @@
+2025-12-04 04:01:35,673 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.279s]
+2025-12-04 04:02:25,097 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.248s]
+2025-12-04 04:03:01,563 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.183s]
+2025-12-04 04:03:05,475 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.024s]
+2025-12-04 04:03:07,120 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.587s]
+2025-12-04 04:06:05,482 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.153s]
+2025-12-04 04:06:08,589 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.295s]
+2025-12-04 04:06:08,624 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-12-04 04:06:08,625 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.329s]
+2025-12-04 04:06:10,170 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.268s]
+2025-12-04 04:06:10,403 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-12-04 04:06:10,403 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.372s]
+2025-12-04 04:06:24,023 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.027s]
+2025-12-04 04:06:24,257 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.155s]
+2025-12-04 04:07:20,676 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.180s]
+2025-12-04 04:09:31,848 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.170s]
+2025-12-04 04:09:35,884 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.119s]
+2025-12-04 04:09:37,133 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.170s]
+2025-12-04 04:09:38,042 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-04 04:09:38,727 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-04 04:09:39,109 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.364s]
+2025-12-04 04:09:39,246 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-04 04:09:53,122 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.026s]
+2025-12-04 04:09:53,332 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.133s]
+2025-12-04 04:09:53,866 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-04 04:09:54,012 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.137s]
+2025-12-04 04:09:54,183 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"

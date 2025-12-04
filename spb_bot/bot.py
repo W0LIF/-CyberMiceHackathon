@@ -164,11 +164,60 @@ def city_life(message):
 def establishments_info(message):
     bot.send_message(message.chat.id, "📋 Выберите тип учреждения:", reply_markup=createEstablishmentsMenu())
 
+# Обработчики для кнопок подменю (Госуслуги)
+@bot.message_handler(func=lambda message: message.text in ['Регистрация', 'Документы', 'Медицина', 'Семья', 'Жилье'])
+def handle_gov_submenu(message):
+    query = message.text
+    bot.send_chat_action(message.chat.id, 'typing')
+    message_copy = message
+    message_copy.text = query  # Переделаем текст для поиска
+    process_open_query(message_copy)
+
+# Обработчики для кнопок подменю (Соцподдержка)
+@bot.message_handler(func=lambda message: message.text in ['Пенсионерам', 'Детям', 'Студентам', 'Субсидии ЖКХ', 'Пособия'])
+def handle_social_submenu(message):
+    query = message.text
+    bot.send_chat_action(message.chat.id, 'typing')
+    message_copy = message
+    message_copy.text = query
+    process_open_query(message_copy)
+
+# Обработчики для кнопок подменю (Транспорт)
+@bot.message_handler(func=lambda message: message.text in ['Карта Метро', 'Автобусы', 'Трамваи', 'Парковки'])
+def handle_transport_submenu(message):
+    query = message.text
+    bot.send_chat_action(message.chat.id, 'typing')
+    message_copy = message
+    message_copy.text = query
+    process_open_query(message_copy)
+
+# Обработчики для кнопок подменю (Мероприятия)
+@bot.message_handler(func=lambda message: message.text in ['Театры', 'Выставки', 'Кинотеатры', 'Фестивали'])
+def handle_events_submenu(message):
+    query = message.text
+    bot.send_chat_action(message.chat.id, 'typing')
+    message_copy = message
+    message_copy.text = query
+    process_open_query(message_copy)
+
+# Обработчики для кнопок подменю (Учреждения)
+@bot.message_handler(func=lambda message: message.text in ['Детские сады', 'Школы', 'Колледжи', 'Вузы'])
+def handle_establishments_submenu(message):
+    query = message.text
+    bot.send_chat_action(message.chat.id, 'typing')
+    message_copy = message
+    message_copy.text = query
+    process_open_query(message_copy)
+
 @bot.message_handler(content_types=['text'])
 def handle_text_commands(message):
     user_text = message.text.lower().strip()
 
-    if user_text in ['госуслуги','gosuslugi','услуги']:
+    # Обработка кнопки "Назад в главное меню"
+    if 'назад' in user_text and 'меню' in user_text:
+        start_bot(message)
+        return
+    elif user_text in ['госуслуги','gosuslugi','услуги']:
         gosuslugi_info(message)
     elif user_text in ['соцподдержка','social','поддержка']:
         social_support(message)

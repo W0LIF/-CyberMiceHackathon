@@ -9,6 +9,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langchain_gigachat.chat_models import GigaChat
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 from langchain.tools import tool
 
 # Отключаем лишний шум
@@ -24,6 +25,19 @@ llm = GigaChat(
     verify_ssl_certs=False, 
     model="GigaChat"
 )
+
+validation_template = """
+Ты — строгий модератор чата. Твоя задача — проверить сообщение пользователя.
+Если сообщение содержит нецензурную лексику, прямые оскорбления, угрозы или явную токсичность — ответь одним словом: BLOCK.
+Если сообщение корректное (даже если это жалоба или спор) — ответь одним словом: PASS.
+
+Сообщение пользователя: "{text}"
+
+Ответ (только BLOCK или PASS):
+"""
+validation_prompt = ChatPromptTemplate.from_template(validation_template)
+validation_chain = validation_prompt | llm | StrOutputParser()
+
 
 @tool
 def search_city_data(query: str) -> str:
@@ -62,7 +76,6 @@ def search_city_data(query: str) -> str:
         
     return output
 
-# У нас теперь всего ОДИН мощный инструмент
 tools = [search_city_data]
 
 system_prompt = """
@@ -96,7 +109,11 @@ if __name__ == "__main__":
         try:
             user_input = input("\nВы: ")
             if user_input.lower() in ["exit", "выход"]: break
-            
+            validation_result = validation_chain.invoke({"text": user_input})
+            if "BLOCK" in validation_result.strip().upper():
+                print("⛔ Бот: Пожалуйста, соблюдайте нормы приличия. Я не отвечаю на грубость.")
+                continue
+
             response = agent_executor.invoke({
                 "input": user_input,
                 "chat_history": chat_history

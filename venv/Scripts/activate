@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\vscode\-CyberMiceHackathon\venv"
+VIRTUAL_ENV="C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -23,6 +23,12 @@
 - `ai_engine.py` — интеграция с LLM; функция `ask_agent()` используется ботами для генерации ответов с учётом контекста из OpenSearch.
 
 Краткая инструкция по запуску
+
+0) сперва загрузить все зависимость
+```powershell
+pip install -r requirements.txt
+```
+
 1) Убедитесь, что запущен OpenSearch (по умолчанию http://localhost:9200). Можно поднять через `docker-compose`:
 
 ```powershell

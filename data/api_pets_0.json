@@ -1,0 +1,3574 @@
+[
+  {
+    "place": {
+      "id": "88,Парк",
+      "type": "Парк",
+      "title": "Овсянниковский сад",
+      "address": "Санкт-Петербург, Овсянниковский сад",
+      "coordinates": [
+        59.931106,
+        30.376497
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 0.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "19,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Центр ветеринарной офтальмологии и стоматологии Центрального района",
+      "address": "г. Санкт-Петербург, ул. Боровая, д. 14 лит. А",
+      "coordinates": [
+        59.921015,
+        30.348189
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 1.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "18,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Центрального района",
+      "address": "г. Санкт-Петербург, ул. Коломенская, д. 45",
+      "coordinates": [
+        59.920835,
+        30.349007
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 1.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "14,Приют",
+      "type": "Приют",
+      "title": "Приют «Рыжий кот»",
+      "address": "г. Санкт-Петербург",
+      "coordinates": [
+        59.938955,
+        30.315644
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 2.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "24,Приют",
+      "type": "Приют",
+      "title": "Приют «4 лапы»",
+      "address": "Санкт-Петербург",
+      "coordinates": [
+        59.938955,
+        30.315644
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 2.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "33,Приют",
+      "type": "Приют",
+      "title": "Приют «Кошачья санатория»",
+      "address": "Санкт-Петербург",
+      "coordinates": [
+        59.938955,
+        30.315645
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 2.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "18,Приют",
+      "type": "Приют",
+      "title": "Приют «Пульт»",
+      "address": "Санкт-Петербург, набережная реки Волковки, 9А",
+      "coordinates": [
+        59.906282,
+        30.366425
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 2.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "17,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Адмиралтейского района",
+      "address": "г. Санкт-Петербург, ул. Большая Подьяческая, д. 5",
+      "coordinates": [
+        59.925913,
+        30.305331
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 3.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "75,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Магнитогорская улица, 3к2",
+      "coordinates": [
+        59.936443,
+        30.418951
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 3.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "22,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Фрунзенского района",
+      "address": "г. Санкт-Петербург, ул. Салова, д. 16",
+      "coordinates": [
+        59.898945,
+        30.365778
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 3.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "30,Приют",
+      "type": "Приют",
+      "title": "Приют «Хелпдогмини»",
+      "address": "Санкт-Петербург, Партизанская улица, 11Э",
+      "coordinates": [
+        59.945774,
+        30.428472
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "65,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Московский проспект, 79",
+      "coordinates": [
+        59.900995,
+        30.316364
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "5,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "угол Зверинской улицы и переулка Нестерова",
+      "coordinates": [
+        59.952959,
+        30.29602
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "4,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Большая Пушкарская улица, дом 50",
+      "coordinates": [
+        59.962139,
+        30.308494
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "120,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "проспект Энергетиков, 11к5",
+      "coordinates": [
+        59.940638,
+        30.439252
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "34,Приют",
+      "type": "Приют",
+      "title": "Приют «Аверс»",
+      "address": "Санкт-Петербург, улица Смолячкова, 15-17",
+      "coordinates": [
+        59.970898,
+        30.344533
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "15,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Калининского района",
+      "address": "г. Санкт-Петербург, ул. Васенко, д. 3/3",
+      "coordinates": [
+        59.9692,
+        30.389988
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "8,Приют",
+      "type": "Приют",
+      "title": "Приют «Помощь бездомным кошкам и собакам»",
+      "address": "г. Санкт-Петербург, Большой Смоленский проспект, 7-9",
+      "coordinates": [
+        59.89593,
+        30.407604
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 4.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "45,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Малый проспект Петроградской стороны, 87",
+      "coordinates": [
+        59.966671,
+        30.306613
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "21,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Кировского района",
+      "address": "г. Санкт-Петербург, ул. Швецова, д. 47/2",
+      "coordinates": [
+        59.897483,
+        30.292467
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "76,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Маршала Тухачевского, 25",
+      "coordinates": [
+        59.968511,
+        30.425917
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "16,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Петроградского района",
+      "address": "г. Санкт-Петербург, Вяземский пер., д. 4",
+      "coordinates": [
+        59.972406,
+        30.301019
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "73,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Дальневосточный проспект, 20к2",
+      "coordinates": [
+        59.906699,
+        30.453811
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "12,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Василеостровского района",
+      "address": "г. Санкт-Петербург, 17-я линия Васильевского острова, д. 56",
+      "coordinates": [
+        59.9444,
+        30.259607
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "68,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Бумажная улица, 22к4",
+      "coordinates": [
+        59.907323,
+        30.265693
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 5.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "1,Приют",
+      "type": "Приют",
+      "title": "Шпиц команда Санкт-Петербурга",
+      "address": "Невский район, недалеко от проспекта Большевиков.",
+      "coordinates": [
+        59.919838,
+        30.466857
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 6.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "118,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Средний проспект Васильевского острова, 91",
+      "coordinates": [
+        59.934798,
+        30.247451
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 6.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "66,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Турбинная улица, 18А",
+      "coordinates": [
+        59.894528,
+        30.269727
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 6.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "96,Парк",
+      "type": "Парк",
+      "title": "Парк Лесотехнической Академии",
+      "address": "Санкт-Петербург, Выборгский район, Институтский пер., 5",
+      "coordinates": [
+        59.992085,
+        30.343272
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 6.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "67,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Двинская улица, 14А",
+      "coordinates": [
+        59.9076,
+        30.244624
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "27,Площадка",
+      "type": "Площадка",
+      "title": "Спортивно-дрессировочная площадка Красногвардейского района",
+      "address": "Армашевский сквер",
+      "coordinates": [
+        59.960912,
+        30.472704
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "32,Приют",
+      "type": "Приют",
+      "title": "Приют «Брошенный ангел»",
+      "address": "Санкт-Петербург, улица Маршала Говорова, 29",
+      "coordinates": [
+        59.884884,
+        30.274321
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "74,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Товарищеский проспект, 20/27В",
+      "coordinates": [
+        59.913645,
+        30.485248
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "91,Парк",
+      "type": "Парк",
+      "title": "Приморский парк Победы",
+      "address": "Санкт-Петербург, Петроградский район, Южная аллея",
+      "coordinates": [
+        59.970472,
+        30.258423
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "121,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "проспект Космонавтов, 14Б",
+      "coordinates": [
+        59.865479,
+        30.350935
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "6,Приют",
+      "type": "Приют",
+      "title": "Кошачий приют «КОТОХАУС»",
+      "address": "г. Санкт-Петербург, ул.Будапештская 36, к.2",
+      "coordinates": [
+        59.863062,
+        30.378526
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "5,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Приморского района",
+      "address": "г. Санкт-Петербург, ул. Школьная, д. 32, лит.А",
+      "coordinates": [
+        59.98678,
+        30.279082
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "36,Площадка",
+      "type": "Площадка",
+      "title": "Спортивно-дрессировочная площадка в Калининском районе",
+      "address": "улица Печорская, дом 10",
+      "coordinates": [
+        59.997013,
+        30.412124
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "86,Парк",
+      "type": "Парк",
+      "title": "Парк «Авиаторов»",
+      "address": "Санкт-Петербург, парк Авиаторов",
+      "coordinates": [
+        59.866939,
+        30.301787
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 7.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "71,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Морская набережная, 37к5",
+      "coordinates": [
+        59.959427,
+        30.226359
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "9,Приют",
+      "type": "Приют",
+      "title": "Приют «Преданное сердце»",
+      "address": "г. Санкт-Петербург, Автовская улица, 31И",
+      "coordinates": [
+        59.871301,
+        30.278202
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "0,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Красногвардейского района",
+      "address": "г. Санкт-Петербург, ул. 2-я Жерновская, д.46",
+      "coordinates": [
+        59.964317,
+        30.490814
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "29,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "проспект Испытателей, дом 2, корпус 3",
+      "coordinates": [
+        60.001011,
+        30.313868
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "93,Парк",
+      "type": "Парк",
+      "title": "Парк «Куракина дача»",
+      "address": "Санкт-Петербург, пруд Козлов Ручей",
+      "coordinates": [
+        59.872562,
+        30.44988
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "13,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Выборгского района",
+      "address": "г. Санкт-Петербург, ул. Зеленогорская, д. 16",
+      "coordinates": [
+        60.001955,
+        30.322641
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "28,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "Байконурская улица на пересечении с улицей Генерала Хрулева",
+      "coordinates": [
+        59.994531,
+        30.27786
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "11,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "территория по улице Примакова, в створе улицы Червонного Казачества",
+      "coordinates": [
+        59.867439,
+        30.279765
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "13,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Верности, напротив дома 44",
+      "coordinates": [
+        59.998314,
+        30.430643
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "64,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Кибальчича, 16к1",
+      "coordinates": [
+        59.863941,
+        30.43813
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "22,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Морская набережная, дом 17 (дворовая территория)",
+      "coordinates": [
+        59.945508,
+        30.208488
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "70,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Морская набережная, 17к3",
+      "coordinates": [
+        59.943252,
+        30.209136
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "3,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Бухарестская улица, дом 59",
+      "coordinates": [
+        59.8557,
+        30.391637
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "63,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Агатов переулок, 11",
+      "coordinates": [
+        59.861511,
+        30.432601
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "119,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Морская набережная, 31к1",
+      "coordinates": [
+        59.959371,
+        30.215546
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "12,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Канонерский остров, за домом 11",
+      "coordinates": [
+        59.899351,
+        30.214021
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "69,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "бульвар Головнина, 12к1",
+      "coordinates": [
+        59.9374,
+        30.200842
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 8.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "99,Парк",
+      "type": "Парк",
+      "title": "Парк «Удельный»",
+      "address": "Санкт-Петербург, аллея Юрия Морозова",
+      "coordinates": [
+        60.007913,
+        30.310863
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "72,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Кудрово, Центральная улица, 54",
+      "coordinates": [
+        59.89459,
+        30.507921
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "25,Приют",
+      "type": "Приют",
+      "title": "Приют «Город кошек»",
+      "address": "Ленинградская область, Всеволожский район, Заневское городское поселение, Кудрово, Столичная улица, 11к3",
+      "coordinates": [
+        59.904478,
+        30.519678
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "62,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Тихая улица, 3",
+      "coordinates": [
+        59.861142,
+        30.45751
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "0,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Ситцевая, восточнее дома 1 по улице Оптиков",
+      "coordinates": [
+        59.996823,
+        30.25268
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "46,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Туполевская улица, 6",
+      "coordinates": [
+        60.003983,
+        30.269469
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "98,Парк",
+      "type": "Парк",
+      "title": "Парк «Сосновка»",
+      "address": "Санкт-Петербург, проспект Тореза, парк Сосновка",
+      "coordinates": [
+        60.018717,
+        30.361533
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 9.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "87,Парк",
+      "type": "Парк",
+      "title": "Парк «Канонерский»",
+      "address": "Санкт-Петербург, Канонерский остров",
+      "coordinates": [
+        59.891364,
+        30.198218
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "10,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "между домом 12 по улицы Зины Портновой и домом 2, корпус 2 по Трамвайному проспекту",
+      "coordinates": [
+        59.85508,
+        30.259463
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "7,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Пулковская, дом 8, корпус 4",
+      "coordinates": [
+        59.838358,
+        30.354702
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "92,Парк",
+      "type": "Парк",
+      "title": "Парк «Пулковский»",
+      "address": "Санкт-Петербург, Пулковский парк",
+      "coordinates": [
+        59.838793,
+        30.325355
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "43,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Яхтенная улица, 13к1",
+      "coordinates": [
+        59.993415,
+        30.217716
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "15,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Жака Дюкло, дом 20",
+      "coordinates": [
+        60.025899,
+        30.335504
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "11,Приют",
+      "type": "Приют",
+      "title": "Приют «Ржевка»",
+      "address": "г. Санкт-Петербург, Поселковая улица, 18",
+      "coordinates": [
+        59.981717,
+        30.522005
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "47,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "2-я Никитинская улица, 50",
+      "coordinates": [
+        60.018284,
+        30.281025
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "2,Приют",
+      "type": "Приют",
+      "title": "Приют «ИЛЬИНКА»",
+      "address": "г. Санкт-Петербург, Красногвардейский р-н, Ржевка, ул. Поселковая, 11",
+      "coordinates": [
+        59.981154,
+        30.524421
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "26,Приют",
+      "type": "Приют",
+      "title": "Приют «Новый дом»",
+      "address": "Санкт-Петерубрг, Гаражный проезд, 4",
+      "coordinates": [
+        59.843489,
+        30.446196
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "32,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "улица Яхтенная, на пересечении с улицей Оптиков",
+      "coordinates": [
+        60.000071,
+        30.222559
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 10.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "33,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "улица Планерная, на пересечении с Камышовой улицей",
+      "coordinates": [
+        60.008107,
+        30.236439
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 11.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "35,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "улица Афонская, дом 16",
+      "coordinates": [
+        60.027399,
+        30.300973
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 11.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "34,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "улица Долгоозерная, на пересечении с Ольховой улицей",
+      "coordinates": [
+        60.017222,
+        30.252391
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 11.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "61,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Карпатская улица, 15",
+      "coordinates": [
+        59.835015,
+        30.430986
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 11.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "6,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Среднерогатская, дом 8, корпус 1",
+      "coordinates": [
+        59.827298,
+        30.335965
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 11.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "8,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "территория между улицей Десантников и Брестским бульваром",
+      "coordinates": [
+        59.859612,
+        30.205055
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 11.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "21,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "проспект Луначарского, между домами 62 и 68",
+      "coordinates": [
+        60.039341,
+        30.352772
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 12.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "95,Парк",
+      "type": "Парк",
+      "title": "Юнтоловский заказник",
+      "address": "Санкт-Петербург, Юнтоловский заказник",
+      "coordinates": [
+        60.0032,
+        30.193989
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 12.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "31,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "улица Шаврова, напротив дома 19",
+      "coordinates": [
+        60.026772,
+        30.244629
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 12.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "40,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Козлова, дом 20Б",
+      "coordinates": [
+        59.838195,
+        30.22143
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 12.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "51,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Мурино, Новая улица, 7",
+      "coordinates": [
+        60.039849,
+        30.446314
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "89,Парк",
+      "type": "Парк",
+      "title": "Парк «Александрино»",
+      "address": "Санкт-Петербург, парк Александрино",
+      "coordinates": [
+        59.836642,
+        30.223368
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "9,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "проспект Маршала Жукова, дом 56, корпус 8",
+      "coordinates": [
+        59.838791,
+        30.211551
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "84,Парк",
+      "type": "Парк",
+      "title": "Парк «Полежаевский»",
+      "address": "Санкт-Петербург, аллея Славы",
+      "coordinates": [
+        59.842236,
+        30.19782
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "13,Приют",
+      "type": "Приют",
+      "title": "Приют «Добрый городок»",
+      "address": "г. Санкт-Петербург, территория Авиагородок",
+      "coordinates": [
+        59.815233,
+        30.296581
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "96,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Ветеринарная клиника",
+      "address": "Ленинградская область, Всеволожский район, г. Мурино, ул. Центральная, д.39",
+      "coordinates": [
+        60.043642,
+        30.446681
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "25,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "проспект Ветеранов, дом 91, корпус 1",
+      "coordinates": [
+        59.834591,
+        30.212871
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "15,Приют",
+      "type": "Приют",
+      "title": "Приют «Солнечная поляна»",
+      "address": "г. Санкт-Петербург, Пушкинский район, посёлок Шушары, Окуловская улица, 7к2",
+      "coordinates": [
+        59.809147,
+        30.370809
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "49,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Есенина, 27",
+      "coordinates": [
+        60.053629,
+        30.34554
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "50,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Придорожная аллея, 19А",
+      "coordinates": [
+        60.054561,
+        30.3637
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "53,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Мурино, Оборонная улица, 24",
+      "coordinates": [
+        60.044008,
+        30.465065
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "48,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Заповедная аллея, 49",
+      "coordinates": [
+        60.047839,
+        30.270447
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 13.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "52,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "посёлок Бугры, Воронцовский бульвар, 5к4",
+      "coordinates": [
+        60.05324,
+        30.418972
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 14.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "54,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Мурино, Екатерининская улица, 4",
+      "coordinates": [
+        60.053359,
+        30.435805
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 14.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "55,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Мурино, улица Шоссе в Лаврики, 34",
+      "coordinates": [
+        60.052292,
+        30.450423
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 14.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "56,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Мурино, Воронцовский бульвар, 17",
+      "coordinates": [
+        60.061057,
+        30.422644
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 14.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "57,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Мурино, Екатерининская улица, 22к1",
+      "coordinates": [
+        60.061536,
+        30.44115
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 15.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "58,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "деревня Новое Девяткино, Арсенальная улица, 3",
+      "coordinates": [
+        60.057475,
+        30.466428
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 15.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "81,Парк",
+      "type": "Парк",
+      "title": "Парк усадьбы Приютино",
+      "address": "Всеволожское городское поселение, Парк усадьбы Приютино",
+      "coordinates": [
+        60.012296,
+        30.58013
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 15.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "24,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Петергофское шоссе, в створе улицы Адм. Черокова",
+      "coordinates": [
+        59.85142,
+        30.133748
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 15.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "59,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "деревня Новое Девяткино, улица Энергетиков, 8",
+      "coordinates": [
+        60.055774,
+        30.48591
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 15.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "60,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "посёлок Бугры, Школьная улица, 10",
+      "coordinates": [
+        60.068895,
+        30.404126
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 15.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "7,Приют",
+      "type": "Приют",
+      "title": "Приют для собак в поисках дома «Келтсские ангелы»",
+      "address": "Ленобласть, Всеволожский р-н, селов Павлово, ул.Быкова, д.48",
+      "coordinates": [
+        59.937405,
+        30.648586
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "30,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для учебно-дрессировочных целей Приморского района",
+      "address": "Приморское шоссе, напротив мотеля \"Ольгино\"",
+      "coordinates": [
+        59.998741,
+        30.103968
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "0,Приют",
+      "type": "Приют",
+      "title": "Приют «Галкино подворье»",
+      "address": "Посёлок Колтуши",
+      "coordinates": [
+        59.932919,
+        30.655377
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "97,Парк",
+      "type": "Парк",
+      "title": "Парк «Шуваловский»",
+      "address": "Санкт-Петербург, Шуваловский парк",
+      "coordinates": [
+        60.076477,
+        30.305786
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "90,Парк",
+      "type": "Парк",
+      "title": "Парк «Сосновая Поляна»",
+      "address": "Санкт-Петербург, парк Сосновая Поляна",
+      "coordinates": [
+        59.834065,
+        30.135302
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "42,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Гладышевский проспект, 38к1",
+      "coordinates": [
+        60.033109,
+        30.137959
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "4,Приют",
+      "type": "Приют",
+      "title": "Приют «Полянка»",
+      "address": "пр. Народного ополчения, 247, к.2 ",
+      "coordinates": [
+        59.826348,
+        30.144874
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 16.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "85,Парк",
+      "type": "Парк",
+      "title": "Лесопарк «Невский»",
+      "address": "Всеволожский район, Свердловское городское поселение, Невский лесопарк",
+      "coordinates": [
+        59.836191,
+        30.604372
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 17.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "14,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Выборгского района",
+      "address": "пос. Парголово, ул. Ломоносова, д. 22а",
+      "coordinates": [
+        60.080923,
+        30.267745
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 17.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "14,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Парголово, улица 1 Мая севернее дома 87 литера А",
+      "coordinates": [
+        60.076711,
+        30.237829
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 17.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "7,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Красносельского района",
+      "address": "пос. Володарский (Сергиево), ул. Володарского, д. 5",
+      "coordinates": [
+        59.834893,
+        30.093198
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 18.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "38,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Всеволожская ветеринарная лечебница (входит в состав СББЖ)",
+      "address": "Всеволожский район, ш. Колтушское, д. 45",
+      "coordinates": [
+        60.033283,
+        30.637573
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 19.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "115,Парк",
+      "type": "Парк",
+      "title": "Парк «Орловский»",
+      "address": "Санкт-Петербург, Петродворцовый район, посёлок Стрельна, Орловский парк",
+      "coordinates": [
+        59.851283,
+        30.038834
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 20.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "23,Приют",
+      "type": "Приют",
+      "title": "Приют «Вера-Надежда-Любовь»",
+      "address": "Ленинградская область, Всеволожск, улица Шишканя, 16",
+      "coordinates": [
+        60.040564,
+        30.646834
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 20.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "117,Парк",
+      "type": "Парк",
+      "title": "Шунгеровский заказник",
+      "address": "Санкт-Петербург, Петродворцовый район, посёлок Стрельна, участок Лесной, Государственный природный заказник регионального значения Шунгеровский",
+      "coordinates": [
+        59.83541,
+        30.046584
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 20.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "111,Парк",
+      "type": "Парк",
+      "title": "Парк «Буферный»",
+      "address": "Санкт-Петербург, Пушкин, Буферный парк",
+      "coordinates": [
+        59.743685,
+        30.398078
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 20.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "116,Парк",
+      "type": "Парк",
+      "title": "Парк «Михайловка»",
+      "address": "Санкт-Петербург, Петергоф, парк Михайловка",
+      "coordinates": [
+        59.861662,
+        29.997657
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 21.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "105,Парк",
+      "type": "Парк",
+      "title": "Парк «Знаменка»",
+      "address": "Санкт-Петербург, Петергоф, парк Знаменка",
+      "coordinates": [
+        59.875921,
+        29.972026
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 22.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "2,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "г. Пушкин, улица Промышленная, дом 9Б",
+      "coordinates": [
+        59.73282,
+        30.454568
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 22.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "4,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Курортного района",
+      "address": "пос. Песочный, ул. Ленинградская, д. 73а",
+      "coordinates": [
+        60.119274,
+        30.172569
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 23.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "10,Приют",
+      "type": "Приют",
+      "title": "Приют «Верность»",
+      "address": "г. Санкт-Петербург, посёлок Левашово, улица Добрая Горка, 81А",
+      "coordinates": [
+        60.103804,
+        30.117161
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 23.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "12,Приют",
+      "type": "Приют",
+      "title": "Приют «Особый друг»",
+      "address": "г. Санкт-Петерубрг, Курортный район, посёлок Песочный",
+      "coordinates": [
+        60.123931,
+        30.160451
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 24.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "20,Приют",
+      "type": "Приют",
+      "title": "«Кошачий мир»",
+      "address": "Санкт-Петербург, Колпино",
+      "coordinates": [
+        59.748564,
+        30.595657
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 24.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "8,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Петродворцового района",
+      "address": "г. Петергоф, ул. Демьяна Бедного, д. 8/5",
+      "coordinates": [
+        59.862623,
+        29.947065
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 24.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "112,Парк",
+      "type": "Парк",
+      "title": "Парк «Баболовский»",
+      "address": "Санкт-Петербург, Пушкин, Баболовский парк",
+      "coordinates": [
+        59.711966,
+        30.355604
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 24.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "108,Парк",
+      "type": "Парк",
+      "title": "Парк «Александрийский (Зверинец)»",
+      "address": "Санкт-Петербург, Петергоф, Александрийский парк",
+      "coordinates": [
+        59.870051,
+        29.932248
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 24.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "9,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Колпинского района",
+      "address": "г. Колпино, ул. Колпинская, д. 6",
+      "coordinates": [
+        59.750381,
+        30.619562
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 24.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "41,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Красносельское шоссе, дом 14к3",
+      "coordinates": [
+        59.705663,
+        30.383484
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "113,Парк",
+      "type": "Парк",
+      "title": "Парк «Отдельный (Нижний)»",
+      "address": "Санкт-Петербург, Пушкин, Отдельный парк",
+      "coordinates": [
+        59.7055,
+        30.426136
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "22,Приют",
+      "type": "Приют",
+      "title": "Приют «Домик»",
+      "address": "Санкт-Петербург, Пушкин, улица Радищева, 23",
+      "coordinates": [
+        59.705309,
+        30.409212
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "80,Парк",
+      "type": "Парк",
+      "title": "Ново-Кавголовский лесопарк",
+      "address": "Ново-Кавголовский лесопарк, Токсовское городское поселение, Всеволожский район, Ленинградская область",
+      "coordinates": [
+        60.15434,
+        30.459921
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "1,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "г. Пушкин, улица Саперная, между Тиньковым переулком и Гвардейским бульваром",
+      "coordinates": [
+        59.700414,
+        30.379215
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "10,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Пушкинского района",
+      "address": "г. Пушкин, ул. Сапёрная, д. 61а",
+      "coordinates": [
+        59.700525,
+        30.390779
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "21,Приют",
+      "type": "Приют",
+      "title": "Центр «Велес»",
+      "address": "Ленинградская область, Всеволожский район, Токсовское городское поселение, деревня Рапполово, Овражная улица, 11",
+      "coordinates": [
+        60.159183,
+        30.442153
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "107,Парк",
+      "type": "Парк",
+      "title": "Парк «Колонистский»",
+      "address": "Санкт-Петербург, Петергоф, Колонистский парк",
+      "coordinates": [
+        59.875839,
+        29.908842
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 25.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "38,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Петергоф, Сашинская дорога, дом 2",
+      "coordinates": [
+        59.863476,
+        29.904114
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 26.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "6,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Красносельского района",
+      "address": "г. Красное Село, ул. Лермонтова, д. 22/1",
+      "coordinates": [
+        59.734294,
+        30.083222
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 26.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "110,Парк",
+      "type": "Парк",
+      "title": "Парк «Луговой»",
+      "address": "Санкт-Петербург, Петергоф, Луговой парк",
+      "coordinates": [
+        59.862377,
+        29.896192
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 27.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "44,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Тихвинская улица, 12к5",
+      "coordinates": [
+        60.163154,
+        30.204652
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 27.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "109,Парк",
+      "type": "Парк",
+      "title": "Парк «Английский»",
+      "address": "Санкт-Петербург, Петергоф, Английский парк",
+      "coordinates": [
+        59.880317,
+        29.878498
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 27.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "37,Площадка",
+      "type": "Площадка",
+      "title": "Спортивно-дрессировочная площадка в Красносельском районе",
+      "address": "Красное Село, проспект Ленина, дом 120",
+      "coordinates": [
+        59.72567,
+        30.0825
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 27.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "106,Парк",
+      "type": "Парк",
+      "title": "Парк «Заячий Ремиз»",
+      "address": "Санкт-Петербург, Петергоф, парк Заячий Ремиз",
+      "coordinates": [
+        59.874068,
+        29.879576
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 27.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "11,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Пушкинского района",
+      "address": "г. Павловск, пер. Мичурина, д. 9",
+      "coordinates": [
+        59.68231,
+        30.42805
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 27.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "2,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Курортного района",
+      "address": "г. Сестрорецк, Транспортный пер., д. 4",
+      "coordinates": [
+        60.081192,
+        29.955203
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "26,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Павловск, улица Красного Курсанта (пустырь на разворотном кольце)",
+      "coordinates": [
+        59.681833,
+        30.455107
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "104,Парк",
+      "type": "Парк",
+      "title": "Парк «Мариенталь»",
+      "address": "Санкт-Петербург, Пушкинский район, Павловск, Надгорная улица",
+      "coordinates": [
+        59.681882,
+        30.44985
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "103,Парк",
+      "type": "Парк",
+      "title": "Парк «Александрова Дача»",
+      "address": "Санкт-Петербург, Пушкинский район, Павловск, парк Александрова Дача",
+      "coordinates": [
+        59.679289,
+        30.431202
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "37,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Токсовский ветеринарный участок",
+      "address": "Всеволожский район, п. Токсово, ул. Первомайская, д. 6Д",
+      "coordinates": [
+        60.170206,
+        30.543194
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "39,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "Петергоф, улица Халтурина, 15",
+      "coordinates": [
+        59.882026,
+        29.855728
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "3,Приют",
+      "type": "Приют",
+      "title": "Народный приют Старый Петергоф",
+      "address": "г. Санкт-Петербург, Петергоф, территория Старый Петергоф",
+      "coordinates": [
+        59.880776,
+        29.853092
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 28.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "16,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "между улицей Коммунаров, железной дорогой и улицей Малая Канонерская",
+      "coordinates": [
+        60.095803,
+        29.95693
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 29.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "94,Парк",
+      "type": "Парк",
+      "title": "Парк «Дудергофские высоты»",
+      "address": "Санкт-Петербург, Красное Село, Нагорный парк",
+      "coordinates": [
+        59.697107,
+        30.131027
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 29.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "114,Парк",
+      "type": "Парк",
+      "title": "Парк «Дубки»",
+      "address": "Санкт-Петербург, Сестрорецк, Большой Литейный переулок, 37",
+      "coordinates": [
+        60.088575,
+        29.93686
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 29.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "102,Парк",
+      "type": "Парк",
+      "title": "Парк «Усадьбы Мордвиновых»",
+      "address": "Санкт-Петербург, Ломоносов, парк Усадьбы Мордвиновых",
+      "coordinates": [
+        59.89403,
+        29.824295
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 30.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "57,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Отрадненский ветеринарный участок",
+      "address": "Ленинградская область, г. Отрадное, пр-т Ленсовета д.49.",
+      "coordinates": [
+        59.774398,
+        30.814074
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 30.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "17,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Мануильского, дом 45/3",
+      "coordinates": [
+        59.985553,
+        29.788666
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 32.4
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "98,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Ветеринарная клиника",
+      "address": "Ленинградская область, СНТ «Дунай», Центральное правление",
+      "coordinates": [
+        59.989346,
+        30.937053
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 32.7
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "18,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Восстания, дом 5",
+      "coordinates": [
+        59.994794,
+        29.785877
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 32.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "23,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Петродворцового района",
+      "address": "г. Ломоносов, ул. Михайловская, д. 38",
+      "coordinates": [
+        59.903726,
+        29.767433
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 33.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "19,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Восстания, дом 9",
+      "coordinates": [
+        59.999956,
+        29.773457
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 33.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "100,Парк",
+      "type": "Парк",
+      "title": "Парк «Петровский»",
+      "address": "Санкт-Петербург, Кронштадт, Петровский парк",
+      "coordinates": [
+        59.98771,
+        29.767584
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 33.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "5,Приют",
+      "type": "Приют",
+      "title": "Санкт Петербургская общественная благотворительная организация помощи бездомным животным «Ковчег»",
+      "address": "г. Кронштадт, Рыбачий проезд, 5",
+      "coordinates": [
+        60.000142,
+        29.77298
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 33.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "1,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Кронштадтского района",
+      "address": "г. Кронштадт, ул. Восстания, д. 13а",
+      "coordinates": [
+        60.001595,
+        29.769351
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 33.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "95,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Никольская участковая ветеринарная лечебница",
+      "address": "Ленинградская область, г. Никольское, ул. Первомайская д.3",
+      "coordinates": [
+        59.707806,
+        30.780279
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 34.1
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "46,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Коммунарский ветеринарный участок",
+      "address": "Ленинградская область, Гатчинский район, г. Коммунар, ул. Западная, дом 4.",
+      "coordinates": [
+        59.617103,
+        30.387239
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 34.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "27,Приют",
+      "type": "Приют",
+      "title": "Приют «Красное село»",
+      "address": "Ленинградская область, Ломоносовский район, Русско-Высоцкое сельское поселение, село Русско-Высоцкое, улица Павлика Филимонова, 60",
+      "coordinates": [
+        59.69509,
+        29.94092
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 35.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "66,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Центральный ветучасток",
+      "address": "г. Ломоносов, Санкт-Петербург, Ветеринарный пер., д.13",
+      "coordinates": [
+        59.91581,
+        29.72837
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 35.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "56,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Кировская ветеринарная лечебница",
+      "address": "Ленинградская область, г. Кировск, ул. Победы д.42.",
+      "coordinates": [
+        59.868609,
+        30.999486
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 36.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "70,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Ропшинский ветучасток",
+      "address": "Ленинградская область, Ломоносовский район, п. Ропша, Красносельское ш., д.49",
+      "coordinates": [
+        59.7222,
+        29.849696
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 36.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "20,Площадка",
+      "type": "Площадка",
+      "title": "Площадка для выгула собак",
+      "address": "улица Гидростроителей, напротив дом 6",
+      "coordinates": [
+        60.01156,
+        29.717276
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 36.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "59,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Шлиссельбургский ветеринарный участок",
+      "address": "Ленинградская область, г. Шлиссельбург, Староладожский канал д.90.",
+      "coordinates": [
+        59.939284,
+        31.051615
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 38.5
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "94,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Ульяновский ветеринарный участок",
+      "address": "Ленинградская область, пос. Ульяновка Советский пр. д.129",
+      "coordinates": [
+        59.652016,
+        30.780306
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 38.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "43,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Пудостьский ветеринарный участок",
+      "address": "Ленинградская область, Гатчинский район, п. Мыза-Ивановка, ул. Инкубаторная, дом 2.",
+      "coordinates": [
+        59.604685,
+        30.090095
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 39.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "101,Парк",
+      "type": "Парк",
+      "title": "Западный Котлин",
+      "address": "Санкт-Петербург, Кронштадт, заказник Западный Котлин",
+      "coordinates": [
+        60.029989,
+        29.650285
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 41.0
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "82,Парк",
+      "type": "Парк",
+      "title": "Парк «Зверинец»",
+      "address": "Гатчина, Красная дорога",
+      "coordinates": [
+        59.584607,
+        30.094973
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 41.3
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "42,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Гатчинская ветеринарная лечебница",
+      "address": "Ленинградская область, г. Гатчина, ул. Карла Маркса, дом 42 «а»",
+      "coordinates": [
+        59.56635,
+        30.126575
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 42.6
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "97,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Ветеринарная клиника",
+      "address": "Ленинградская область, Всеволожский район, д. Куйвози, ул.Первомайская, д. 2В",
+      "coordinates": [
+        60.317933,
+        30.4405
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 43.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "58,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Мгинский ветеринарный участок",
+      "address": "Ленинградская область, пос. Мга ул. Северная д.43.",
+      "coordinates": [
+        59.762401,
+        31.071423
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 43.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "83,Парк",
+      "type": "Парк",
+      "title": "Парк «Приоратский»",
+      "address": "Гатчина, Приоратский парк",
+      "coordinates": [
+        59.553465,
+        30.114663
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 44.2
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "67,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Глуховский ветучасток",
+      "address": "Ленинградская область, Ломоносовский район, д.Глухово, д.99",
+      "coordinates": [
+        59.663603,
+        29.759137
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 44.9
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "68,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Гостилицкий ветучасток",
+      "address": "Ленинградская область, Ломоносовский район, д.Гостилицы, ул.Центральная, д.11",
+      "coordinates": [
+        59.747521,
+        29.626555
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 45.8
+      }
+    },
+    "category_tag": "pets"
+  },
+  {
+    "place": {
+      "id": "3,Ветклиника",
+      "type": "Ветклиника",
+      "title": "Межрайонная ветеринарная станция Курортного района",
+      "address": "г. Зеленогорск, пр. Ленина, д. 49б",
+      "coordinates": [
+        60.206734,
+        29.71123
+      ],
+      "location": {
+        "latitude": 59.9311,
+        "longitude": 30.3609,
+        "radius": 50,
+        "distance": 47.3
+      }
+    },
+    "category_tag": "pets"
+  }
+]

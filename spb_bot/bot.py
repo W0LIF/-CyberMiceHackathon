@@ -14,8 +14,12 @@ import os
 from submenu import*
 from parsing.universal_parser import UniversalParser, CONFIGURATIONS
 import ai_engine as ai_engine
-from ai_engine import check_toxicity, ask_agent, search_city_services, detect_category
+from ai_engine import ask_agent
+from spb_bot_opensearch.opensearch_manager import OpenSearchManager
 from langchain_core.messages import HumanMessage, AIMessage
+
+# Инициализируем OpenSearch менеджер
+os_manager = OpenSearchManager()
 TOKEN = "8482065670:AAHcPeR6v20gFlgQCtfYz3uxfZY3QG4CSGo"
 bot = telebot.TeleBot(TOKEN)
 user_histories = {}
@@ -46,26 +50,6 @@ def create_menu():
     return keyboard
 
 
-def _spawn_agent_for_user(chat_id, user_prompt, extra_context=None):
-    """Run the agent in a background thread and send the answer to the chat when ready."""
-    def _work():
-        try:
-            bot.send_chat_action(chat_id, 'typing')
-            answer = ask_agent(user_prompt, chat_history=user_histories.get(chat_id, []), extra_context=extra_context or '')
-            if isinstance(answer, str):
-                bot.send_message(chat_id, answer[:4000])
-            else:
-                bot.send_message(chat_id, str(answer)[:4000])
-            # Save to history
-            user_histories.setdefault(chat_id, []).append(HumanMessage(content=user_prompt))
-            user_histories[chat_id].append(AIMessage(content=answer))
-            if len(user_histories[chat_id]) > 6:
-                user_histories[chat_id] = user_histories[chat_id][-6:]
-        except Exception as e:
-            bot.send_message(chat_id, f"Произошла ошибка при обращении к агенту: {e}")
-    import threading
-    threading.Thread(target=_work, daemon=True).start()
-
 @bot.message_handler(commands=['start'])
 def start_bot(message):
     welcome_text = """
@@ -86,38 +70,50 @@ def start_bot(message):
 @bot.message_handler(func=lambda message: message.text == "🏛️ Госуслуги")
 def gosuslugi_info(message):
     bot.send_message(message.chat.id, "🏛️ Выберите раздел госуслуг:", reply_markup=createGosMenu())
-    # Spawn agent to prepare a quick summary and start parsing for refresh
-    summary_prompt = "Пожалуйста, дай краткий обзор государственных услуг Санкт-Петербурга и подскажи, где получить популярные услуги (паспорт, регистрация, МФЦ)."
-    _spawn_agent_for_user(message.chat.id, summary_prompt, extra_context="REFRESH_PARSE: gu_spb_knowledge")
-    # Trigger a one-shot parsing in background to refresh local cache
-    try:
-        import threading
-        threading.Thread(target=lambda: ai_engine.parse_site_impl('gu_spb_knowledge'), daemon=True).start()
-    except Exception:
-        pass
+    # Обновляем данные в фоне (если нужно по 30-дневному расписанию)
+    def _update_data():
+        try:
+            os_manager.ensure_data_loaded()
+        except Exception as e:
+            print(f"[bot] Ошибка при обновлении данных: {e}")
+    import threading
+    threading.Thread(target=_update_data, daemon=True).start()
 
 @bot.message_handler(func=lambda message: message.text == "💰 Соцподдержка")
 def social_support(message):
     bot.send_message(message.chat.id, "💰 Выберите категорию соцподдержки:", reply_markup=createSocialMenu())
-    summary_prompt = "Пожалуйста, дай краткий обзор мер соцподдержки в Санкт-Петербурге: основные выплаты и куда обращаться."
-    _spawn_agent_for_user(message.chat.id, summary_prompt, extra_context="REFRESH_PARSE: gov_spb_helper")
-    try:
-        import threading
-        threading.Thread(target=lambda: ai_engine.parse_site_impl('gov_spb_helper'), daemon=True).start()
-    except Exception:
-        pass
+    # Обновляем данные в фоне
+    def _update_data():
+        try:
+            os_manager.ensure_data_loaded()
+        except Exception as e:
+            print(f"[bot] Ошибка при обновлении данных: {e}")
+    import threading
+    threading.Thread(target=_update_data, daemon=True).start()
 
 @bot.message_handler(func=lambda message: message.text == "🚇 Транспорт")
 def transport_info(message):
     bot.send_message(message.chat.id, "🚇 Выберите вид транспорта:", reply_markup=createTransportMenu())
-    summary_prompt = "Пожалуйста, дай краткий обзор транспорта Петербурга: метро, автобусы, расписания, где искать информацию о пробках и ремонтах дорог."
-    _spawn_agent_for_user(message.chat.id, summary_prompt)
+    # Обновляем данные в фоне
+    def _update_data():
+        try:
+            os_manager.ensure_data_loaded()
+        except Exception as e:
+            print(f"[bot] Ошибка при обновлении данных: {e}")
+    import threading
+    threading.Thread(target=_update_data, daemon=True).start()
 
 @bot.message_handler(func=lambda message: message.text == "🎭 Мероприятия")
 def events_info(message):
     bot.send_message(message.chat.id, "🎭 Выберите тип мероприятия:", reply_markup=createIventsMenu())
-    summary_prompt = "Подскажи ближайшие интересные мероприятия в Петербурге и где посмотреть афишу."
-    _spawn_agent_for_user(message.chat.id, summary_prompt)
+    # Обновляем данные в фоне
+    def _update_data():
+        try:
+            os_manager.ensure_data_loaded()
+        except Exception as e:
+            print(f"[bot] Ошибка при обновлении данных: {e}")
+    import threading
+    threading.Thread(target=_update_data, daemon=True).start()
 
 @bot.message_handler(func=lambda message: message.text == "❓ FAQ")
 def faq_info(message):
@@ -206,141 +202,89 @@ def handle_text_commands(message):
 
 
 def process_open_query(message):
-    """Process free-form queries with parsing -> LLM -> Telegram reply."""
+    """Process free-form queries with OpenSearch -> LLM -> Telegram reply."""
     user_input = message.text.strip()
-
-    # Toxicity check
-    if check_toxicity(user_input):
-        bot.send_message(message.chat.id, "Извините, я не могу ответить на это.")
-        return
+    chat_id = message.chat.id
 
     # Maintain chat history per user
     if 'user_histories' not in globals():
         global user_histories
         user_histories = {}
-    chat_id = message.chat.id
     if chat_id not in user_histories:
         user_histories[chat_id] = []
 
-    # Quick search via city services (fast API) — detect likely categories to reduce noise
-    categories = detect_category(user_input)
-    api_context_parts = []
-    # limit the number of categories to avoid excessive calls
-    for cat in categories[:3]:
-        try:
-            api_result = search_city_services(user_input, cat)
-            if api_result and 'ничего не найдено' not in api_result.lower():
-                api_context_parts.append(f"[{cat}] {api_result}")
-        except Exception as e:
-            print(f"Ошибка при поиске по API {cat}: {e}")
+    # Шаг 1: Проверяем локальные данные в OpenSearch (30 дней кеш)
+    try:
+        os_manager.ensure_data_loaded()
+    except Exception as e:
+        print(f"[bot] Ошибка при инициализации OpenSearch: {e}")
 
-    api_context = "\n\n".join(api_context_parts)
+    # Шаг 2: Ищем в OpenSearch локально
+    try:
+        bot.send_chat_action(chat_id, 'typing')
+        search_results = os_manager.search(user_input, size=7)
+        
+        if search_results:
+            # Формируем контекст из результатов поиска
+            context_parts = []
+            for i, hit in enumerate(search_results, 1):
+                s = hit['_source']
+                title = s.get('title', 'Без названия')
+                content = s.get('content', '')[:200]
+                address = s.get('address', '')
+                category = s.get('category', '')
+                
+                details = f"{i}. {title}"
+                if category:
+                    details += f" ({category})"
+                if address:
+                    details += f"\n   📍 {address}"
+                if content:
+                    details += f"\n   📝 {content}..."
+                context_parts.append(details)
+            
+            extra_context = "\n\n".join(context_parts)
+        else:
+            extra_context = ""
+    except Exception as e:
+        print(f"[bot] Ошибка при поиске в OpenSearch: {e}")
+        extra_context = ""
 
-    # Search in parsed JSON files as additional context (if cached)
-    parsed_context_parts = []
-    parser = UniversalParser()
-    parsed_files = [
-        'parsing/gu_spb_knowledge.json',
-        'parsing/gu_spb_mfc.json',
-        'parsing/gov_spb_helper.json',
-        'parsing/consultant.json'
-    ]
-    for pf in parsed_files:
-        if os.path.exists(pf):
+    # Шаг 3: Если нет результатов в кеше - запускаем парсинг в фоне
+    if not search_results:
+        bot.send_message(chat_id, "Данные обновляются, попробуйте повторить запрос через минуту...")
+        
+        def _background_update():
             try:
-                with open(pf, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    for item in data:
-                        title = (item.get('title') or item.get('name') or '')
-                        content = (item.get('content') or item.get('text') or item.get('description') or '')
-                        link = item.get('link') or item.get('href') or ''
-                        combined = f"{title} {content} {link}".lower()
-                        if user_input.lower() in combined:
-                            snippet = content[:300].strip() if content else title
-                            parsed_context_parts.append(f"- {title} ({link})\n{snippet}")
-                            if len(parsed_context_parts) >= 5:
-                                break
+                os_manager.load_all_data()
+                os_manager.update_metadata()
+                print("[bot] Данные обновлены")
             except Exception as e:
-                print(f"Ошибка чтения parsed file {pf}: {e}")
+                print(f"[bot] Ошибка при обновлении: {e}")
+        
+        import threading
+        threading.Thread(target=_background_update, daemon=True).start()
+        return
 
-    # If no cached parsed data found, try to parse one of the key sites (non-blocking to be safe)
-    if not parsed_context_parts:
-        # If background parser is enabled, trigger an update and ask user to try later
-        if os.getenv('START_PARSER_BACKGROUND', 'false').lower() in ('1', 'true', 'yes'):
-            bot.send_message(chat_id, "Я обновляю кеш данных в фоновом режиме — попробуйте снова через минуты 1-2.")
-            return
-
-        # Otherwise, start a one-shot parsing in background (do not block the bot)
-        try:
-            bot.send_message(chat_id, "Я не нашел локальных данных — запускаю парсинг в фоне. Попробуйте повторить запрос через минуту.")
-            def _one_shot_parse():
-                try:
-                    items = parser.parse_site(CONFIGURATIONS['gu_spb_knowledge'])
-                    for item in items:
-                        title = item.get('title','')
-                        content = item.get('content') or ''
-                        link = item.get('link') or ''
-                        combined = f"{title} {content} {link}".lower()
-                        if user_input.lower() in combined:
-                            parsed_context_parts.append(f"- {title} ({link})\n{content[:300]}")
-                            if len(parsed_context_parts) >= 5:
-                                break
-                except Exception as e:
-                    print(f"Ошибка при одноразовом парсинге: {e}")
-            import threading
-            threading.Thread(target=_one_shot_parse, daemon=True).start()
-            # Also trigger a background parse for the top detected category to speed up future queries
-            try:
-                top_cat = categories[0]
-                cat_to_config = {
-                    'documents': ['gu_spb_mfc', 'gu_spb_knowledge'],
-                    'social': ['gov_spb_helper'],
-                    'iparent': ['gu_spb_mfc', 'gu_spb_knowledge'],
-                    'pets': ['consultant'],
-                    'health': ['consultant']
-                }
-                configs = cat_to_config.get(top_cat, [])
-                if configs:
-                    import ai_engine as _ae
-                    import threading as _th
-                    for cfg in configs[:1]:
-                        _th.Thread(target=lambda c=cfg: _ae.parse_site_impl(c), daemon=True).start()
-            except Exception:
-                pass
-            return
-        except Exception as e:
-            print(f"Ошибка при запуске фоновго парсинга: {e}")
-
-    parsed_context = "\n\n".join(parsed_context_parts)
-
-    # Combine contexts for LLM
-    extra_context_list = []
-    if api_context:
-        extra_context_list.append(api_context)
-    if parsed_context:
-        extra_context_list.append(parsed_context)
-
-    extra_context = "\n\n".join(extra_context_list)
-
-    # Build chat history (LangChain message objects) for the agent
-    history_messages = user_histories.get(chat_id, [])
-    # Call the agent (GigaChat) with extra_context
-    bot.send_chat_action(chat_id, 'typing')
-    answer = ask_agent(user_input, chat_history=history_messages, extra_context=extra_context)
-
-    # Save to history
-    user_histories.setdefault(chat_id, []).append(HumanMessage(content=user_input))
-    user_histories[chat_id].append(AIMessage(content=answer))
-    # Keep only last 6 messages
-    if len(user_histories[chat_id]) > 6:
-        user_histories[chat_id] = user_histories[chat_id][-6:]
-
-    # Respond in chat (limit to 4096 characters for Telegram)
-    if isinstance(answer, str):
-        to_send = answer[:4000]
-    else:
-        to_send = str(answer)[:4000]
-    bot.send_message(chat_id, to_send)
+    # Шаг 4: Отправляем в LLM с контекстом из локальной базы
+    try:
+        answer = ask_agent(user_input, chat_history=user_histories.get(chat_id, []), extra_context=extra_context)
+        
+        # Сохраняем в историю
+        user_histories.setdefault(chat_id, []).append(HumanMessage(content=user_input))
+        user_histories[chat_id].append(AIMessage(content=answer))
+        if len(user_histories[chat_id]) > 6:
+            user_histories[chat_id] = user_histories[chat_id][-6:]
+        
+        # Отправляем ответ
+        if isinstance(answer, str):
+            to_send = answer[:4000]
+        else:
+            to_send = str(answer)[:4000]
+        bot.send_message(chat_id, to_send)
+    except Exception as e:
+        bot.send_message(chat_id, f"Ошибка при обработке запроса: {e}")
+        print(f"[bot] Ошибка в ask_agent: {e}")
 
 print("Бот запущен! Нажмите Ctrl+C чтобы остановить")
 bot.polling(none_stop = True)

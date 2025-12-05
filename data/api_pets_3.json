@@ -1,0 +1,2558 @@
+[
+  {
+    "id": 0,
+    "specie": "Собака",
+    "breed": "Австралийская борзая (кенгуровая собака)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 1,
+    "specie": "Собака",
+    "breed": "Австралийская овчарка (Аусси)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 2,
+    "specie": "Собака",
+    "breed": "Австралийская пастушья собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 3,
+    "specie": "Собака",
+    "breed": "Австралийская короткохвостая пастушья собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 4,
+    "specie": "Собака",
+    "breed": "Австралийский бандог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 5,
+    "specie": "Собака",
+    "breed": "Австралийский бульдог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 6,
+    "specie": "Собака",
+    "breed": "Австралийский динго",
+    "category_tag": "pets"
+  },
+  {
+    "id": 7,
+    "specie": "Собака",
+    "breed": "Австралийский келпи",
+    "category_tag": "pets"
+  },
+  {
+    "id": 8,
+    "specie": "Собака",
+    "breed": "Австралийский шелковистый терьер (силки терьер)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 9,
+    "specie": "Собака",
+    "breed": "Австрийская гончая (брандл бракк)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 10,
+    "specie": "Собака",
+    "breed": "Австрийский пинчер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 11,
+    "specie": "Собака",
+    "breed": "Азавак (Африканская борзая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 12,
+    "specie": "Собака",
+    "breed": "Айну (хоккайдская собака)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 13,
+    "specie": "Собака",
+    "breed": "Акбаш",
+    "category_tag": "pets"
+  },
+  {
+    "id": 14,
+    "specie": "Собака",
+    "breed": "Акита-ину",
+    "category_tag": "pets"
+  },
+  {
+    "id": 15,
+    "specie": "Собака",
+    "breed": "Алано (Испанский алано)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 16,
+    "specie": "Собака",
+    "breed": "Алапахский бульдог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 17,
+    "specie": "Собака",
+    "breed": "Алопекис",
+    "category_tag": "pets"
+  },
+  {
+    "id": 18,
+    "specie": "Собака",
+    "breed": "Альпийская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 19,
+    "specie": "Собака",
+    "breed": "Альпийский таксообразный бракк",
+    "category_tag": "pets"
+  },
+  {
+    "id": 20,
+    "specie": "Собака",
+    "breed": "Аляскинский Кли Кэй",
+    "category_tag": "pets"
+  },
+  {
+    "id": 21,
+    "specie": "Собака",
+    "breed": "Аляскинский маламут",
+    "category_tag": "pets"
+  },
+  {
+    "id": 22,
+    "specie": "Собака",
+    "breed": "Американская акита",
+    "category_tag": "pets"
+  },
+  {
+    "id": 23,
+    "specie": "Собака",
+    "breed": "Американская белая овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 24,
+    "specie": "Собака",
+    "breed": "Американская тундровая овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 25,
+    "specie": "Собака",
+    "breed": "Американский бандог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 26,
+    "specie": "Собака",
+    "breed": "Американский бульдог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 27,
+    "specie": "Собака",
+    "breed": "Американский кокер-спаниель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 28,
+    "specie": "Собака",
+    "breed": "Американский питбультерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 29,
+    "specie": "Собака",
+    "breed": "Американский стаффордшир-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 30,
+    "specie": "Собака",
+    "breed": "Американский той-фокстерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 31,
+    "specie": "Собака",
+    "breed": "Американская эскимосская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 32,
+    "specie": "Собака",
+    "breed": "Английская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 33,
+    "specie": "Собака",
+    "breed": "Английский бульдог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 34,
+    "specie": "Собака",
+    "breed": "Английский кокер-спаниель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 35,
+    "specie": "Собака",
+    "breed": "Английский мастиф",
+    "category_tag": "pets"
+  },
+  {
+    "id": 36,
+    "specie": "Собака",
+    "breed": "Английский сеттер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 37,
+    "specie": "Собака",
+    "breed": "Английский той-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 38,
+    "specie": "Собака",
+    "breed": "Аппенцеллер Зенненхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 39,
+    "specie": "Собака",
+    "breed": "Аргентинский дог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 40,
+    "specie": "Собака",
+    "breed": "Арубская деревенская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 41,
+    "specie": "Собака",
+    "breed": "Атласская овчарка (Аиди)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 42,
+    "specie": "Собака",
+    "breed": "Афганская борзая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 43,
+    "specie": "Собака",
+    "breed": "Аффенпинчер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 44,
+    "specie": "Собака",
+    "breed": "Басенджи",
+    "category_tag": "pets"
+  },
+  {
+    "id": 45,
+    "specie": "Собака",
+    "breed": "Бассет бретонский (рыжий бретонский бассет)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 46,
+    "specie": "Собака",
+    "breed": "Бассет-хаунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 47,
+    "specie": "Собака",
+    "breed": "Бедлингтон терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 48,
+    "specie": "Собака",
+    "breed": "Белая швейцарская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 49,
+    "specie": "Собака",
+    "breed": "Бельгийская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 50,
+    "specie": "Собака",
+    "breed": "Бернский зенненхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 51,
+    "specie": "Собака",
+    "breed": "Бигль",
+    "category_tag": "pets"
+  },
+  {
+    "id": 52,
+    "specie": "Собака",
+    "breed": "Бишон фризе",
+    "category_tag": "pets"
+  },
+  {
+    "id": 53,
+    "specie": "Собака",
+    "breed": "Бладхаунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 54,
+    "specie": "Собака",
+    "breed": "Бобтейл",
+    "category_tag": "pets"
+  },
+  {
+    "id": 55,
+    "specie": "Собака",
+    "breed": "Боксер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 56,
+    "specie": "Собака",
+    "breed": "Болгарская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 57,
+    "specie": "Собака",
+    "breed": "Болоньез",
+    "category_tag": "pets"
+  },
+  {
+    "id": 58,
+    "specie": "Собака",
+    "breed": "Большой швейцарский зенненхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 59,
+    "specie": "Собака",
+    "breed": "Бордер колли",
+    "category_tag": "pets"
+  },
+  {
+    "id": 60,
+    "specie": "Собака",
+    "breed": "Бордоский дог (Французский мастиф)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 61,
+    "specie": "Собака",
+    "breed": "Бостон терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 62,
+    "specie": "Собака",
+    "breed": "Бразильский терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 63,
+    "specie": "Собака",
+    "breed": "Бриар",
+    "category_tag": "pets"
+  },
+  {
+    "id": 64,
+    "specie": "Собака",
+    "breed": "Бульмастиф",
+    "category_tag": "pets"
+  },
+  {
+    "id": 65,
+    "specie": "Собака",
+    "breed": "Бультерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 66,
+    "specie": "Собака",
+    "breed": "Бультерьер миниатюрный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 67,
+    "specie": "Собака",
+    "breed": "Бурбуль",
+    "category_tag": "pets"
+  },
+  {
+    "id": 68,
+    "specie": "Собака",
+    "breed": "Веймаранер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 69,
+    "specie": "Собака",
+    "breed": "Вельш корги",
+    "category_tag": "pets"
+  },
+  {
+    "id": 70,
+    "specie": "Собака",
+    "breed": "Вельштерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 71,
+    "specie": "Собака",
+    "breed": "Венгерская короткошерстная легавая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 72,
+    "specie": "Собака",
+    "breed": "Вест терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 73,
+    "specie": "Собака",
+    "breed": "Волкодав ирландский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 74,
+    "specie": "Собака",
+    "breed": "Восточноевропейская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 75,
+    "specie": "Собака",
+    "breed": "Гампр",
+    "category_tag": "pets"
+  },
+  {
+    "id": 76,
+    "specie": "Собака",
+    "breed": "Голая мексиканская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 77,
+    "specie": "Собака",
+    "breed": "Голландская овчарка (Хердер)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 78,
+    "specie": "Собака",
+    "breed": "Гончая греческая (Греческая заячья гончая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 79,
+    "specie": "Собака",
+    "breed": "Гончая малая (англо-французская)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 80,
+    "specie": "Собака",
+    "breed": "Гончая плотта",
+    "category_tag": "pets"
+  },
+  {
+    "id": 81,
+    "specie": "Собака",
+    "breed": "Гончая Стефена",
+    "category_tag": "pets"
+  },
+  {
+    "id": 82,
+    "specie": "Собака",
+    "breed": "Гончая тирольская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 83,
+    "specie": "Собака",
+    "breed": "Гончая Шиллера",
+    "category_tag": "pets"
+  },
+  {
+    "id": 84,
+    "specie": "Собака",
+    "breed": "Грейхаунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 85,
+    "specie": "Собака",
+    "breed": "Греческая овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 86,
+    "specie": "Собака",
+    "breed": "Гренландская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 87,
+    "specie": "Собака",
+    "breed": "Гриффон",
+    "category_tag": "pets"
+  },
+  {
+    "id": 88,
+    "specie": "Собака",
+    "breed": "Грюнендаль",
+    "category_tag": "pets"
+  },
+  {
+    "id": 89,
+    "specie": "Собака",
+    "breed": "Далматин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 90,
+    "specie": "Собака",
+    "breed": "Датский дог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 91,
+    "specie": "Собака",
+    "breed": "Двортерьер (дворняжки, метисы)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 92,
+    "specie": "Собака",
+    "breed": "Денди динмонд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 93,
+    "specie": "Собака",
+    "breed": "Джек Рассел терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 94,
+    "specie": "Собака",
+    "breed": "Дизайнерские собаки",
+    "category_tag": "pets"
+  },
+  {
+    "id": 95,
+    "specie": "Собака",
+    "breed": "Доберман-пинчер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 96,
+    "specie": "Собака",
+    "breed": "Дрентская куропаточная собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 97,
+    "specie": "Собака",
+    "breed": "Золотистый ретривер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 98,
+    "specie": "Собака",
+    "breed": "Ирландский сеттер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 99,
+    "specie": "Собака",
+    "breed": "Ирландский глен-оф-имаал-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 100,
+    "specie": "Собака",
+    "breed": "Йоркширский терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 101,
+    "specie": "Собака",
+    "breed": "Ка-де-бо",
+    "category_tag": "pets"
+  },
+  {
+    "id": 102,
+    "specie": "Собака",
+    "breed": "Кавалер кинг чарльз спаниель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 103,
+    "specie": "Собака",
+    "breed": "Кавказская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 104,
+    "specie": "Собака",
+    "breed": "Канадская эскимосская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 105,
+    "specie": "Собака",
+    "breed": "Канарский дог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 106,
+    "specie": "Собака",
+    "breed": "Кане корсо",
+    "category_tag": "pets"
+  },
+  {
+    "id": 107,
+    "specie": "Собака",
+    "breed": "Карабаш анатолийский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 108,
+    "specie": "Собака",
+    "breed": "Карабаш кангальский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 109,
+    "specie": "Собака",
+    "breed": "Карельская медвежья собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 110,
+    "specie": "Собака",
+    "breed": "Карликовый пинчер (цвергпинчер)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 111,
+    "specie": "Собака",
+    "breed": "Карская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 112,
+    "specie": "Собака",
+    "breed": "Кеесхонд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 113,
+    "specie": "Собака",
+    "breed": "Керн терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 114,
+    "specie": "Собака",
+    "breed": "Керри-блю-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 115,
+    "specie": "Собака",
+    "breed": "Китайская хохлатая собачка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 116,
+    "specie": "Собака",
+    "breed": "Кламбер-спаниель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 117,
+    "specie": "Собака",
+    "breed": "Колли",
+    "category_tag": "pets"
+  },
+  {
+    "id": 118,
+    "specie": "Собака",
+    "breed": "Крашская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 119,
+    "specie": "Собака",
+    "breed": "Комондор",
+    "category_tag": "pets"
+  },
+  {
+    "id": 120,
+    "specie": "Собака",
+    "breed": "Кpапчато-голубой кунхаунд (енотовая гончая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 121,
+    "specie": "Собака",
+    "breed": "Ксолоитцкуинтли (мексиканская голая собака)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 122,
+    "specie": "Собака",
+    "breed": "Кувас",
+    "category_tag": "pets"
+  },
+  {
+    "id": 123,
+    "specie": "Собака",
+    "breed": "Курцхаар",
+    "category_tag": "pets"
+  },
+  {
+    "id": 124,
+    "specie": "Собака",
+    "breed": "Курчавошерстный ретривер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 125,
+    "specie": "Собака",
+    "breed": "Кыргызская борзая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 126,
+    "specie": "Собака",
+    "breed": "Лабрадор-ретривер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 127,
+    "specie": "Собака",
+    "breed": "Лайка западно-сибирская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 128,
+    "specie": "Собака",
+    "breed": "Лайка камчатская ездовая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 129,
+    "specie": "Собака",
+    "breed": "Лайка ненецкая оленегонная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 130,
+    "specie": "Собака",
+    "breed": "Лайка самоедская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 131,
+    "specie": "Собака",
+    "breed": "Лайка финская оленегонная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 132,
+    "specie": "Собака",
+    "breed": "Лайка чукотская ездовая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 133,
+    "specie": "Собака",
+    "breed": "Лайка эскимосская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 134,
+    "specie": "Собака",
+    "breed": "Лайка якутская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 135,
+    "specie": "Собака",
+    "breed": "Лакенуа",
+    "category_tag": "pets"
+  },
+  {
+    "id": 136,
+    "specie": "Собака",
+    "breed": "Ландсир",
+    "category_tag": "pets"
+  },
+  {
+    "id": 137,
+    "specie": "Собака",
+    "breed": "Лапландская пастушья собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 138,
+    "specie": "Собака",
+    "breed": "Левретка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 139,
+    "specie": "Собака",
+    "breed": "Леонбергер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 140,
+    "specie": "Собака",
+    "breed": "Литовская гончая (латвийская гончая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 141,
+    "specie": "Собака",
+    "breed": "Лопарская оленегонная собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 142,
+    "specie": "Собака",
+    "breed": "Лукас терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 143,
+    "specie": "Собака",
+    "breed": "Лхасский апсо",
+    "category_tag": "pets"
+  },
+  {
+    "id": 144,
+    "specie": "Собака",
+    "breed": "Люцернская гончая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 145,
+    "specie": "Собака",
+    "breed": "Малая греческая домашняя собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 146,
+    "specie": "Собака",
+    "breed": "Малинуа",
+    "category_tag": "pets"
+  },
+  {
+    "id": 147,
+    "specie": "Собака",
+    "breed": "Мальтезе (Мальтийская болонка)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 148,
+    "specie": "Собака",
+    "breed": "Мареммано-абруццкая овчарка (мареммано абруццеле)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 149,
+    "specie": "Собака",
+    "breed": "Мастино наполетано (Неаполетанский мастиф)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 150,
+    "specie": "Собака",
+    "breed": "Миттельшнауцер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 151,
+    "specie": "Собака",
+    "breed": "Монгольская овчарка (банхар)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 152,
+    "specie": "Собака",
+    "breed": "Мопс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 153,
+    "specie": "Собака",
+    "breed": "Московская сторожевая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 154,
+    "specie": "Собака",
+    "breed": "Московский дракон",
+    "category_tag": "pets"
+  },
+  {
+    "id": 155,
+    "specie": "Собака",
+    "breed": "Немецкий дог (Датский дог)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 156,
+    "specie": "Собака",
+    "breed": "Немецкая овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 157,
+    "specie": "Собака",
+    "breed": "Немецкий дратхаар (жесткошерстная легавая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 158,
+    "specie": "Собака",
+    "breed": "Пинчер немецкий",
+    "category_tag": "pets"
+  },
+  {
+    "id": 159,
+    "specie": "Собака",
+    "breed": "Новогвинейская поющая собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 160,
+    "specie": "Собака",
+    "breed": "Норботтен-шпиц (Скандинавская лайка)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 161,
+    "specie": "Собака",
+    "breed": "Норвежский эльгхунд серый",
+    "category_tag": "pets"
+  },
+  {
+    "id": 162,
+    "specie": "Собака",
+    "breed": "Норвежский эльгхунд чёрный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 163,
+    "specie": "Собака",
+    "breed": "Норвич терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 164,
+    "specie": "Собака",
+    "breed": "Норфолк терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 165,
+    "specie": "Собака",
+    "breed": "Ньюфаундленд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 166,
+    "specie": "Собака",
+    "breed": "Орхидея петербургская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 167,
+    "specie": "Собака",
+    "breed": "Папильон",
+    "category_tag": "pets"
+  },
+  {
+    "id": 168,
+    "specie": "Собака",
+    "breed": "Парсон рассел терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 169,
+    "specie": "Собака",
+    "breed": "Пекинес",
+    "category_tag": "pets"
+  },
+  {
+    "id": 170,
+    "specie": "Собака",
+    "breed": "Перуанская голая собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 171,
+    "specie": "Собака",
+    "breed": "Пинчеры",
+    "category_tag": "pets"
+  },
+  {
+    "id": 172,
+    "specie": "Собака",
+    "breed": "Пиренейская горная собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 173,
+    "specie": "Собака",
+    "breed": "Пиренейский мастиф",
+    "category_tag": "pets"
+  },
+  {
+    "id": 174,
+    "specie": "Собака",
+    "breed": "Поденгу португезе",
+    "category_tag": "pets"
+  },
+  {
+    "id": 175,
+    "specie": "Собака",
+    "breed": "Подгалянская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 176,
+    "specie": "Собака",
+    "breed": "Пойнтер английский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 177,
+    "specie": "Собака",
+    "breed": "Пойнтер Герта",
+    "category_tag": "pets"
+  },
+  {
+    "id": 178,
+    "specie": "Собака",
+    "breed": "Пойнтер немецкий",
+    "category_tag": "pets"
+  },
+  {
+    "id": 179,
+    "specie": "Собака",
+    "breed": "Пойнтер пудель (Пудель-пойнтер)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 180,
+    "specie": "Собака",
+    "breed": "Пойнтер старо-датский (старо-датская легавая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 181,
+    "specie": "Собака",
+    "breed": "Польская гончая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 182,
+    "specie": "Собака",
+    "breed": "Польская низинная овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 183,
+    "specie": "Собака",
+    "breed": "Португальская водяная собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 184,
+    "specie": "Собака",
+    "breed": "Португальская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 185,
+    "specie": "Собака",
+    "breed": "Португальский рафейру",
+    "category_tag": "pets"
+  },
+  {
+    "id": 186,
+    "specie": "Собака",
+    "breed": "Пражский крысарик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 187,
+    "specie": "Собака",
+    "breed": "Пти-брабансон",
+    "category_tag": "pets"
+  },
+  {
+    "id": 188,
+    "specie": "Собака",
+    "breed": "Пудель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 189,
+    "specie": "Собака",
+    "breed": "Пули",
+    "category_tag": "pets"
+  },
+  {
+    "id": 190,
+    "specie": "Собака",
+    "breed": "Перро де преса канарио (Канарская собака)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 191,
+    "specie": "Собака",
+    "breed": "Риджбек родезийский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 192,
+    "specie": "Собака",
+    "breed": "Риджбек тайский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 193,
+    "specie": "Собака",
+    "breed": "Ризеншнауцер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 194,
+    "specie": "Собака",
+    "breed": "Ротвейлер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 195,
+    "specie": "Собака",
+    "breed": "Русская гончая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 196,
+    "specie": "Собака",
+    "breed": "Русская псовая борзая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 197,
+    "specie": "Собака",
+    "breed": "Русская салонная собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 198,
+    "specie": "Собака",
+    "breed": "Русский спаниель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 199,
+    "specie": "Собака",
+    "breed": "Русская цветная болонка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 200,
+    "specie": "Собака",
+    "breed": "Русский длинношерстный той терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 201,
+    "specie": "Собака",
+    "breed": "Русский той терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 202,
+    "specie": "Собака",
+    "breed": "Русский черный терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 203,
+    "specie": "Собака",
+    "breed": "Салюки",
+    "category_tag": "pets"
+  },
+  {
+    "id": 204,
+    "specie": "Собака",
+    "breed": "Сарлосская волчья собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 205,
+    "specie": "Собака",
+    "breed": "Сенбернар",
+    "category_tag": "pets"
+  },
+  {
+    "id": 206,
+    "specie": "Собака",
+    "breed": "Силихем-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 207,
+    "specie": "Собака",
+    "breed": "Сицилийская борзая (Чирнеко дель этна)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 208,
+    "specie": "Собака",
+    "breed": "Сиба Ину",
+    "category_tag": "pets"
+  },
+  {
+    "id": 209,
+    "specie": "Собака",
+    "breed": "Скай-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 210,
+    "specie": "Собака",
+    "breed": "Скотч-терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 211,
+    "specie": "Собака",
+    "breed": "Словацкий чувач",
+    "category_tag": "pets"
+  },
+  {
+    "id": 212,
+    "specie": "Собака",
+    "breed": "Слюги",
+    "category_tag": "pets"
+  },
+  {
+    "id": 213,
+    "specie": "Собака",
+    "breed": "Среднеазиатская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 214,
+    "specie": "Собака",
+    "breed": "Стаффордширский бультерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 215,
+    "specie": "Собака",
+    "breed": "Суссекс-спаниель",
+    "category_tag": "pets"
+  },
+  {
+    "id": 216,
+    "specie": "Собака",
+    "breed": "Тазы (Среднеазиатская борзая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 217,
+    "specie": "Собака",
+    "breed": "Тайский риджбек",
+    "category_tag": "pets"
+  },
+  {
+    "id": 218,
+    "specie": "Собака",
+    "breed": "Такса",
+    "category_tag": "pets"
+  },
+  {
+    "id": 219,
+    "specie": "Собака",
+    "breed": "Тамасканская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 220,
+    "specie": "Собака",
+    "breed": "Тервюрен",
+    "category_tag": "pets"
+  },
+  {
+    "id": 221,
+    "specie": "Собака",
+    "breed": "Терьер пшеничный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 222,
+    "specie": "Собака",
+    "breed": "Тибетский терьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 223,
+    "specie": "Собака",
+    "breed": "Тоса-ину",
+    "category_tag": "pets"
+  },
+  {
+    "id": 224,
+    "specie": "Собака",
+    "breed": "Уиппет",
+    "category_tag": "pets"
+  },
+  {
+    "id": 225,
+    "specie": "Собака",
+    "breed": "Утонаган",
+    "category_tag": "pets"
+  },
+  {
+    "id": 226,
+    "specie": "Собака",
+    "breed": "Фараонова собка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 227,
+    "specie": "Собака",
+    "breed": "Фила бразилейро",
+    "category_tag": "pets"
+  },
+  {
+    "id": 228,
+    "specie": "Собака",
+    "breed": "Финская оленегонная лайка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 229,
+    "specie": "Собака",
+    "breed": "Финско-шведская оленегонная собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 230,
+    "specie": "Собака",
+    "breed": "Фландрский бувье",
+    "category_tag": "pets"
+  },
+  {
+    "id": 231,
+    "specie": "Собака",
+    "breed": "Фокстерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 232,
+    "specie": "Собака",
+    "breed": "Фоксхаунд английский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 233,
+    "specie": "Собака",
+    "breed": "Французская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 234,
+    "specie": "Собака",
+    "breed": "Французский бульдог",
+    "category_tag": "pets"
+  },
+  {
+    "id": 235,
+    "specie": "Собака",
+    "breed": "Ханаанская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 236,
+    "specie": "Собака",
+    "breed": "Хаски аляскинский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 237,
+    "specie": "Собака",
+    "breed": "Хаски лабрадорский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 238,
+    "specie": "Собака",
+    "breed": "Хаски сахалинский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 239,
+    "specie": "Собака",
+    "breed": "Хаски сибирский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 240,
+    "specie": "Собака",
+    "breed": "Ховаварт",
+    "category_tag": "pets"
+  },
+  {
+    "id": 241,
+    "specie": "Собака",
+    "breed": "Хорватская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 242,
+    "specie": "Собака",
+    "breed": "Хорватская планинская собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 243,
+    "specie": "Собака",
+    "breed": "Хортая борзая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 244,
+    "specie": "Собака",
+    "breed": "Цвергшнауцер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 245,
+    "specie": "Собака",
+    "breed": "Цвергпинчер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 246,
+    "specie": "Собака",
+    "breed": "Чау-чау",
+    "category_tag": "pets"
+  },
+  {
+    "id": 247,
+    "specie": "Собака",
+    "breed": "Чесапик бей ретривер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 248,
+    "specie": "Собака",
+    "breed": "Чехословацкая волчья собака",
+    "category_tag": "pets"
+  },
+  {
+    "id": 249,
+    "specie": "Собака",
+    "breed": "Чинук",
+    "category_tag": "pets"
+  },
+  {
+    "id": 250,
+    "specie": "Собака",
+    "breed": "Чихуахуа",
+    "category_tag": "pets"
+  },
+  {
+    "id": 251,
+    "specie": "Собака",
+    "breed": "Шар-пей",
+    "category_tag": "pets"
+  },
+  {
+    "id": 252,
+    "specie": "Собака",
+    "breed": "Шарпланинац",
+    "category_tag": "pets"
+  },
+  {
+    "id": 253,
+    "specie": "Собака",
+    "breed": "Шведский вальхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 254,
+    "specie": "Собака",
+    "breed": "Шведский лапхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 255,
+    "specie": "Собака",
+    "breed": "Шведский элькхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 256,
+    "specie": "Собака",
+    "breed": "Швейцарская юрская гончая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 257,
+    "specie": "Собака",
+    "breed": "Шелти",
+    "category_tag": "pets"
+  },
+  {
+    "id": 258,
+    "specie": "Собака",
+    "breed": "Ши-тцу",
+    "category_tag": "pets"
+  },
+  {
+    "id": 259,
+    "specie": "Собака",
+    "breed": "Шиба-Ину",
+    "category_tag": "pets"
+  },
+  {
+    "id": 260,
+    "specie": "Собака",
+    "breed": "Шилонская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 261,
+    "specie": "Собака",
+    "breed": "Шипперке",
+    "category_tag": "pets"
+  },
+  {
+    "id": 262,
+    "specie": "Собака",
+    "breed": "Шотландский сеттер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 263,
+    "specie": "Собака",
+    "breed": "Шпиц карликовый (померанский)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 264,
+    "specie": "Собака",
+    "breed": "Шпиц малый (немецкий)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 265,
+    "specie": "Собака",
+    "breed": "Шпиц финский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 266,
+    "specie": "Собака",
+    "breed": "Шпиц шведский (лапхунд) — Лапдандские собаки",
+    "category_tag": "pets"
+  },
+  {
+    "id": 267,
+    "specie": "Собака",
+    "breed": "Шпиц японский",
+    "category_tag": "pets"
+  },
+  {
+    "id": 268,
+    "specie": "Собака",
+    "breed": "Энтлебухер зенненхунд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 269,
+    "specie": "Собака",
+    "breed": "Эрдельтерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 270,
+    "specie": "Собака",
+    "breed": "Эстонская гончая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 271,
+    "specie": "Собака",
+    "breed": "Эштрельская гладкошерстная овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 272,
+    "specie": "Собака",
+    "breed": "Эштрельская длинношерстная овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 273,
+    "specie": "Собака",
+    "breed": "Югославская горная гончая (Планинская гончая)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 274,
+    "specie": "Собака",
+    "breed": "Югославская трехцветная гончая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 275,
+    "specie": "Собака",
+    "breed": "Южнорусская овчарка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 276,
+    "specie": "Собака",
+    "breed": "Южнорусская степная борзая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 277,
+    "specie": "Собака",
+    "breed": "Ягдтерьер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 278,
+    "specie": "Собака",
+    "breed": "Японский хин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 279,
+    "specie": "Кошка",
+    "breed": "Абиссинская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 280,
+    "specie": "Кошка",
+    "breed": "Австралийский мист",
+    "category_tag": "pets"
+  },
+  {
+    "id": 281,
+    "specie": "Кошка",
+    "breed": "Азиатская (табби)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 282,
+    "specie": "Кошка",
+    "breed": "Американский бобтейл длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 283,
+    "specie": "Кошка",
+    "breed": "Американский бобтейл короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 284,
+    "specie": "Кошка",
+    "breed": "Американская жесткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 285,
+    "specie": "Кошка",
+    "breed": "Американский кёрл длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 286,
+    "specie": "Кошка",
+    "breed": "Американский кёрл короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 287,
+    "specie": "Кошка",
+    "breed": "Американская короткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 288,
+    "specie": "Кошка",
+    "breed": "Анатолийская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 289,
+    "specie": "Кошка",
+    "breed": "Аравийский мау",
+    "category_tag": "pets"
+  },
+  {
+    "id": 290,
+    "specie": "Кошка",
+    "breed": "Балинезийская (Балинез, балийская)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 291,
+    "specie": "Кошка",
+    "breed": "Бенгальская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 292,
+    "specie": "Кошка",
+    "breed": "Бомбейская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 293,
+    "specie": "Кошка",
+    "breed": "Бразильская короткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 294,
+    "specie": "Кошка",
+    "breed": "Британская длинношёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 295,
+    "specie": "Кошка",
+    "breed": "Британская короткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 296,
+    "specie": "Кошка",
+    "breed": "Бурма (Бурманская)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 297,
+    "specie": "Кошка",
+    "breed": "Бурмилла длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 298,
+    "specie": "Кошка",
+    "breed": "Бурмилла короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 299,
+    "specie": "Кошка",
+    "breed": "Гавана",
+    "category_tag": "pets"
+  },
+  {
+    "id": 300,
+    "specie": "Кошка",
+    "breed": "Гималайская кошка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 301,
+    "specie": "Кошка",
+    "breed": "Девон рекс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 302,
+    "specie": "Кошка",
+    "breed": "Домашняя",
+    "category_tag": "pets"
+  },
+  {
+    "id": 303,
+    "specie": "Кошка",
+    "breed": "Донской сфинкс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 304,
+    "specie": "Кошка",
+    "breed": "Кельтская (Европейская короткошёрстная)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 305,
+    "specie": "Кошка",
+    "breed": "Египетская мау",
+    "category_tag": "pets"
+  },
+  {
+    "id": 306,
+    "specie": "Кошка",
+    "breed": "Йорк",
+    "category_tag": "pets"
+  },
+  {
+    "id": 307,
+    "specie": "Кошка",
+    "breed": "Калифорнийская сияющая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 308,
+    "specie": "Кошка",
+    "breed": "Канаани",
+    "category_tag": "pets"
+  },
+  {
+    "id": 309,
+    "specie": "Кошка",
+    "breed": "Карельский бобтейл длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 310,
+    "specie": "Кошка",
+    "breed": "Карельский бобтейл короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 311,
+    "specie": "Кошка",
+    "breed": "Кимрик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 312,
+    "specie": "Кошка",
+    "breed": "Корат",
+    "category_tag": "pets"
+  },
+  {
+    "id": 313,
+    "specie": "Кошка",
+    "breed": "Корниш рекс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 314,
+    "specie": "Кошка",
+    "breed": "Курильский бобтейл длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 315,
+    "specie": "Кошка",
+    "breed": "Курильский бобтейл короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 316,
+    "specie": "Кошка",
+    "breed": "Лаперм длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 317,
+    "specie": "Кошка",
+    "breed": "Лаперм короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 318,
+    "specie": "Кошка",
+    "breed": "Манчкин длинношёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 319,
+    "specie": "Кошка",
+    "breed": "Манчкин короткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 320,
+    "specie": "Кошка",
+    "breed": "Мейн-кун",
+    "category_tag": "pets"
+  },
+  {
+    "id": 321,
+    "specie": "Кошка",
+    "breed": "Меконгский бобтейл",
+    "category_tag": "pets"
+  },
+  {
+    "id": 322,
+    "specie": "Кошка",
+    "breed": "Минскин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 323,
+    "specie": "Кошка",
+    "breed": "Мэнкс (Мэнская кошка)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 324,
+    "specie": "Кошка",
+    "breed": "Наполеон",
+    "category_tag": "pets"
+  },
+  {
+    "id": 325,
+    "specie": "Кошка",
+    "breed": "Немецкий рекс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 326,
+    "specie": "Кошка",
+    "breed": "Нибелунг",
+    "category_tag": "pets"
+  },
+  {
+    "id": 327,
+    "specie": "Кошка",
+    "breed": "Норвежская лесная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 328,
+    "specie": "Кошка",
+    "breed": "Орегон-рекс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 329,
+    "specie": "Кошка",
+    "breed": "Ориентальная длинношёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 330,
+    "specie": "Кошка",
+    "breed": "Ориентальная короткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 331,
+    "specie": "Кошка",
+    "breed": "Охос азулес",
+    "category_tag": "pets"
+  },
+  {
+    "id": 332,
+    "specie": "Кошка",
+    "breed": "Охос азулес длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 333,
+    "specie": "Кошка",
+    "breed": "Оцикет",
+    "category_tag": "pets"
+  },
+  {
+    "id": 334,
+    "specie": "Кошка",
+    "breed": "Персидская (Колорпойнт)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 335,
+    "specie": "Кошка",
+    "breed": "Колорпойнт",
+    "category_tag": "pets"
+  },
+  {
+    "id": 336,
+    "specie": "Кошка",
+    "breed": "Петерболд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 337,
+    "specie": "Кошка",
+    "breed": "Пиксибоб длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 338,
+    "specie": "Кошка",
+    "breed": "Пиксибоб короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 339,
+    "specie": "Кошка",
+    "breed": "Рагамаффин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 340,
+    "specie": "Кошка",
+    "breed": "Русская голубая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 341,
+    "specie": "Кошка",
+    "breed": "Рэгдолл",
+    "category_tag": "pets"
+  },
+  {
+    "id": 342,
+    "specie": "Кошка",
+    "breed": "Саванна",
+    "category_tag": "pets"
+  },
+  {
+    "id": 343,
+    "specie": "Кошка",
+    "breed": "Священная бирманская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 344,
+    "specie": "Кошка",
+    "breed": "Сейшельская длинношёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 345,
+    "specie": "Кошка",
+    "breed": "Сейшельская короткошёрстная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 346,
+    "specie": "Кошка",
+    "breed": "Селкирк рекс длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 347,
+    "specie": "Кошка",
+    "breed": "Селкирк рекс короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 348,
+    "specie": "Кошка",
+    "breed": "Серенгети",
+    "category_tag": "pets"
+  },
+  {
+    "id": 349,
+    "specie": "Кошка",
+    "breed": "Сиамская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 350,
+    "specie": "Кошка",
+    "breed": "Сибирская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 351,
+    "specie": "Кошка",
+    "breed": "Экспериментальная порода",
+    "category_tag": "pets"
+  },
+  {
+    "id": 352,
+    "specie": "Кошка",
+    "breed": "Невская маскарадная",
+    "category_tag": "pets"
+  },
+  {
+    "id": 353,
+    "specie": "Кошка",
+    "breed": "Сингапурская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 354,
+    "specie": "Кошка",
+    "breed": "Скоттиш фолд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 355,
+    "specie": "Кошка",
+    "breed": "Скоттиш страйт",
+    "category_tag": "pets"
+  },
+  {
+    "id": 356,
+    "specie": "Кошка",
+    "breed": "Сноу-Шу",
+    "category_tag": "pets"
+  },
+  {
+    "id": 357,
+    "specie": "Кошка",
+    "breed": "Сококе",
+    "category_tag": "pets"
+  },
+  {
+    "id": 358,
+    "specie": "Кошка",
+    "breed": "Сомали",
+    "category_tag": "pets"
+  },
+  {
+    "id": 359,
+    "specie": "Кошка",
+    "breed": "Сфинкс (канадский)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 360,
+    "specie": "Кошка",
+    "breed": "Тайская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 361,
+    "specie": "Кошка",
+    "breed": "Шантильи-тиффани",
+    "category_tag": "pets"
+  },
+  {
+    "id": 362,
+    "specie": "Кошка",
+    "breed": "Тойгер",
+    "category_tag": "pets"
+  },
+  {
+    "id": 363,
+    "specie": "Кошка",
+    "breed": "Тонкинская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 364,
+    "specie": "Кошка",
+    "breed": "Турецкая ангора",
+    "category_tag": "pets"
+  },
+  {
+    "id": 365,
+    "specie": "Кошка",
+    "breed": "Турецкий ван",
+    "category_tag": "pets"
+  },
+  {
+    "id": 366,
+    "specie": "Кошка",
+    "breed": "Украинский левкой",
+    "category_tag": "pets"
+  },
+  {
+    "id": 367,
+    "specie": "Кошка",
+    "breed": "Уральский рекс длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 368,
+    "specie": "Кошка",
+    "breed": "Уральский рекс короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 369,
+    "specie": "Кошка",
+    "breed": "Форин Вайт",
+    "category_tag": "pets"
+  },
+  {
+    "id": 370,
+    "specie": "Кошка",
+    "breed": "Хайленд фолд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 371,
+    "specie": "Кошка",
+    "breed": "Цейлонская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 372,
+    "specie": "Кошка",
+    "breed": "Хауси",
+    "category_tag": "pets"
+  },
+  {
+    "id": 373,
+    "specie": "Кошка",
+    "breed": "Шартрез",
+    "category_tag": "pets"
+  },
+  {
+    "id": 374,
+    "specie": "Кошка",
+    "breed": "Эгейская",
+    "category_tag": "pets"
+  },
+  {
+    "id": 375,
+    "specie": "Кошка",
+    "breed": "Экзотическая",
+    "category_tag": "pets"
+  },
+  {
+    "id": 376,
+    "specie": "Кошка",
+    "breed": "Яванез (Яванская кошка)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 377,
+    "specie": "Кошка",
+    "breed": "Японский бобтейл длинношёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 378,
+    "specie": "Кошка",
+    "breed": "Японский бобтейл короткошёрстный",
+    "category_tag": "pets"
+  },
+  {
+    "id": 379,
+    "specie": "Кролик",
+    "breed": "Цветной кролик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 380,
+    "specie": "Кролик",
+    "breed": "Гермелин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 381,
+    "specie": "Кролик",
+    "breed": "Голландский вислоухий",
+    "category_tag": "pets"
+  },
+  {
+    "id": 382,
+    "specie": "Кролик",
+    "breed": "Карликовый баран",
+    "category_tag": "pets"
+  },
+  {
+    "id": 383,
+    "specie": "Кролик",
+    "breed": "Гималайский кролик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 384,
+    "specie": "Кролик",
+    "breed": "Шиншилла",
+    "category_tag": "pets"
+  },
+  {
+    "id": 385,
+    "specie": "Кролик",
+    "breed": "Арлекин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 386,
+    "specie": "Кролик",
+    "breed": "Львиная голова",
+    "category_tag": "pets"
+  },
+  {
+    "id": 387,
+    "specie": "Кролик",
+    "breed": "Ангорский кролик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 388,
+    "specie": "Кролик",
+    "breed": "Карликовый рекс",
+    "category_tag": "pets"
+  },
+  {
+    "id": 389,
+    "specie": "Кролик",
+    "breed": "Карликовая бабочка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 390,
+    "specie": "Кролик",
+    "breed": "Хотот",
+    "category_tag": "pets"
+  },
+  {
+    "id": 391,
+    "specie": "Кролик",
+    "breed": "Огнёвка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 392,
+    "specie": "Рептилия",
+    "breed": "Крокодил",
+    "category_tag": "pets"
+  },
+  {
+    "id": 393,
+    "specie": "Рептилия",
+    "breed": "Черепаха",
+    "category_tag": "pets"
+  },
+  {
+    "id": 394,
+    "specie": "Рептилия",
+    "breed": "Ящерица",
+    "category_tag": "pets"
+  },
+  {
+    "id": 395,
+    "specie": "Рептилия",
+    "breed": "Змея",
+    "category_tag": "pets"
+  },
+  {
+    "id": 396,
+    "specie": "Грызун",
+    "breed": "Хомяк",
+    "category_tag": "pets"
+  },
+  {
+    "id": 397,
+    "specie": "Грызун",
+    "breed": "Морская свинка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 398,
+    "specie": "Грызун",
+    "breed": "Шиншила",
+    "category_tag": "pets"
+  },
+  {
+    "id": 399,
+    "specie": "Грызун",
+    "breed": "Крыса",
+    "category_tag": "pets"
+  },
+  {
+    "id": 400,
+    "specie": "Грызун",
+    "breed": "Мышь",
+    "category_tag": "pets"
+  },
+  {
+    "id": 401,
+    "specie": "Птицы",
+    "breed": "Попугай",
+    "category_tag": "pets"
+  },
+  {
+    "id": 402,
+    "specie": "Птица",
+    "breed": "Голубь",
+    "category_tag": "pets"
+  },
+  {
+    "id": 403,
+    "specie": "Птица",
+    "breed": "Канарейка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 404,
+    "specie": "Птица",
+    "breed": "Амадин",
+    "category_tag": "pets"
+  },
+  {
+    "id": 405,
+    "specie": "Птица",
+    "breed": "Синица",
+    "category_tag": "pets"
+  },
+  {
+    "id": 406,
+    "specie": "Птица",
+    "breed": "Горихвостка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 407,
+    "specie": "Птица",
+    "breed": "Ткачик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 408,
+    "specie": "Птица",
+    "breed": "Вьюрок (юрок)",
+    "category_tag": "pets"
+  },
+  {
+    "id": 409,
+    "specie": "Птица",
+    "breed": "Ворон",
+    "category_tag": "pets"
+  },
+  {
+    "id": 410,
+    "specie": "Птица",
+    "breed": "Ворона",
+    "category_tag": "pets"
+  },
+  {
+    "id": 411,
+    "specie": "Птица",
+    "breed": "Воробей",
+    "category_tag": "pets"
+  },
+  {
+    "id": 412,
+    "specie": "Птица",
+    "breed": "Сова",
+    "category_tag": "pets"
+  },
+  {
+    "id": 413,
+    "specie": "Птица",
+    "breed": "Дрозд",
+    "category_tag": "pets"
+  },
+  {
+    "id": 414,
+    "specie": "Птица",
+    "breed": "Жаворонок",
+    "category_tag": "pets"
+  },
+  {
+    "id": 415,
+    "specie": "Птица",
+    "breed": "Сорока",
+    "category_tag": "pets"
+  },
+  {
+    "id": 416,
+    "specie": "Птица",
+    "breed": "Снегирь",
+    "category_tag": "pets"
+  },
+  {
+    "id": 417,
+    "specie": "Птица",
+    "breed": "Соловей",
+    "category_tag": "pets"
+  },
+  {
+    "id": 418,
+    "specie": "Птица",
+    "breed": "Овсянка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 419,
+    "specie": "Птица",
+    "breed": "Скворец",
+    "category_tag": "pets"
+  },
+  {
+    "id": 420,
+    "specie": "Птица",
+    "breed": "Чиж",
+    "category_tag": "pets"
+  },
+  {
+    "id": 421,
+    "specie": "Птица",
+    "breed": "Щегол",
+    "category_tag": "pets"
+  },
+  {
+    "id": 422,
+    "specie": "Птица",
+    "breed": "Зяблик",
+    "category_tag": "pets"
+  },
+  {
+    "id": 423,
+    "specie": "Птица",
+    "breed": "Сойка",
+    "category_tag": "pets"
+  },
+  {
+    "id": 424,
+    "specie": "Птица",
+    "breed": "Амарант",
+    "category_tag": "pets"
+  },
+  {
+    "id": 425,
+    "specie": "Птица",
+    "breed": "Чечётка",
+    "category_tag": "pets"
+  }
+]

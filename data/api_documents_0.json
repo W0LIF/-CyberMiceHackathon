@@ -1,0 +1,2684 @@
+[
+  {
+    "id": 66,
+    "id_bitrix": 653073,
+    "name": "МФЦ Василеостровского района Сектор № 5",
+    "address": "Санкт-Петербург, улица Наличная, дом 44, корпус 1",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/653073/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.95209,
+      30.233269
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 27,
+    "id_bitrix": 608353,
+    "name": "МФЦ Кронштадтского района",
+    "address": "Санкт-Петербург, город Кронштадт, улица Зосимова, дом 46, литера А",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/608353/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.991693,
+      29.756557
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 63,
+    "id_bitrix": null,
+    "name": "Мобильный МФЦ Ленинский 92",
+    "address": "Санкт-Петербург, Ленинский проспект, дом 92, корпус 1\t",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Вторник, суббота с 11.00 до 19.15, среда, четверг с 11.00 до 18.45",
+    "link": "https://gu.spb.ru/mfc/list/207957/mobile/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.85481,
+      30.21202
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 64,
+    "id_bitrix": null,
+    "name": "Мобильный МФЦ Парголово",
+    "address": "Санкт-Петербург, посёлок Парголово, улица 1-го Мая, дом 107, корпус 5",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Вторник, пятница с 10.00 до 20.00, четверг с 10.00 до 19.30",
+    "link": "https://gu.spb.ru/mfc/list/35728/mobile/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.07275,
+      30.23807
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 62,
+    "id_bitrix": null,
+    "name": "Мобильный МФЦ Левашово",
+    "address": "Санкт-Петербург, посёлок Левашово, улица Володарского, дом 9",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Понедельник с 10.00 до 20.00",
+    "link": "https://gu.spb.ru/mfc/list/35729/mobile/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.10289,
+      30.21256
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 69,
+    "id_bitrix": null,
+    "name": "Мобильный МФЦ Новая Охта",
+    "address": "Санкт-Петербург, Новая Охта, проспект Маршака, дом 3",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Понедельник с 10:30 до 19:30, среда, суббота с 10.30 до 19.45",
+    "link": "https://gu.spb.ru/mfc/list/663651/mobile/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.036034,
+      30.444687
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 65,
+    "id_bitrix": null,
+    "name": "Мобильный МФЦ Славянка-2",
+    "address": "Санкт-Петербург, посёлок Славянка, улица Ростовская, дом 12",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Понедельник, вторник, четверг, пятница с 11.00 до 19.00, среда, суббота с 11.00 до 18.30",
+    "link": "https://gu.spb.ru/mfc/list/35735/mobile/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.7375,
+      30.46359
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 71,
+    "id_bitrix": null,
+    "name": "Мобильный МФЦ Горелово",
+    "address": "Санкт-Петербург, посёлок Горелово, Красносельское шоссе, дом 46, корпус 4",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Вторник, пятница с 11.00 до 19.00, суббота с 11.00 до 18.30",
+    "link": "https://gu.spb.ru/mfc/list/207959/mobile/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.788171,
+      30.150596
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 22,
+    "id_bitrix": 66403,
+    "name": "МФЦ Красногвардейского района Сектор № 3",
+    "address": "Санкт-Петербург, Новочеркасский проспект, дом 60, литера А",
+    "nearest_metro": "Новочеркасская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66403/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Вход с поверхности земли",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/96b/Vkhod-s-poverkhnosti.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.92124,
+      30.42239
+    ],
+    "active": true,
+    "closed": true,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 29,
+    "id_bitrix": 66421,
+    "name": "МФЦ Курортного района Сектор № 2",
+    "address": "Санкт-Петербург, город Сестрорецк, улица Токарева, дом 7",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66421/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.088126,
+      29.955464
+    ],
+    "active": true,
+    "closed": true,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 68,
+    "id_bitrix": 808073,
+    "name": "МФЦ Выборгского района Сектор № 6",
+    "address": "Санкт-Петербург, посёлок Парголово, улица Валерия Гаврилина, дом 11, корпус 1, строение 1",
+    "nearest_metro": "Парнас",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/653079/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.078666,
+      30.337149
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 1,
+    "id_bitrix": 66371,
+    "name": "МФЦ Адмиралтейского района Сектор № 1",
+    "address": "Санкт-Петербург, Английский проспект, дом 21/60, литера Б",
+    "nearest_metro": "Садовая",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66371/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Вход с поверхности земли",
+      "Центр оснащен подъёмной платформой",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/96b/Vkhod-s-poverkhnosti.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.923276,
+      30.284492
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 10,
+    "id_bitrix": 66387,
+    "name": "МФЦ Калининского района Сектор № 1",
+    "address": "Санкт-Петербург, Кондратьевский проспект, дом 22, литера А",
+    "nearest_metro": "Площадь Ленина",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66387/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.96408,
+      30.38033
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 2,
+    "id_bitrix": 66369,
+    "name": "МФЦ Адмиралтейского района Сектор № 2",
+    "address": "Санкт-Петербург, улица Садовая, дом 55-57, литера А",
+    "nearest_metro": "Садовая",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66369/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.923079,
+      30.308243
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 11,
+    "id_bitrix": 66389,
+    "name": "МФЦ Калининского района Сектор № 2",
+    "address": "Санкт-Петербург, улица Веденеева, дом 4",
+    "nearest_metro": "Академическая",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66389/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен подъёмной платформой",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.021783,
+      30.373634
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 75,
+    "id_bitrix": 743433,
+    "name": "Специализированный сектор МФЦ Адмиралтейского района",
+    "address": "Санкт-Петербург, Старо-Петергофский пр., д. 30, корпус 1, литер А",
+    "nearest_metro": "Нарвская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/743433/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Осуществляется приём только иностранных граждан и лиц без гражданства по услугам: СНИЛС, ИНН, доступ к учётной записи ЕСИА.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оборудован тактильно-контрастными средствами"
+    ],
+    "accessible_env_photos": [
+      "https://gu.spb.ru/upload/iblock/72c/6yd31v19vh7yltsyroue3r9g3fmxvkr0/admiral_1_4.JPG.jpg"
+    ],
+    "coordinates": [
+      59.905073,
+      30.277789
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 12,
+    "id_bitrix": 66391,
+    "name": "МФЦ Калининского района Сектор № 3",
+    "address": "Санкт-Петербург, улица Ушинского, дом 6, литера А",
+    "nearest_metro": "Гражданский проспект",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66391/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен лифтом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/06f/TSentr-osnashchen-liftom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.031086,
+      30.404334
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 5,
+    "id_bitrix": 66373,
+    "name": "МФЦ Василеостровского района Сектор № 3",
+    "address": "Санкт-Петербург, 15-я линия Васильевского острова, дом 32",
+    "nearest_metro": "Василеостровская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66373/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.93933,
+      30.269061
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 13,
+    "id_bitrix": 66385,
+    "name": "МФЦ Калининского района Сектор № 5",
+    "address": "Санкт-Петербург, Гражданский проспект, дом 104, корпус 1, литера А",
+    "nearest_metro": "Гражданский проспект",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Понедельник - четверг с 09.30 до 18.00, пятница с 09.30 до 17.00",
+    "link": "https://gu.spb.ru/mfc/list/66385/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.027043,
+      30.410624
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 6,
+    "id_bitrix": 66381,
+    "name": "МФЦ Выборгского района Сектор № 1",
+    "address": "Санкт-Петербург, Придорожная аллея, дом 17, литера А",
+    "nearest_metro": "Проспект Просвещения",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66381/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.05498,
+      30.36168
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 14,
+    "id_bitrix": 66395,
+    "name": "МФЦ Кировского района Сектор № 1",
+    "address": "Санкт-Петербург, проспект Народного Ополчения, дом 101, литера А",
+    "nearest_metro": "Проспект Ветеранов",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66395/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен подъёмной платформой",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.83883,
+      30.27073
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 7,
+    "id_bitrix": 66383,
+    "name": "МФЦ Выборгского района Сектор № 2",
+    "address": "Санкт-Петербург, Учебный переулок, дом 2, литера А",
+    "nearest_metro": "Озерки",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66383/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.039516,
+      30.33257
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 15,
+    "id_bitrix": 66397,
+    "name": "МФЦ Кировского района Сектор № 2",
+    "address": "Санкт-Петербург, проспект Маршала Жукова, дом 60, корпус 1, литера Б",
+    "nearest_metro": "Автово",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66397/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен подъёмной платформой",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.838645,
+      30.205592
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 8,
+    "id_bitrix": 123353,
+    "name": "МФЦ Выборгского района Сектор № 3",
+    "address": "Санкт-Петербург, посёлок Парголово, Осиновая Роща, Приозерское шоссе, дом 18, корпус 1, литера А, помещение 16Н",
+    "nearest_metro": "Проспект Просвещения",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/123353/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оборудован аппарелями",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/ab3/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.109986,
+      30.259334
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 16,
+    "id_bitrix": 66393,
+    "name": "МФЦ Кировского района Сектор № 3",
+    "address": "Санкт-Петербург, проспект Стачек, дом 18",
+    "nearest_metro": "Нарвская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66393/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оборудован внутренним пандусом",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/212/Vnutrenniy-pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.894179,
+      30.27881
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 9,
+    "id_bitrix": 66379,
+    "name": "МФЦ Выборгского района Сектор № 4",
+    "address": "Санкт-Петербург, улица Новороссийская, дом 18",
+    "nearest_metro": "Площадь Мужества",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66379/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оборудован аппарелями",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/ab3/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.99746,
+      30.33825
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 17,
+    "id_bitrix": 66401,
+    "name": "МФЦ Колпинского района Сектор № 1",
+    "address": "Санкт-Петербург, посёлок Металлострой, улица Садовая, дом 21, корпус 3, литера А",
+    "nearest_metro": "Рыбацкое",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66401/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.813436,
+      30.577164
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 67,
+    "id_bitrix": 761677,
+    "name": "МФЦ Выборгского района Сектор № 5",
+    "address": "Санкт-Петербург, Северный проспект, дом 7, корпус 1, литера А",
+    "nearest_metro": "Озерки",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/650431/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.030204,
+      30.335685
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 18,
+    "id_bitrix": 66399,
+    "name": "МФЦ Колпинского района Сектор № 2",
+    "address": "Санкт-Петербург, город Колпино, проспект Ленина, дом 22, литера А",
+    "nearest_metro": "Шушары",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66399/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.749898,
+      30.582374
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 61,
+    "id_bitrix": 648121,
+    "name": "МФЦ Колпинского района Сектор № 3",
+    "address": "Санкт-Петербург, город Колпино, Тверская улица, дом 36, корпус 3, литера А",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/663649/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оборудован внутренним пандусом",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.74006,
+      30.61181
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 45,
+    "id_bitrix": 66453,
+    "name": "МФЦ Приморского района Сектор № 4",
+    "address": "Санкт-Петербург, улица Туристская, дом 11, корпус 1",
+    "nearest_metro": "Беговая",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66453/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.996663,
+      30.209598
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 20,
+    "id_bitrix": 66405,
+    "name": "МФЦ Красногвардейского района Сектор № 1",
+    "address": "Санкт-Петербург, проспект Наставников, дом 6, корпус 2",
+    "nearest_metro": "Проспект Большевиков",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66405/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.93885,
+      30.4858
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 56,
+    "id_bitrix": 66471,
+    "name": "МФЦ Фрунзенского района Сектор № 3",
+    "address": "Санкт-Петербург, улица Турку, дом 5/13",
+    "nearest_metro": "Международная",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66471/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Вход с поверхности земли",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/96b/Vkhod-s-poverkhnosti.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.86673,
+      30.370882
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 21,
+    "id_bitrix": 66407,
+    "name": "МФЦ Красногвардейского района Сектор № 2",
+    "address": "Санкт-Петербург, улица Молдагуловой, дом 5, литера А",
+    "nearest_metro": "Новочеркасская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66407/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.94765,
+      30.41184
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 60,
+    "id_bitrix": 66475,
+    "name": "МФЦ Центрального района Сектор № 2",
+    "address": "Санкт-Петербург, Невский проспект, дом 174, литера А",
+    "nearest_metro": "Площадь Александра Невского",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66475/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Государственная услуга «Государственный кадастровый учет недвижимого имущества и (или) государственная регистрация прав на недвижимое имущество» предоставляется только по предварительной записи.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оборудован аппарелями",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/ab3/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.92578,
+      30.3801
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 23,
+    "id_bitrix": 66411,
+    "name": "МФЦ Красносельского района Сектор № 1",
+    "address": "Санкт-Петербург, город Красное Село, улица Освобождения, дом 31, корпус 1",
+    "nearest_metro": "Проспект Ветеранов",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66411/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.74452,
+      30.07758
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 74,
+    "id_bitrix": 746663,
+    "name": "Специализированный сектор МФЦ Центрального района",
+    "address": "Санкт-Петербург, ул. Красного Текстильщика, д. 10-12, лит. О",
+    "nearest_metro": "Площадь Александра Невского",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.00 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/746663/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Осуществляется приём только иностранных граждан и лиц без гражданства.",
+    "accessible_env": [
+      "Вход с поверхности земли"
+    ],
+    "accessible_env_photos": [
+      "https://gu.spb.ru/upload/iblock/a09/39h32hme1db6yq1prkf77i0wiijtq0xg/centralniy_specializirovannyy.jpg"
+    ],
+    "coordinates": [
+      59.940409,
+      30.396023
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 24,
+    "id_bitrix": 66413,
+    "name": "МФЦ Красносельского района Сектор № 2",
+    "address": "Санкт-Петербург, проспект Ветеранов, дом 147, литера В",
+    "nearest_metro": "Проспект Ветеранов",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66413/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильной плиткой",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.83643,
+      30.13673
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 25,
+    "id_bitrix": 66415,
+    "name": "МФЦ Красносельского района Сектор № 3",
+    "address": "Санкт-Петербург, Ленинский проспект, дом 55, корпус 1, литера А",
+    "nearest_metro": "Проспект Ветеранов",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66415/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.862378,
+      30.173039
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 26,
+    "id_bitrix": 66409,
+    "name": "МФЦ Красносельского района Сектор № 4",
+    "address": "Санкт-Петербург, улица Пограничника Гарькавого, дом 36, корпус 6",
+    "nearest_metro": "Проспект Ветеранов",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66409/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.83239,
+      30.15201
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 70,
+    "id_bitrix": 808071,
+    "name": "МФЦ Красносельского района Сектор № 5",
+    "address": "Санкт-Петербург, Балтийский бульвар, дом 4, строение 1",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/663653/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.868501,
+      30.155413
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 28,
+    "id_bitrix": 66419,
+    "name": "МФЦ Курортного района Сектор № 1",
+    "address": "Санкт-Петербург, город Зеленогорск, проспект Ленина, дом 21",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66419/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.19895,
+      29.70593
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 30,
+    "id_bitrix": 66425,
+    "name": "МФЦ Московского района Сектор № 1",
+    "address": "Санкт-Петербург, Новоизмайловский проспект, дом 34, корпус 2",
+    "nearest_metro": "Московская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66425/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.85826,
+      30.30661
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 31,
+    "id_bitrix": 66427,
+    "name": "МФЦ Московского района Сектор № 2",
+    "address": "Санкт-Петербург, улица Звёздная, дом 9, корпус 4, литера А",
+    "nearest_metro": "Звёздная",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66427/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Государственная услуга «Государственный кадастровый учет недвижимого имущества и (или) государственная регистрация прав на недвижимое имущество» предоставляется только по предварительной записи.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен подъёмной платформой",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.83286,
+      30.3578
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 32,
+    "id_bitrix": 66423,
+    "name": "МФЦ Московского района Сектор № 3",
+    "address": "Санкт-Петербург, улица Благодатная, дом 41, литера А",
+    "nearest_metro": "Электросила",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66423/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.87527,
+      30.32226
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 72,
+    "id_bitrix": 738557,
+    "name": "МФЦ Московского района Сектор № 5",
+    "address": "Санкт-Петербург, улица Орджоникидзе, дом 31, корпус 1, литера А",
+    "nearest_metro": "Звёздная",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/650427/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.842996,
+      30.34076
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 33,
+    "id_bitrix": 66431,
+    "name": "МФЦ Невского района Сектор № 1",
+    "address": "Санкт-Петербург, улица Седова, дом 69, литера А",
+    "nearest_metro": "Ломоносовская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66431/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.8762,
+      30.43281
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 34,
+    "id_bitrix": 66433,
+    "name": "МФЦ Невского района Сектор № 2",
+    "address": "Санкт-Петербург, улица Народная, дом 98",
+    "nearest_metro": "Ломоносовская, Пролетарская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66433/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.88508,
+      30.48627
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 35,
+    "id_bitrix": 66435,
+    "name": "МФЦ Невского района Сектор № 3",
+    "address": "Санкт-Петербург, улица Бабушкина, дом 64, литера А",
+    "nearest_metro": "Пролетарская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66435/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.864722,
+      30.454709
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 36,
+    "id_bitrix": 123357,
+    "name": "МФЦ Невского района Сектор № 4",
+    "address": "Санкт-Петербург, проспект Обуховской Обороны, дом 138, корпус 2, помещение 86Н",
+    "nearest_metro": "Пролетарская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/123357/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "Вход с поверхности земли",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала",
+      "Подъезд к зданию затруднен"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/96b/Vkhod-s-poverkhnosti.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/0cc/Podezd-k-zdaniyu-zatrudnen.png"
+    ],
+    "coordinates": [
+      59.84579,
+      30.48472
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 37,
+    "id_bitrix": 66429,
+    "name": "МФЦ Невского района Сектор № 5",
+    "address": "Санкт-Петербург, проспект Большевиков, дом 8, корпус 1, литера А",
+    "nearest_metro": "Улица Дыбенко, проспект Большевиков",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66429/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.91428,
+      30.47676
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 38,
+    "id_bitrix": 748013,
+    "name": "МФЦ Невского района Сектор № 7",
+    "address": "Санкт-Петербург, улица Крыленко, дом 1, корпус 1, строение 2",
+    "nearest_metro": "Улица Дыбенко",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/650429/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.8926,
+      30.45141
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 39,
+    "id_bitrix": 66439,
+    "name": "МФЦ Петроградского района Сектор № 1",
+    "address": "Санкт-Петербург, улица Красного Курсанта, дом 28",
+    "nearest_metro": "Чкаловская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66439/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.960121,
+      30.278576
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 40,
+    "id_bitrix": 66437,
+    "name": "МФЦ Петроградского района Сектор № 2",
+    "address": "Санкт-Петербург, Каменноостровский проспект, дом 55, литера Г",
+    "nearest_metro": "Петроградская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66437/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.97199,
+      30.30746
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 41,
+    "id_bitrix": 66443,
+    "name": "МФЦ Петродворцового района Сектор № 1",
+    "address": "Санкт-Петербург, город Ломоносов, улица Победы, дом 6, литера А",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66443/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.90809,
+      29.77483
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 42,
+    "id_bitrix": 66441,
+    "name": "МФЦ Петродворцового района Сектор № 2",
+    "address": "Санкт-Петербург, город Петергоф, улица Братьев Горкушенко, дом 6, литера А",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66441/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.87146,
+      29.91223
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 43,
+    "id_bitrix": 66447,
+    "name": "МФЦ Приморского района Сектор № 1",
+    "address": "Санкт-Петербург, Новоколомяжский проспект, дом 16/8, литера А",
+    "nearest_metro": "Озерки",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66447/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.03226,
+      30.29501
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 44,
+    "id_bitrix": 66451,
+    "name": "МФЦ Приморского района Сектор № 3",
+    "address": "Санкт-Петербург, Шуваловский проспект, дом 41, корпус 1, литера А",
+    "nearest_metro": "Комендантский проспект",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66451/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "Центр оснащен подъёмной платформой",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.029849,
+      30.240873
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 46,
+    "id_bitrix": 66455,
+    "name": "МФЦ Приморского района Сектор № 5",
+    "address": "Санкт-Петербург, Лахтинский проспект, дом 85, литера В",
+    "nearest_metro": "Беговая",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66455/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.994217,
+      30.145656
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 48,
+    "id_bitrix": 66445,
+    "name": "МФЦ Приморского района Сектор № 7",
+    "address": "Санкт-Петербург, аллея Котельникова, дом 2, корпус 2, литера А",
+    "nearest_metro": "Пионерская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66445/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.011957,
+      30.293117
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 49,
+    "id_bitrix": 661783,
+    "name": "МФЦ Приморского района Сектор № 8",
+    "address": "Санкт-Петербург, улица Ильюшина, дом 14, строение 1",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/663655/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.00817,
+      30.24574
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 73,
+    "id_bitrix": 796455,
+    "name": "МФЦ Приморского района Сектор № 9",
+    "address": "Санкт-Петербург, Юнтоловский проспект, дом 53, корпус 1, строение 1",
+    "nearest_metro": "Беговая",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/663657/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      60.034115,
+      30.145018
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 50,
+    "id_bitrix": 66461,
+    "name": "МФЦ Пушкинского района Сектор № 1",
+    "address": "Санкт-Петербург, посёлок Шушары, улица Валдайская, дом 9, литера А",
+    "nearest_metro": "Купчино",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66461/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.80416,
+      30.37799
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 51,
+    "id_bitrix": 66463,
+    "name": "МФЦ Пушкинского района Сектор № 2",
+    "address": "Санкт-Петербург, город Павловск, Песчаный переулок, дом 11/16",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66463/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "Центр оснащен пандусом",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.68347,
+      30.44293
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 52,
+    "id_bitrix": 66459,
+    "name": "МФЦ Пушкинского района Сектор № 3",
+    "address": "Санкт-Петербург, город Пушкин, Малая улица, дом 17/13, литера А",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66459/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.71867,
+      30.40281
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 53,
+    "id_bitrix": 716933,
+    "name": "МФЦ Пушкинского района Сектор № 4",
+    "address": "Санкт-Петербург, посёлок Шушары, Московское шоссе, дом 244, строение 1, помещение 12-Н",
+    "nearest_metro": null,
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/663659/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.76135,
+      30.4713
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 54,
+    "id_bitrix": 66467,
+    "name": "МФЦ Фрунзенского района Сектор № 1",
+    "address": "Санкт-Петербург, проспект Славы, дом 2, корпус 1",
+    "nearest_metro": "Проспект Славы",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66467/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.85523,
+      30.36782
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 55,
+    "id_bitrix": 66469,
+    "name": "МФЦ Фрунзенского района Сектор № 2",
+    "address": "Санкт-Петербург, улица Олеко Дундича, дом 25, корпус 2",
+    "nearest_metro": "Дунайская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66469/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": "Приём документов осуществляется по предварительной записи. Телефон предварительной записи 573-90-00.",
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен отдельным входом для маломобильных групп населения",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a8b/TSentr-osnashchen-otdelnym-vkhodom.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.82967,
+      30.41076
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 57,
+    "id_bitrix": 66473,
+    "name": "МФЦ Фрунзенского района Сектор № 4",
+    "address": "Санкт-Петербург, улица Софийская, дом 47, корпус 1, литера А",
+    "nearest_metro": "Международная",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66473/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Центр оснащен подъёмной платформой",
+      "Центр оборудован тактильно-контрастными средствами",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/7f6/TSentr-oborudovan-taktilno_kontrastnymi-sredstvami.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.87106,
+      30.40601
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 58,
+    "id_bitrix": 66465,
+    "name": "МФЦ Фрунзенского района Сектор № 5",
+    "address": "Санкт-Петербург, Дунайский проспект, дом 49/126, литера А",
+    "nearest_metro": "Дунайская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66465/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен пандусом",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/8bd/Pandus.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.842374,
+      30.413683
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  },
+  {
+    "id": 59,
+    "id_bitrix": 66477,
+    "name": "МФЦ Центрального района Сектор № 1",
+    "address": "Санкт-Петербург, улица Чайковского, дом 24, литера А",
+    "nearest_metro": "Чернышевская",
+    "phone": [
+      "122",
+      "+7(812)2465122"
+    ],
+    "working_hours": "Ежедневно с 09.30 до 21.00",
+    "link": "https://gu.spb.ru/mfc/list/66477/",
+    "source": "https://gu.spb.ru/mfc/list/",
+    "additional_data": null,
+    "accessible_env": [
+      "У здания оборудовано парковочное место для автотранспорта инвалидов",
+      "Центр оснащен подъёмной платформой",
+      "Вход с поверхности земли",
+      "Нанесены контрастные полосы у перепадов высот",
+      "Центр оборудован тактильной плиткой",
+      "Центр оснащен туалетом для маломобильных групп населения",
+      "Кнопка вызова персонала"
+    ],
+    "accessible_env_photos": [
+      "https://alpha-pre.gu.spb.ru/upload/iblock/59d/U-zdaniya-oborudovano-parkovochnoe-mesto-dlya-avtotransporta-invalidov.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a38/TSentr-osnashchen-pandusom_-apparelyami_-podemnoy-platformoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/96b/Vkhod-s-poverkhnosti.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/1d2/Perepad-vysot.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/a2e/TSentr-oborudovan-taktilnoy-plitkoy.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/fc1/TSentr-osnashchen-tualetom-dlya-malomobilnykh-grupp-naseleniya.png",
+      "https://alpha-pre.gu.spb.ru/upload/iblock/330/Knopka-vyzova-personala.png"
+    ],
+    "coordinates": [
+      59.94675,
+      30.35342
+    ],
+    "active": true,
+    "closed": false,
+    "chat_bot": "https://vk.com/im?sel=-164988466",
+    "category_tag": "documents"
+  }
+]

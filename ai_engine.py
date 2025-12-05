@@ -1,230 +1,103 @@
 import os
-import requests
 import urllib3
-import json
-
-# === ИМПОРТЫ ПРОЕКТА ===
+import logging
+# Импортируем наш менеджер
 from spb_bot_opensearch.opensearch_manager import OpenSearchManager
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-# === ИМПОРТЫ LANGCHAIN ===
+# Импорты LangChain
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_gigachat.chat_models import GigaChat
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 from langchain.tools import tool
 
-# === КОНФИГУРАЦИЯ ===
+# Отключаем лишний шум
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Ваши ключи
 GIGACHAT_CREDENTIALS = "MDE5YWJiZTMtNjFhMi03YjQ2LWE0ZWYtZGZhMmQzYjg0OGUyOmU3OTIwZmE5LWY2MjUtNGExMy1hYmNkLWI1Y2NkNzc4N2M2NQ=="
-BASE_URL = "https://yazzh.gate.petersburg.ru"
 
-# ======================================================================================
-# 🛠️ ЗОНА НАСТРОЙКИ API (ЗАПОЛНИ ЭТО)
-# ======================================================================================
-# district_key: как называется параметр района в URL? (например "district", "area_id"). 
-#               Если не знаешь или API не умеет фильтровать — ставь None.
-# keyword_key:  как называется параметр текстового поиска? (например "q", "search", "text").
-#               Если не знаешь — ставь None.
-# static_params: параметры, которые отправляются ВСЕГДА (например {"limit": 100}).
-
-API_CATALOG = {
-    # Животные
-    "pets": [
-        f"{BASE_URL}/mypets/all-category/",
-        f"{BASE_URL}/mypets/posts/",
-        f"{BASE_URL}/mypets/recommendations/"
-        f"{BASE_URL}/mypets/animal-breeds/",
-    ],
-    # Документы и МФЦ
-    "documents": [
-        f"{BASE_URL}/mfc/all/"
-    ],
-    # Здоровье
-    "health": [
-        f"{BASE_URL}/polyclinics/"
-    ],
-    # Родитель
-    "iparent": [
-        f"{BASE_URL}/iparent/places/categoria/",
-        f"{BASE_URL}/dou/", 
-        f"{BASE_URL}/dou/available-spots/",
-        f"{BASE_URL}/dou/commissions/",
-         f"{BASE_URL}/school/stat/",
-        f"{BASE_URL}/school/commissions/",
-        f"{BASE_URL}/school/helpful/",
-        f"{BASE_URL}/school/map/"
-    ],
-    "social" :[
-        f"{BASE_URL}/uk-falsification/",
-        f"{BASE_URL}/districts-info/district/",
-        f"{BASE_URL}/disconnections/",
-        f"{BASE_URL}/gati/orders/work-type-all/"
-    ]
-}
-# ======================================================================================
-
-TOXIC_WORDS = ["хуй", "пизд", "бляд", "еба", "говно", "муда", "сук"] 
-
-def check_toxicity(text: str) -> bool:
-    for word in TOXIC_WORDS:
-        if word in text.lower(): return True
-    return False
-
-def extract_data_safe(json_response):
-    if isinstance(json_response, list): return json_response
-    if isinstance(json_response, dict): return json_response.get("data") or json_response.get("results") or []
-    return []
-
-# === ИНИЦИАЛИЗАЦИЯ ===
+# Инициализация
 os_manager = OpenSearchManager()
+
+# Проверяем и загружаем данные при старте
+try:
+    was_updated = os_manager.ensure_data_loaded()
+    if was_updated:
+        print("[ai_engine] Данные загружены/обновлены в OpenSearch")
+except Exception as e:
+    print(f"[ai_engine] Ошибка при инициализации данных: {e}")
 
 llm = GigaChat(
     credentials=GIGACHAT_CREDENTIALS, 
-    verify_ssl_certs=False,
-    model="GigaChat" 
+    verify_ssl_certs=False, 
+    model="GigaChat"
 )
 
-# === ИНСТРУМЕНТЫ (TOOLS) ===
+validation_template = """
+Ты — строгий модератор чата. Твоя задача — проверить сообщение пользователя.
+Если сообщение содержит нецензурную лексику, прямые оскорбления, угрозы или явную токсичность — ответь одним словом: BLOCK.
+Если сообщение корректное (даже если это жалоба или спор) — ответь одним словом: PASS.
+
+Сообщение пользователя: "{text}"
+
+Ответ (только BLOCK или PASS):
+"""
+validation_prompt = ChatPromptTemplate.from_template(validation_template)
+validation_chain = validation_prompt | llm | StrOutputParser()
+
 
 @tool
-def search_api_catalog(category: str, district: str = "", keyword: str = "") -> str:
+def search_city_data(query: str) -> str:
     """
-    Ищет в городском API, подставляя параметры в URL, если они настроены.
-    
-    Args:
-        category: СТРОГО одна из: 'pets', 'documents', 'health', 'social', 'iparent'.
-        query: отправляй пустой запрос.
+    Универсальный поиск по базе данных Санкт-Петербурга.
+    Ищет ВСЁ: организации (ветклиники, МФЦ, школы), адреса, законы и инструкции.
+    Используй этот инструмент для ЛЮБОГО вопроса.
     """
-    print(f"\n[API] 📂 Категория: {category.upper()} | Район: '{district}' | Ключ: '{keyword}'")
+    print(f"\n[OPENSEARCH] Запрос: '{query}'")
     
-    endpoints = API_CATALOG.get(category)
-    if not endpoints: return f"Ошибка: Категория '{category}' не настроена."
-
-    results = []
-    headers = {'Accept': 'application/json'}
+    # Ищем в базе (заголовки, контент, адреса)
+    results = os_manager.search(query, size=7)
     
-    # Подготовка корней слов для Python-фильтрации (на случай, если API не умеет фильтровать)
-    district_root = ""
-    if district:
-        clean = district.strip().lower().split()[0]
-        if len(clean) > 4: district_root = clean[:-1]
-        else: district_root = clean
-
-    for entry in endpoints:
-        url = entry["url"]
-        config = entry["params_config"]
-        
-        # 1. ФОРМИРУЕМ ПАРАМЕТРЫ ЗАПРОСА (GET params)
-        params = config.get("static_params", {}).copy()
-        
-        # Если в конфиге задан ключ для района, добавляем его
-        if district and config["district_key"]:
-            params[config["district_key"]] = district
-            
-        # Если в конфиге задан ключ для поиска, добавляем его
-        if keyword and config["keyword_key"]:
-            params[config["keyword_key"]] = keyword
-
-        try:
-            # print(f"[DEBUG] GET {url} params={params}") 
-            # Отправляем запрос с параметрами (или пустой, если params пуст)
-            response = requests.get(url, params=params, headers=headers, verify=False, timeout=5)
-            
-            if response.status_code == 200:
-                data = extract_data_safe(response.json())
-                
-                for item in data:
-                    actual_item = item
-                    if 'place' in item and isinstance(item['place'], dict):
-                        actual_item = item['place']
-                    
-                    # 2. ДОПОЛНИТЕЛЬНАЯ ФИЛЬТРАЦИЯ (PYTHON)
-                    # Даже если мы отправили параметры, API мог вернуть мусор.
-                    # Или если параметры были None, мы скачали всё.
-                    # Поэтому проверяем район еще раз здесь.
-                    
-                    def get_all_text(d):
-                        t = ""
-                        for v in d.values():
-                            if isinstance(v, dict): t += get_all_text(v)
-                            elif isinstance(v, list): t += " ".join([str(x) for x in v])
-                            elif v: t += str(v) + " "
-                        return t
-
-                    full_text = get_all_text(actual_item).lower()
-                    
-                    # Если параметр района НЕ был отправлен на сервер (None), 
-                    # то фильтруем руками здесь.
-                    if district_root and (config["district_key"] is None):
-                         if district_root not in full_text:
-                            continue
-                    
-                    # Если параметр ключа НЕ был отправлен на сервер (None),
-                    # то фильтруем руками здесь.
-                    if keyword and (config["keyword_key"] is None):
-                        if keyword.lower() not in full_text:
-                            continue
-
-                    # Сборка карточки
-                    title = (actual_item.get('name') or actual_item.get('title') or 'Без названия')
-                    address = (actual_item.get('address') or actual_item.get('location') or '')
-                    if isinstance(address, dict): address = str(address.get('address', ''))
-                    
-                    card = f"- {title}"
-                    if address: card += f" (📍 {address})"
-                    if actual_item.get('phone'): card += f" 📞 {actual_item.get('phone')}"
-                    
-                    results.append(card)
-        except Exception:
-            pass
-
-    results = list(set([r for r in results if r]))
-
     if not results:
-        return f"По запросу ничего не найдено в категории '{category}'."
+        return "К сожалению, в базе данных ничего не найдено по этому запросу."
     
-    limit = 10
-    output = "\n".join(results[:limit])
-    if len(results) > limit:
-        return f"Найдено {len(results)} записей. Вот первые {limit}:\n{output}"
-    
-    return output
-
-@tool
-def search_knowledge_base(query: str) -> str:
-    """Ищет инструкции, законы и статьи (ТЕКСТ) в базе знаний."""
-    print(f"\n[OPENSEARCH] 📚 Ищу инструкции: '{query}'")
-    results = os_manager.search(query, size=3)
-    if not results: return "В базе знаний ничего не найдено."
-    
-    output = ""
+    output = f"[НАЙДЕНО {len(results)} ОБЪЕКТОВ]:\n"
     for i, hit in enumerate(results, 1):
         s = hit['_source']
-        output += f"{i}. {s.get('title')}: {s.get('content')[:200]}...\n"
+        title = s.get('title', 'Без названия')
+        category = s.get('category', 'Разное')
+        
+        # Собираем детали
+        details = []
+        if s.get('address'): details.append(f"Адрес: {s.get('address')}")
+        if s.get('phone'): details.append(f"Телефон: {s.get('phone')}")
+        
+        # Обрезаем описание, чтобы не перегружать контекст
+        content = s.get('content', '')[:150].replace("\n", " ")
+        if content: details.append(f"Описание: {content}...")
+        
+        if s.get('link') and s.get('link') != "#": 
+            details.append(f"Ссылка: {s.get('link')}")
+        
+        output += f"{i}. {title} ({category})\n   " + "\n   ".join(details) + "\n\n"
+        
     return output
 
-# Список инструментов
-tools = [search_api_catalog, search_knowledge_base]
-
-# === НАСТРОЙКА АГЕНТА ===
+tools = [search_city_data]
 
 system_prompt = """
 Ты — «Городской советник» Санкт-Петербурга.
+Твоя задача — отвечать на вопросы жителей, используя ТОЛЬКО локальную базу данных.
 
-ТВОЯ ЗАДАЧА — ВЫБРАТЬ ИНСТРУМЕНТ И ЗАПОЛНИТЬ ПАРАМЕТРЫ.
-
-1. Если вопрос про **АДРЕСА, ОРГАНИЗАЦИИ** ("Где?", "Куда пойти?", "Адрес"):
-   -> Используй `search_api_catalog`.
-   -> отпраляй пустой запрос.
-   -> находи из ответа нужное пользователю.
-
-2. Если вопрос про **ИНСТРУКЦИИ, ЗАКОНЫ** ("Как?", "Что нужно?"):
-   -> Используй `search_knowledge_base`.
-
-Пример:
-User: "Где терапевт в Адмиралтейском?"
-AI: search_api_catalog(category="health", district="адмиралтейский", keyword="терапевт")
+ТВОЯ СТРАТЕГИЯ:
+1. Любой вопрос про город (адреса, телефоны, законы, "где найти") -> вызывай `search_city_data`.
+2. Передавай в поиск ключевые слова. 
+   - Если ищут "ветклиники в Адмиралтейском" -> ищи "ветклиника Адмиралтейский".
+   - Если ищут "паспорт" -> ищи "как получить паспорт".
+3. В ответе инструмента ты получишь список объектов. Сформируй из них вежливый ответ.
+4. Если объектов много, перечисли их списком с адресами.
 """
 
 prompt_template = ChatPromptTemplate.from_messages([
@@ -237,19 +110,42 @@ prompt_template = ChatPromptTemplate.from_messages([
 agent = create_tool_calling_agent(llm, tools, prompt_template)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
+def ask_agent(user_input, chat_history=None, extra_context=""):
+    """
+    Функция для отправки вопроса агенту с контекстом
+    """
+    if chat_history is None:
+        chat_history = []
+    
+    # Добавляем контекст к вопросу если он есть
+    if extra_context:
+        full_input = f"{extra_context}\n\nВопрос: {user_input}"
+    else:
+        full_input = user_input
+    
+    try:
+        response = agent_executor.invoke({
+            "input": full_input,
+            "chat_history": chat_history
+        })
+        return response.get('output', 'Нет ответа')
+    except Exception as e:
+        print(f"[ai_engine] Ошибка при вызове агента: {e}")
+        return f"Произошла ошибка при обработке запроса: {e}"
+
 if __name__ == "__main__":
-    print("🤖 Бот запущен! (Режим: Шаблоны параметров)")
+    print("Бот запущен!")
     chat_history = [] 
 
     while True:
         try:
             user_input = input("\nВы: ")
             if user_input.lower() in ["exit", "выход"]: break
-            
-            if check_toxicity(user_input):
-                print("Бот: (Игнорирует сообщение)")
+            validation_result = validation_chain.invoke({"text": user_input})
+            if "BLOCK" in validation_result.strip().upper():
+                print("⛔ Бот: Пожалуйста, соблюдайте нормы приличия. Я не отвечаю на грубость.")
                 continue
-            
+
             response = agent_executor.invoke({
                 "input": user_input,
                 "chat_history": chat_history
@@ -263,4 +159,4 @@ if __name__ == "__main__":
             if len(chat_history) > 10: chat_history = chat_history[-10:]
             
         except Exception as e:
-            print(f"❌ Ошибка: {e}")
+            print(f"Ошибка: {e}")

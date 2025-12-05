@@ -20,7 +20,7 @@ def createGosMenu():
         types.KeyboardButton('Медицина'),
         types.KeyboardButton('Семья'),
         types.KeyboardButton('Жилье'),
-        types.KeyboardButton('Назад в главное  меню')
+        types.KeyboardButton('Назад в главное меню')
     ]
     keyboard.add(*buttons)
     return keyboard
@@ -32,7 +32,7 @@ def createSocialMenu():
         types.KeyboardButton('Студентам'),
         types.KeyboardButton('Субсидии ЖКХ'),
         types.KeyboardButton('Пособия'),
-        types.KeyboardButton('Назад в главное  меню')
+        types.KeyboardButton('Назад в главное меню')
     ]
     keyboard.add(*buttons)
     return keyboard
@@ -43,7 +43,7 @@ def createIventsMenu():
         types.KeyboardButton('Выставки'),
         types.KeyboardButton('Кинотеатры'),
         types.KeyboardButton('Фестивали'),
-        types.KeyboardButton('Назад в главное  меню')
+        types.KeyboardButton('Назад в главное меню')
     ]
     keyboard.add(*buttons)
     return keyboard
@@ -54,7 +54,7 @@ def createEstablishmentsMenu():
         types.KeyboardButton('Школы'),
         types.KeyboardButton('Колледжи'),
         types.KeyboardButton('Вузы'),
-        types.KeyboardButton('Назад в главное  меню')
+        types.KeyboardButton('Назад в главное меню')
     ]
     keyboard.add(*buttons)
     return keyboard

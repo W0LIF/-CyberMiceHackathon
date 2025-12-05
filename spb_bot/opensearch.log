@@ -8857,3 +8857,8 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
 2025-12-05 02:34:15,506 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
 2025-12-05 02:34:15,598 - opensearch - INFO - POST https://localhost:9200/corporate_data/_search [status:200 request:0.088s]
 2025-12-05 02:34:15,735 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-05 21:49:03,030 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:1.930s]
+2025-12-05 22:04:24,981 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.296s]
+2025-12-05 22:05:16,368 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.162s]
+2025-12-05 22:06:46,120 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.156s]
+2025-12-05 22:07:41,015 - opensearch - INFO - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:200 request:0.221s]

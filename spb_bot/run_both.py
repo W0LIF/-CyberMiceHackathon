@@ -25,7 +25,7 @@ def run_vk_bot():
         from vk_bot import VKBot
         print("[Main] Запуск VK бота...")
         
-        VK_TOKEN = "db40L1WRa3I0mmOdUcnF"
+        VK_TOKEN = "vk1.a.AYjSJn_GMEKM5y8P15dAp14bgZbvKrUujNpS1wC8ShXG8XE0cOZ6gfLjywiN1qeh3A1I8uX2Q41BBcFu0neea_Zj4dqv9zCj06YiNInD-bA2mJl5eUya6fQpstw5zfxOHha9rxkI-AGK8sm4f11-Q40h8QS2ZAnvh23YB6taP9yYZLU7fFWwJ4GSYc7rGVS4efoSAN7d6PwY96Vsek0ejQ"
         bot = VKBot(VK_TOKEN)
         bot.run()
     except Exception as e:

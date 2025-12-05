@@ -166,7 +166,10 @@ def establishments_info(message):
 
 @bot.message_handler(content_types=['text'])
 def handle_text_commands(message):
-    user_text = message.text.lower().strip()
+    # Normalize spaces and lowercase for reliable matching
+    raw_text = message.text or ""
+    normalized = ' '.join(raw_text.split()).lower()
+    user_text = normalized
 
     if user_text in ['госуслуги','gosuslugi','услуги']:
         gosuslugi_info(message)
@@ -182,7 +185,8 @@ def handle_text_commands(message):
         city_life(message)
     elif user_text in ['учреждения', 'заведения', 'учреждение', 'организации']:
         establishments_info(message)
-    elif user_text in ['старт', 'start', 'начать', 'главное меню']:
+    elif user_text in ['старт', 'start', 'начать', 'главное меню'] or 'назад' in user_text:
+        # Treat any 'назад' (back) as a request to return to main menu
         start_bot(message)
     else:
         # If command is not recognized - treat as open query and forward to parser+AI pipeline

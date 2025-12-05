@@ -118,7 +118,12 @@ class VKBot:
                 'random_id': 0
             }
             if keyboard:
-                params['keyboard'] = json.dumps(keyboard)
+                # VkKeyboard.get_keyboard() already returns a JSON string.
+                # If we were passed a JSON string, pass it through; otherwise JSON-encode.
+                if isinstance(keyboard, str) and keyboard.strip().startswith('{'):
+                    params['keyboard'] = keyboard
+                else:
+                    params['keyboard'] = json.dumps(keyboard)
             if attachment:
                 params['attachment'] = attachment
             
@@ -339,8 +344,12 @@ class VKBot:
             if event.type == VkEventType.MESSAGE_NEW and event.to_me:
                 user_id = event.user_id
                 text = event.text
-                
-                print(f"[VK Bot] Сообщение от {user_id}: {text}")
+                # Use repr(text) to avoid console encoding errors with emojis
+                try:
+                    printable = repr(text)
+                except Exception:
+                    printable = '<unprintable message>'
+                print(f"[VK Bot] Сообщение от {user_id}: {printable}")
                 
                 # Обработка сообщения
                 self.handle_text_message(user_id, text)

@@ -1,10 +1,9 @@
 import os
 import urllib3
 import logging
-# Импортируем наш менеджер
+
 from spb_bot_opensearch.opensearch_manager import OpenSearchManager
 
-# Импорты LangChain
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_gigachat.chat_models import GigaChat
 from langchain.agents import create_tool_calling_agent, AgentExecutor
@@ -12,128 +11,149 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain.tools import tool
 
-# Отключаем лишний шум
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Ваши ключи
 GIGACHAT_CREDENTIALS = "MDE5YWJiZTMtNjFhMi03YjQ2LWE0ZWYtZGZhMmQzYjg0OGUyOmU3OTIwZmE5LWY2MjUtNGExMy1hYmNkLWI1Y2NkNzc4N2M2NQ=="
 
-# Инициализация
 os_manager = OpenSearchManager()
 
-# Проверяем и загружаем данные при старте
 try:
     was_updated = os_manager.ensure_data_loaded()
-    if was_updated:
-        print("[ai_engine] Данные загружены/обновлены в OpenSearch")
+    if was_updated: print("[ai_engine] Данные обновлены")
 except Exception as e:
-    print(f"[ai_engine] Ошибка при инициализации данных: {e}")
+    print(f"[ai_engine] Ошибка инициализации: {e}")
 
 llm = GigaChat(
     credentials=GIGACHAT_CREDENTIALS, 
     verify_ssl_certs=False, 
-    model="GigaChat"
+    model="GigaChat",
+    temperature=0.1
 )
 
+# === МОДЕРАЦИЯ ===
 validation_template = """
-Ты — строгий модератор чата. Твоя задача — проверить сообщение пользователя.
-Если сообщение содержит нецензурную лексику, прямые оскорбления, угрозы или явную токсичность — ответь одним словом: BLOCK.
-Если сообщение корректное (даже если это жалоба или спор) — ответь одним словом: PASS.
-
-Сообщение пользователя: "{text}"
-
-Ответ (только BLOCK или PASS):
+Ты — модератор. Проверь сообщение на токсичность/мат.
+Если токсично — ответь BLOCK. Иначе — PASS.
+Сообщение: "{text}"
+Ответ:
 """
-validation_prompt = ChatPromptTemplate.from_template(validation_template)
-validation_chain = validation_prompt | llm | StrOutputParser()
+validation_chain = ChatPromptTemplate.from_template(validation_template) | llm | StrOutputParser()
 
+# === ИНСТРУМЕНТ 1: ДЛЯ АДРЕСОВ (Школы, МФЦ, Клиники) ===
 
 @tool
-def school(query: str, district: str = None) -> str:
+def find_places(query: str, district: str = None) -> str:
     """
-    Ищет школы.
+    Ищет ОРГАНИЗАЦИИ и АДРЕСА: школы, МФЦ, ветклиники, больницы.
     Аргументы:
-    - query: запрос (например "математическая" или просто "школы")
-    - district: Район города. ВАЖНО: Должен быть в Именительном падеже с большой буквы.
-      Пример: "в адмиралтейском" -> пиши "Адмиралтейский". 
-      Пример: "школы василеостровского района" -> пиши "Василеостровский".
+    - query: название или тип (например "школа", "МФЦ", "ветклиника").
+    - district: Район (если указан). Например: "Адмиралтейский".
     """
-    target_file = "api_iparent_2.json"
-    
-    # Если query слишком общий, очищаем его, чтобы сработал match_all
-    if query.lower().strip() in ["школы", "школа", "гимназии", "лицеи"]:
-        query = ""
+    clean_query = query.lower().strip()
+    if clean_query in ["школа", "мфц", "клиника", ""]: 
+        clean_query = "" # Пустой запрос, чтобы найти всё в районе
 
-    print(f"\n[TOOL: SCHOOL] Поиск: '{query}' | Район: '{district}'")
+    print(f"\n[TOOL: PLACES] Ищем организации: '{clean_query}' | Район: '{district}'")
     
-    results = os_manager.search(query, source=target_file, district=district, size=5)
+    # 1. Выгружаем МНОГО данных (чтобы потом фильтровать)
+    # Ищем везде, так как МФЦ и школы в разных файлах
+    raw_results = os_manager.search(clean_query, size=500)
+    
+    final_results = []
+
+    # 2. ЖЕСТКАЯ ФИЛЬТРАЦИЯ ПО РАЙОНУ (PYTHON)
+    if district:
+        # "Адмиралтейский" -> "адмиралтейск"
+        dist_root = district.lower().strip()
+        if len(dist_root) > 4: dist_root = dist_root[:-2]
+
+        for hit in raw_results:
+            s = hit['_source']
+            # Собираем текст, где может быть район (поле district, заголовок, адрес)
+            # В школах район лежит в 'district', в МФЦ - в 'title' или 'address'
+            check_text = (str(s.get('district', '')) + " " + s.get('title', '') + " " + s.get('address', '')).lower()
+            
+            if dist_root in check_text:
+                final_results.append(hit)
+    else:
+        # Если район не указан, берем топ результатов как есть
+        final_results = raw_results
+
+    if not final_results:
+        return f"Не найдено организаций по запросу '{query}' в районе '{district}'."
+
+    # 3. ФОРМАТИРОВАНИЕ
+    # Берем топ-15 после фильтрации
+    display_results = final_results[:15]
+    
+    output = f"[НАЙДЕНО {len(final_results)} МЕСТ (Показано {len(display_results)})]:\n"
+    for i, hit in enumerate(display_results, 1):
+        s = hit['_source']
+        title = s.get('title', 'Без названия')
+        addr = s.get('address', 'Адрес не указан')
+        phone = s.get('phone', '')
+        
+        output += f"{i}. {title}\n"
+        output += f"   📍 {addr}\n"
+        if phone: output += f"   📞 {phone}\n"
+        
+        # Для школ добавляем профиль
+        if s.get('profile'):
+            output += f"   Профиль: {', '.join(s.get('profile'))}\n"
+            
+        output += "\n"
+
+    return output
+
+
+# === ИНСТРУМЕНТ 2: ДЛЯ ИНФОРМАЦИИ (Законы, Льготы) ===
+
+@tool
+def search_knowledge_base(query: str) -> str:
+    """
+    Ищет ИНФОРМАЦИЮ: законы, льготы, пособия, правила, инструкции ("как получить", "что делать").
+    НЕ используй для поиска адресов.
+    """
+    print(f"\n[TOOL: KNOWLEDGE] Ищем информацию: '{query}'")
+    
+    results = os_manager.search(query, size=5)
     
     if not results:
-        return f"В базе (файл {target_file}) по запросу '{query}' в районе '{district}' ничего не найдено. Проверьте правильность названия района."
+        return "В базе знаний нет информации по этому вопросу."
     
-    output = f"[НАЙДЕНО {len(results)} ШКОЛ (Район: {district})]:\n"
+    output = f"[НАЙДЕНО {len(results)} СТАТЕЙ]:\n"
     for i, hit in enumerate(results, 1):
         s = hit['_source']
-        output += f"{i}. {s.get('title')} ({s.get('kind')})\n"
-        output += f"   Адрес: {s.get('address')}\n"
-        if s.get('profile'): 
-            output += f"   Профиль: {', '.join(s.get('profile'))}\n"
+        title = s.get('title', 'Без названия')
+        # Агрессивно собираем текст
+        content = str(s.get('content') or s.get('description') or s.get('text') or "")
+        clean_content = " ".join(content.split())[:300]
+        link = s.get('link', '')
+        
+        output += f"{i}. {title}\n"
+        if clean_content: output += f"   Инфо: {clean_content}...\n"
+        if link and link != "#": output += f"   Ссылка: {link}\n"
         output += "\n"
         
     return output
 
-@tool
-def mfc(query: str) -> str:
-    """
-    Поиск адресов мфц
-    Выбор файла: api_documents_0.json
-    Что искать в файле: 
-        
-    """
-    print(f"\n[OPENSEARCH] Запрос: '{query}'")
-    
-    # Ищем в базе (заголовки, контент, адреса)
-    results = os_manager.search(query, size=7)
-    
-    if not results:
-        return "К сожалению, в базе данных ничего не найдено по этому запросу."
-    
-    output = f"[НАЙДЕНО {len(results)} ОБЪЕКТОВ]:\n"
-    for i, hit in enumerate(results, 1):
-        s = hit['_source']
-        title = s.get('title', 'Без названия')
-        category = s.get('category', 'Разное')
-        
-        # Собираем детали
-        details = []
-        if s.get('address'): details.append(f"Адрес: {s.get('address')}")
-        if s.get('phone'): details.append(f"Телефон: {s.get('phone')}")
-        
-        # Обрезаем описание, чтобы не перегружать контекст
-        content = s.get('content', '')[:150].replace("\n", " ")
-        if content: details.append(f"Описание: {content}...")
-        
-        if s.get('link') and s.get('link') != "#": 
-            details.append(f"Ссылка: {s.get('link')}")
-        
-        output += f"{i}. {title} ({category})\n   " + "\n   ".join(details) + "\n\n"
-        
-    return output
+# Список инструментов
+tools = [find_places, search_knowledge_base]
 
-tools = [mfc, school]
+# === ПРОМПТ ===
 
 system_prompt = """
 Ты — «Городской советник» Санкт-Петербурга.
-Твоя задача — отвечать на вопросы жителей, используя ТОЛЬКО локальную базу данных.
 
-ТВОЯ СТРАТЕГИЯ:
-1. Любой вопрос про мфц -> вызывай mfc.
-2. Любой вопрос про школы -> вызывай school.
-2. Передавай в поиск ключевые слова. 
-   - Если ищут "ветклиники в Адмиралтейском" -> ищи "Адмиралтейский".
-   - Если ищут "паспорт" -> ищи "как получить паспорт".
-3. В ответе инструмента ты получишь список объектов. Сформируй из них вежливый ответ.
-4. Если объектов много, перечисли их списком с адресами.
+ТВОЯ СТРАТЕГИЯ ВЫБОРА:
+1. 🏢 Если спрашивают **"ГДЕ находится?", "Адреса...", "Школы/МФЦ в районе..."**:
+   -> Используй `find_places`.
+   - Обязательно выдели название района, если оно есть (например "Адмиралтейский").
+
+2. 📜 Если спрашивают **"КАК получить?", "Какие льготы?", "Закон о..."**:
+   -> Используй `search_knowledge_base`.
+
+3. Отвечай вежливо, используй найденные данные. Если адресов много, выведи их списком.
 """
 
 prompt_template = ChatPromptTemplate.from_messages([
@@ -146,40 +166,18 @@ prompt_template = ChatPromptTemplate.from_messages([
 agent = create_tool_calling_agent(llm, tools, prompt_template)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
-def ask_agent(user_input, chat_history=None, extra_context=""):
-    """
-    Функция для отправки вопроса агенту с контекстом
-    """
-    if chat_history is None:
-        chat_history = []
-    
-    # Добавляем контекст к вопросу если он есть
-    if extra_context:
-        full_input = f"{extra_context}\n\nВопрос: {user_input}"
-    else:
-        full_input = user_input
-    
-    try:
-        response = agent_executor.invoke({
-            "input": full_input,
-            "chat_history": chat_history
-        })
-        return response.get('output', 'Нет ответа')
-    except Exception as e:
-        print(f"[ai_engine] Ошибка при вызове агента: {e}")
-        return f"Произошла ошибка при обработке запроса: {e}"
-
 if __name__ == "__main__":
-    print("Бот запущен!")
+    print("🤖 Бот запущен! (Гибридный режим: Адреса + Знания)")
     chat_history = [] 
 
     while True:
         try:
             user_input = input("\nВы: ")
             if user_input.lower() in ["exit", "выход"]: break
-            validation_result = validation_chain.invoke({"text": user_input})
-            if "BLOCK" in validation_result.strip().upper():
-                print("⛔ Бот: Пожалуйста, соблюдайте нормы приличия. Я не отвечаю на грубость.")
+            
+            val = validation_chain.invoke({"text": user_input})
+            if "BLOCK" in val.strip().upper():
+                print("⛔ Соблюдайте приличия.")
                 continue
 
             response = agent_executor.invoke({
@@ -195,4 +193,4 @@ if __name__ == "__main__":
             if len(chat_history) > 10: chat_history = chat_history[-10:]
             
         except Exception as e:
-            print(f"Ошибка: {e}")
+            print(f"❌ Ошибка: {e}")

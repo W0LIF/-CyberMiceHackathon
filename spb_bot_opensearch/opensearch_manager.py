@@ -23,14 +23,17 @@ class OpenSearchManager:
     def __init__(self):
         self.host = 'localhost'
         self.port = 9200
-        self.auth = ('admin', 'admin')
+        # Убираем аутентификацию, так как мы отключили безопасность
+        # self.auth = ('admin', 'admin')
         self.index_name = "corporate_data"
         self.metadata_file = os.path.join(os.path.dirname(__file__), 'index_metadata.json')
 
+        # === ИСПРАВЛЕНИЕ: отключаем SSL ===
         self.client = OpenSearch(
             hosts=[{'host': self.host, 'port': self.port}],
-            http_auth=self.auth,
-            use_ssl=True,
+            # Убираем http_auth, так как отключили безопасность
+            # http_auth=self.auth,
+            use_ssl=False,  # ← ИЗМЕНЕНО: было True, стало False
             verify_certs=False,
             ssl_show_warn=False
         )
@@ -44,7 +47,7 @@ class OpenSearchManager:
         self.data_folder = os.path.join(project_root, "data")
         
         # Для отладки (чтобы вы видели, где он ищет)
-        # print(f"OpenSearchManager ищет данные в: {self.data_folder}")
+        print(f"OpenSearchManager ищет данные в: {self.data_folder}")
 
     def setup_index(self):
         index_body = {
@@ -177,6 +180,11 @@ class OpenSearchManager:
         2. Если прошло 30 дней -> перезагружаем
         """
         try:
+            # Проверяем подключение к OpenSearch
+            if not self.client.ping():
+                print("Не удалось подключиться к OpenSearch")
+                return False
+                
             # Если индекс пуст - загружаем
             if self.is_index_empty():
                 print("Индекс пуст, загружаю данные...")

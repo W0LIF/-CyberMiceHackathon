@@ -873,3 +873,1293 @@ urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in
 2025-12-04 03:57:30,690 - opensearch - INFO - POST https://localhost:9200/_bulk [status:200 request:0.166s]
 2025-12-04 03:57:31,044 - opensearch - INFO - POST https://localhost:9200/corporate_data/_refresh [status:200 request:0.352s]
 >>>>>>> dc04f114bdb9466ce324fc103f45d43164fc729c
+2025-12-10 20:57:39,337 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:4.096s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D455450>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:57:43,400 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:4.060s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D455A50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:57:47,473 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:4.073s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D482BD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:57:51,533 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:4.058s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D483210>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:57:57,414 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.065s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D87F890>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:58:01,472 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.057s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D88C210>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:58:05,547 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.075s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D88CD10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:58:09,643 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:4.095s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x000001D53D88D790>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2025-12-10 20:58:14,668 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-10 20:58:14,941 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 20:58:15,095 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:16:08,897 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:16:09,207 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:16:09,325 - opensearch - WARNING - POST https://localhost:9200/corporate_data/_search [status:N/A request:0.078s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:09,501 - opensearch - WARNING - POST https://localhost:9200/corporate_data/_search [status:N/A request:0.056s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:09,540 - opensearch - WARNING - POST https://localhost:9200/corporate_data/_search [status:N/A request:0.036s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:09,653 - opensearch - WARNING - POST https://localhost:9200/corporate_data/_search [status:N/A request:0.111s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:09,793 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:16:33,824 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.042s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:33,966 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.027s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:33,995 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.027s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:34,040 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.043s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:36,411 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.055s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:36,448 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.035s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:36,483 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.033s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:16:36,532 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.047s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,066 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.044s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,110 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.038s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,138 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.026s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,187 - opensearch - WARNING - GET https://localhost:9200/_cat/count/corporate_data?format=json [status:N/A request:0.047s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,330 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.045s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,362 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.029s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,411 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.047s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:23:20,448 - opensearch - WARNING - HEAD https://localhost:9200/corporate_data [status:N/A request:0.033s]
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\kirik\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\opensearchpy\connection\http_urllib3.py", line 280, in perform_request
+    response = self.pool.urlopen(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\retry.py", line 449, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kirik\OneDrive\Документы\GitHub\-CyberMiceHackathon\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)
+2025-12-10 21:24:31,866 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.025s]
+2025-12-10 21:24:31,889 - opensearch - WARNING - GET http://localhost:9200/_cat/count/corporate_data?format=json [status:404 request:0.022s]
+2025-12-10 21:24:32,301 - opensearch - INFO - PUT http://localhost:9200/corporate_data [status:200 request:0.300s]
+2025-12-10 21:24:32,584 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.271s]
+2025-12-10 21:24:33,114 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.493s]
+2025-12-10 21:24:33,811 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.628s]
+2025-12-10 21:24:34,110 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.283s]
+2025-12-10 21:24:34,467 - opensearch - INFO - POST http://localhost:9200/corporate_data/_refresh [status:200 request:0.351s]
+2025-12-10 21:24:45,739 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-10 21:24:45,967 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:24:46,334 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:24:46,724 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.379s]
+2025-12-10 21:24:46,854 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 21:25:33,911 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.091s]
+2025-12-10 21:25:34,088 - opensearch - INFO - DELETE http://localhost:9200/corporate_data [status:200 request:0.175s]
+2025-12-10 21:25:34,378 - opensearch - INFO - PUT http://localhost:9200/corporate_data [status:200 request:0.282s]
+2025-12-10 21:25:34,504 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.004s]
+2025-12-10 21:25:34,570 - opensearch - INFO - DELETE http://localhost:9200/corporate_data [status:200 request:0.064s]
+2025-12-10 21:25:34,827 - opensearch - INFO - PUT http://localhost:9200/corporate_data [status:200 request:0.252s]
+2025-12-10 21:25:34,920 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.084s]
+2025-12-10 21:25:35,186 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.234s]
+2025-12-10 21:25:35,655 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.406s]
+2025-12-10 21:25:35,796 - opensearch - INFO - POST http://localhost:9200/_bulk [status:200 request:0.122s]
+2025-12-10 21:25:36,120 - opensearch - INFO - POST http://localhost:9200/corporate_data/_refresh [status:200 request:0.324s]

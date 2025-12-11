@@ -2576,3 +2576,81 @@ urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_
 2025-12-11 02:22:05,742 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
 2025-12-11 02:22:05,768 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.013s]
 2025-12-11 02:22:05,897 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:17:44,711 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.195s]
+2025-12-11 16:17:44,735 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.023s]
+2025-12-11 16:17:44,801 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.067s]
+2025-12-11 16:17:53,764 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:17:54,335 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:17:54,618 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:17:54,934 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.275s]
+2025-12-11 16:17:55,064 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:18:06,465 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:18:06,855 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:18:07,008 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.121s]
+2025-12-11 16:18:07,391 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:19:03,293 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:19:03,625 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:19:03,775 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.129s]
+2025-12-11 16:19:03,915 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:20:11,321 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.008s]
+2025-12-11 16:20:11,338 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.006s]
+2025-12-11 16:20:11,369 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.030s]
+2025-12-11 16:20:24,209 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:20:24,399 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:20:24,689 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:20:24,836 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.114s]
+2025-12-11 16:20:24,961 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:21:49,156 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.022s]
+2025-12-11 16:21:49,164 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.007s]
+2025-12-11 16:21:49,174 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.009s]
+2025-12-11 16:21:54,601 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:21:55,043 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:21:55,351 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:21:55,533 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.171s]
+2025-12-11 16:21:55,644 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:24:19,013 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.019s]
+2025-12-11 16:24:19,022 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.007s]
+2025-12-11 16:24:19,031 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.009s]
+2025-12-11 16:24:33,653 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:24:33,893 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:24:34,420 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:24:34,599 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.095s]
+2025-12-11 16:24:34,717 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:25:26,472 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:25:26,812 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:25:26,912 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.087s]
+2025-12-11 16:25:27,034 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:29:22,221 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.019s]
+2025-12-11 16:29:22,230 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.009s]
+2025-12-11 16:29:22,240 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.010s]
+2025-12-11 16:29:51,699 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:29:52,039 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:29:52,351 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:29:52,459 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.097s]
+2025-12-11 16:29:52,570 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:30:16,195 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:30:16,488 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:30:16,691 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.193s]
+2025-12-11 16:30:16,828 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:32:54,216 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.030s]
+2025-12-11 16:32:54,226 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.010s]
+2025-12-11 16:32:54,241 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.015s]
+2025-12-11 16:33:05,255 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:33:05,464 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:33:05,763 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:33:05,923 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.146s]
+2025-12-11 16:33:06,052 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:33:48,498 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:33:48,895 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:33:49,089 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.142s]
+2025-12-11 16:33:49,212 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:34:03,405 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:34:03,564 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:38:14,413 - opensearch - INFO - HEAD http://localhost:9200/ [status:200 request:0.022s]
+2025-12-11 16:38:14,424 - opensearch - INFO - HEAD http://localhost:9200/corporate_data [status:200 request:0.010s]
+2025-12-11 16:38:14,438 - opensearch - INFO - POST http://localhost:9200/corporate_data/_count [status:200 request:0.013s]
+2025-12-11 16:38:29,781 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-12-11 16:38:29,986 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:38:30,295 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-11 16:38:30,392 - opensearch - INFO - POST http://localhost:9200/corporate_data/_search [status:200 request:0.081s]
+2025-12-11 16:38:30,513 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"

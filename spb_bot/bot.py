@@ -14,7 +14,8 @@ import os
 from submenu import*
 from parsing.universal_parser import UniversalParser, CONFIGURATIONS
 import ai_engine as ai_engine
-from ai_engine import ask_agent
+from ai_engine import search_knowledge_base
+from ai_engine import search_knowledge_base
 from spb_bot_opensearch.opensearch_manager import OpenSearchManager
 from langchain_core.messages import HumanMessage, AIMessage
 

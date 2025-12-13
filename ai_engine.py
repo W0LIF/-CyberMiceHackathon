@@ -3,6 +3,7 @@ import urllib3
 import logging
 
 from spb_bot_opensearch.opensearch_manager import OpenSearchManager
+from typing import Optional
 
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_gigachat.chat_models import GigaChat
@@ -42,7 +43,7 @@ validation_chain = ChatPromptTemplate.from_template(validation_template) | llm |
 # === ИНСТРУМЕНТ 1: ДЛЯ АДРЕСОВ (Школы, МФЦ, Клиники) ===
 
 @tool
-def search_city_data(query: str, district: str = None) -> str:
+def search_city_data(query: str, district: Optional[str] = None) -> str:
     """
     Универсальный поиск по базе данных Санкт-Петербурга.
     Ищет ВСЁ: организации (ветклиники, МФЦ, школы), адреса, законы и инструкции.

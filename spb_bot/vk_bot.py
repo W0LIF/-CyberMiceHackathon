@@ -15,7 +15,7 @@ if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
 # Импортируем общие модули
-from ai_engine import ask_agent
+from ai_engine import search_city_data
 from spb_bot_opensearch.opensearch_manager import OpenSearchManager
 from langchain_core.messages import HumanMessage, AIMessage
 
@@ -278,9 +278,7 @@ class VKBot:
 
         # Шаг 4: Отправляем в LLM
         try:
-            answer = ask_agent(user_input, 
-                             chat_history=self.user_histories.get(user_id, []), 
-                             extra_context=extra_context)
+            answer = search_city_data(user_input)
             
             # Сохраняем в историю
             self.user_histories.setdefault(user_id, []).append(HumanMessage(content=user_input))

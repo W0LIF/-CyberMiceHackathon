@@ -14,8 +14,8 @@ import os
 from submenu import*
 from parsing.universal_parser import UniversalParser, CONFIGURATIONS
 import ai_engine as ai_engine
-from ai_engine import search_knowledge_base
-from ai_engine import search_knowledge_base
+from ai_engine import search_city_data
+from ai_engine import search_city_data
 from spb_bot_opensearch.opensearch_manager import OpenSearchManager
 from langchain_core.messages import HumanMessage, AIMessage
 
@@ -273,7 +273,7 @@ def process_open_query(message):
 
     # Шаг 4: Отправляем в LLM с контекстом из локальной базы
     try:
-        answer = ask_agent(user_input, chat_history=user_histories.get(chat_id, []), extra_context=extra_context)
+        answer = search_city_data(user_input)
         
         # Сохраняем в историю
         user_histories.setdefault(chat_id, []).append(HumanMessage(content=user_input))
